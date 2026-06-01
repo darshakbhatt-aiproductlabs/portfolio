@@ -680,6 +680,177 @@
       .reveal { opacity: 1; transform: none; transition: none; }
     }
 
+
+    /* ───────── Tab bar ───────── */
+    .tab-bar {
+      position: sticky; top: 0; z-index: 45;
+      background: rgba(13,17,23,0.92);
+      backdrop-filter: saturate(180%) blur(12px);
+      -webkit-backdrop-filter: saturate(180%) blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      overflow-x: auto;
+    }
+    .tab-bar-inner { max-width: var(--max-w); margin: 0 auto; display: flex; gap: 0; }
+    .tab-btn {
+      padding: 18px 20px; font-size: 14.5px; font-weight: 600;
+      color: var(--text-dim); background: transparent;
+      border: 0; border-bottom: 2px solid transparent;
+      cursor: pointer; font-family: inherit; white-space: nowrap;
+      transition: color 150ms ease, border-color 150ms ease;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active { color: var(--text); border-bottom-color: var(--accent); }
+    .tab-btn .count {
+      font-size: 11.5px; color: var(--text-faint); font-weight: 500;
+      background: var(--surface-2); padding: 1px 7px; border-radius: 999px;
+    }
+    .tab-btn.active .count { color: var(--accent); background: rgba(167,139,250,0.12); }
+
+    .tab-panel { display: none; padding: 64px 24px 80px; }
+    .tab-panel.active { display: block; animation: fadeInTab 260ms ease; }
+    @keyframes fadeInTab {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) { .tab-panel.active { animation: none; } }
+    .tab-panel .inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .tab-heading { text-align: center; margin: 0 0 36px; }
+    .tab-heading h2 {
+      font-size: clamp(28px, 3.5vw, 38px);
+      letter-spacing: -0.022em; font-weight: 700; margin: 8px 0 12px;
+    }
+    .tab-heading h2 .grad {
+      background: var(--accent-grad);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .tab-heading p { color: var(--text-dim); font-size: 16.5px; margin: 0 auto; max-width: 640px; }
+
+    .subsection { margin-top: 56px; padding-top: 36px; border-top: 1px solid var(--border); }
+    .subsection:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+    .subsection h3.sub-h {
+      font-size: 13px; text-transform: uppercase; letter-spacing: 0.09em;
+      color: var(--text-faint); font-weight: 700;
+      text-align: center; margin: 0 0 24px;
+    }
+
+    /* ───────── Channel cards (Beyond Work) ───────── */
+    .channel-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 28px; margin-bottom: 24px;
+    }
+    .channel-head {
+      display: flex; align-items: center; gap: 18px;
+      margin-bottom: 22px; flex-wrap: wrap;
+    }
+    .channel-head .brand {
+      display: flex; align-items: center; gap: 14px; flex: 1; min-width: 220px;
+    }
+    .brand-icon {
+      width: 52px; height: 52px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 26px; color: white;
+    }
+    .brand-icon.yt { background: #FF0000; }
+    .brand-icon.ig { background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+    .channel-head h3 { margin: 0 0 4px; font-size: 19px; }
+    .channel-head .meta { color: var(--text-dim); font-size: 13.5px; }
+    .channel-head .stats { display: flex; gap: 18px; color: var(--text-dim); font-size: 13px; }
+    .channel-head .stats b { color: var(--text); font-weight: 700; font-size: 16px; display: block; margin-bottom: 2px; }
+
+    .video-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    @media (max-width: 960px) { .video-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .video-grid { grid-template-columns: 1fr; } }
+    .video-card {
+      text-decoration: none; color: var(--text); display: block;
+      transition: transform 200ms ease;
+    }
+    .video-card:hover { transform: translateY(-3px); text-decoration: none; }
+    .video-card .thumb-wrap {
+      position: relative; aspect-ratio: 16/9;
+      border-radius: 8px; overflow: hidden;
+      background: var(--surface-2); border: 1px solid var(--border);
+    }
+    .video-card .thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .video-card .play-overlay {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.55) 100%);
+      transition: background 200ms ease;
+    }
+    .video-card:hover .play-overlay { background: linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.7) 100%); }
+    .video-card .play-icon {
+      width: 48px; height: 48px;
+      background: rgba(255,0,0,0.92); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 16px; padding-left: 3px;
+      transition: transform 200ms ease;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .video-card:hover .play-icon { transform: scale(1.12); }
+    .video-card .vid-title {
+      margin-top: 10px; font-size: 13px; line-height: 1.45;
+      color: var(--text); font-weight: 500;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+      overflow: hidden; min-height: 38px;
+    }
+
+    .ig-tagline {
+      font-style: italic; color: var(--text);
+      font-size: 15.5px; line-height: 1.55;
+      padding: 14px 18px;
+      border-left: 3px solid #dc2743;
+      background: rgba(220,39,67,0.05);
+      margin: 0 0 20px; border-radius: 0 8px 8px 0;
+    }
+    .ig-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+    @media (max-width: 600px) { .ig-grid { grid-template-columns: 1fr 1fr; } }
+    .ig-tile {
+      aspect-ratio: 1/1; border-radius: 6px;
+      background: #000; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 18px;
+      font-size: 14px; line-height: 1.45;
+      font-family: Georgia, "Times New Roman", serif;
+      position: relative; overflow: hidden;
+      border: 1px solid var(--border);
+      transition: transform 200ms ease, border-color 200ms ease;
+      cursor: pointer; text-decoration: none;
+    }
+    .ig-tile:hover { transform: translateY(-2px); border-color: #dc2743; text-decoration: none; }
+    .ig-tile.dark { background: #0a0a0a; }
+    .ig-tile.quote { font-style: italic; font-size: 13.5px; padding: 16px 14px; }
+    .ig-tile .attribution {
+      position: absolute; bottom: 8px; right: 12px;
+      font-size: 10.5px; font-style: italic;
+      color: rgba(255,255,255,0.55); font-family: Georgia, serif;
+    }
+    .ig-tile .play-mark {
+      position: absolute; top: 10px; right: 12px;
+      color: rgba(255,255,255,0.85); font-size: 14px;
+    }
+    .ig-tile.serif-large { font-size: 17px; font-weight: 600; }
+    .ig-tile.text-sm { font-size: 12.5px; }
+    .ig-tile.with-bg {
+      background: linear-gradient(135deg, rgba(220,39,67,0.15), rgba(0,0,0,0.9)), #1a0a14;
+    }
+
+    .philosophy {
+      margin-top: 32px; text-align: center;
+      padding: 44px 32px;
+      background: linear-gradient(135deg, rgba(167,139,250,0.06), rgba(56,189,248,0.04));
+      border: 1px solid var(--border); border-radius: 16px;
+    }
+    .philosophy blockquote {
+      font-size: clamp(20px, 2.6vw, 28px); font-style: italic;
+      color: var(--text); line-height: 1.45; margin: 0;
+      font-family: Georgia, "Times New Roman", serif; letter-spacing: -0.01em;
+    }
+    .philosophy blockquote::before { content: "“"; color: var(--accent); margin-right: 4px; }
+    .philosophy blockquote::after { content: "”"; color: var(--accent); margin-left: 4px; }
+
     /* ───────── Cmd-K palette ───────── */
     .palette-backdrop {
       position: fixed; inset: 0;
@@ -722,19 +893,18 @@
 <!-- ═══════════════════ NAV ═══════════════════ -->
 <nav class="top">
   <div class="inner">
-    <a href="#top" class="logo">Darshak Bhatt</a>
+    <a href="#overview" class="logo">Darshak Bhatt</a>
     <div class="links">
-      <a href="#story">Story</a>
-      <a href="#work">Work</a>
-      <a href="#impact">Impact</a>
-      <a href="#built">Open Source</a>
-      <a href="#contact">Contact</a>
+      <a class="always" href="mailto:darshakbhatt94@gmail.com">📧 Email</a>
+      <a class="always" href="https://www.linkedin.com/in/darshak-bhatt/" target="_blank" rel="noopener">in LinkedIn</a>
       <a href="#" class="cta always" id="open-palette">⌘K<span class="kbd">K</span></a>
     </div>
   </div>
 </nav>
 
 <!-- ═══════════════════ HERO ═══════════════════ -->
+
+<a id="overview"></a>
 <a id="top"></a>
 <header class="hero">
   <div class="inner">
@@ -758,40 +928,84 @@
   </div>
 </header>
 
-<!-- HERO stat strip -->
-<div class="stat-strip">
-  <div class="stat reveal"><div class="num">$21M+</div><div class="label">Business impact delivered</div></div>
-  <div class="stat reveal"><div class="num">10+ yrs</div><div class="label">Product, growth &amp; AI</div></div>
-  <div class="stat reveal"><div class="num">16+</div><div class="label">Shipped projects &amp; concepts</div></div>
-  <div class="stat reveal"><div class="num">2</div><div class="label">Ventures founded (seed-funded)</div></div>
+<!-- ═══════════════════ TAB BAR ═══════════════════ -->
+<div class="tab-bar">
+  <div class="tab-bar-inner">
+    <button class="tab-btn active" data-tab="overview">📋 Overview</button>
+    <button class="tab-btn" data-tab="work">🚀 Work <span class="count">18</span></button>
+    <button class="tab-btn" data-tab="opensource">‹/› Open Source <span class="count">8</span></button>
+    <button class="tab-btn" data-tab="beyond">🎬 Beyond Work</button>
+    <button class="tab-btn" data-tab="hire">💼 Hire Me</button>
+  </div>
 </div>
 
-<!-- ═══════════════════ THE STORY ═══════════════════ -->
-<section id="story" class="alt">
+<!-- ═══════════════════ TAB: OVERVIEW ═══════════════════ -->
+<main class="tab-panel active" id="tab-overview" role="tabpanel">
   <div class="inner">
-    <div class="eyebrow-wrap"><span class="eyebrow">The Story</span></div>
-    <h2>Three arcs in one operator.</h2>
-    <p class="subhead">PM craft, AI-driven CRO, and founder mileage — sharpened against real P&amp;L.</p>
 
-    <div class="story reveal">
-      <p>I'm a <strong>Senior Product Leader</strong> with 10+ years of building products that move numbers. I cut my teeth on eCommerce and SaaS, and I've spent the last several years doubling down on AI — not as a buzzword, but as the substrate for <strong>search, personalization, agentic automation, and CRO</strong>. The headline outcome: <strong>$21M+ in measurable business impact</strong> for a $100M-ARR US-based company, delivered by combining product strategy with applied AI.</p>
-
-      <p>Before that, I went 0→1 twice. I co-founded <strong>Viazene</strong> and <strong>SuperParent</strong> — both secured seed funding and VC incubation. Earlier, at <strong>Vrozart</strong>, my work on technology-led innovation won the <strong>Indian Achiever's Award (2021)</strong>. Founder mode taught me to ship under constraint, to treat the roadmap as a hypothesis, and to never confuse activity with outcome.</p>
-
-      <p>Today I split time between <strong>shipping AI tooling for daily PM workflows</strong> (jira-digest, intraday trading agents, AI-assisted hiring flows, an interactive Google Flow vision concept) and <strong>helping teams turn AI from a demo into a durable line item</strong>. I'm based in Mumbai, currently on-site in Bengaluru, and open to remote/hybrid roles — with a 15-day notice period.</p>
-
-      <p class="signature">"The will to win is important, but the will to prepare is vital."</p>
+    <div class="stat-strip" style="margin:0 0 56px;padding:0;">
+      <div class="stat reveal"><div class="num">$21M+</div><div class="label">Business impact delivered</div></div>
+      <div class="stat reveal"><div class="num">10+ yrs</div><div class="label">Product, growth &amp; AI</div></div>
+      <div class="stat reveal"><div class="num">18</div><div class="label">Shipped projects &amp; concepts</div></div>
+      <div class="stat reveal"><div class="num">2</div><div class="label">Ventures founded (seed-funded)</div></div>
     </div>
+
+    <div class="subsection">
+      <h3 class="sub-h">The story · three arcs in one operator</h3>
+      <div class="story reveal">
+        <p>I'm a <strong>Senior Product Leader</strong> with 10+ years of building products that move numbers. I cut my teeth on eCommerce and SaaS, and I've spent the last several years doubling down on AI — not as a buzzword, but as the substrate for <strong>search, personalization, agentic automation, and CRO</strong>. The headline outcome: <strong>$21M+ in measurable business impact</strong> for a $100M-ARR US-based company, delivered by combining product strategy with applied AI.</p>
+        <p>Before that, I went 0→1 twice. I co-founded <strong>Viazene</strong> and <strong>SuperParent</strong> — both secured seed funding and VC incubation. Earlier, at <strong>Vrozart</strong>, my work on technology-led innovation won the <strong>Indian Achiever's Award (2021)</strong>. Founder mode taught me to ship under constraint, to treat the roadmap as a hypothesis, and to never confuse activity with outcome.</p>
+        <p>Today I split time between <strong>shipping AI tooling for daily PM workflows</strong> (jira-digest, intraday trading agents, AI-assisted hiring flows, an interactive Google Flow vision concept) and <strong>helping teams turn AI from a demo into a durable line item</strong>. I'm based in Mumbai, currently on-site in Bengaluru, and open to remote/hybrid roles — with a 15-day notice period.</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="sub-h">Spotlight · four projects worth opening first</h3>
+      <div class="work-grid" style="margin-top:8px;">
+        <article class="project-card">
+          <div class="ribbon">Open Source</div>
+          <div class="head"><span class="emoji">📬</span><div><h3>jira-digest</h3><div class="subtitle">Daily Jira summary · Email/Slack/Teams</div></div></div>
+          <p class="desc">Replaces the morning Jira ritual with one daily digest. One YAML, any company. AI-onboarded via Claude Code/Codex/Cursor — no YAML hand-writing.</p>
+          <div class="tech"><span class="tag">Python 3.11</span><span class="tag">GitHub Actions</span><span class="tag">Jira REST API</span></div>
+          <div class="links"><a href="https://darshakbhatt-aiproductlabs.github.io/jira-digest/" target="_blank" rel="noopener">↗ Landing</a><a href="https://github.com/darshakbhatt-aiproductlabs/jira-digest" target="_blank" rel="noopener">‹/› Repo</a></div>
+        </article>
+        <article class="project-card">
+          <div class="ribbon">Live</div>
+          <div class="head"><span class="emoji">📈</span><div><h3>Intraday ORB Trading Agent</h3><div class="subtitle">Algorithmic n8n + Upstox v3 · Dec 2025</div></div></div>
+          <p class="desc">Algorithmic Opening Range Breakout intraday trading agent. Triggers on a Sheet cell, fetches Upstox v3 candles, scores breakouts against ADX + RSI + Bollinger squeeze + volume.</p>
+          <div class="tech"><span class="tag">n8n</span><span class="tag">Upstox v3</span><span class="tag">Lovable</span></div>
+          <div class="links"><a href="https://darshakbhatt-aiproductlabs.github.io/intraday-orb-strategy-db/" target="_blank" rel="noopener">📄 Explainer</a><a href="https://intraday-orb-strategy-db.lovable.app" target="_blank" rel="noopener">↗ Live</a><a href="https://github.com/darshakbhatt-aiproductlabs/intraday-orb-strategy-db" target="_blank" rel="noopener">‹/› Code</a></div>
+        </article>
+        <article class="project-card">
+          <div class="ribbon">Open Source</div>
+          <div class="head"><span class="emoji">🛰️</span><div><h3>Peer &amp; Competitor Monitor</h3><div class="subtitle">n8n agent · Discord + Gmail alerts</div></div></div>
+          <p class="desc">Two n8n workflows that watch competitor URLs every 6h. v1 scores changes 1-10 with GPT-4; v2 uses MD5 hashing for cheap diffing.</p>
+          <div class="tech"><span class="tag">n8n</span><span class="tag">GPT-4</span><span class="tag">MD5</span><span class="tag">Discord</span></div>
+          <div class="links"><a href="https://darshakbhatt-aiproductlabs.github.io/peer-competitor-monitor/" target="_blank" rel="noopener">📄 Microsite</a><a href="https://github.com/darshakbhatt-aiproductlabs/peer-competitor-monitor" target="_blank" rel="noopener">‹/› Repo</a></div>
+        </article>
+        <article class="project-card">
+          <div class="ribbon">Open Source</div>
+          <div class="head"><span class="emoji">🧠</span><div><h3>Prospect Research Agent</h3><div class="subtitle">n8n + LangChain · 60s sales dossier</div></div></div>
+          <p class="desc">Type a prospect name → 10-section psychological sales profile in 60 seconds. Two-agent chain with GPT-4o + Perplexity Sonar + LinkedIn.</p>
+          <div class="tech"><span class="tag">n8n</span><span class="tag">LangChain</span><span class="tag">GPT-4o</span></div>
+          <div class="links"><a href="https://darshakbhatt-aiproductlabs.github.io/prospect-research-agent/" target="_blank" rel="noopener">📄 Microsite</a><a href="https://github.com/darshakbhatt-aiproductlabs/prospect-research-agent" target="_blank" rel="noopener">‹/› Repo</a></div>
+        </article>
+      </div>
+      <p style="text-align:center;margin-top:32px;">
+        <button class="btn btn-secondary" onclick="switchTab('work')">See all 18 projects →</button>
+      </p>
+    </div>
+
   </div>
-</section>
+</main>
 
-<!-- ═══════════════════ SELECTED WORK ═══════════════════ -->
-<section id="work">
+<!-- ═══════════════════ TAB: WORK ═══════════════════ -->
+<main class="tab-panel" id="tab-work" role="tabpanel">
   <div class="inner">
-    <div class="eyebrow-wrap"><span class="eyebrow">Selected Work</span></div>
-    <h2>Things I've shipped, prototyped, or written specs for.</h2>
-    <p class="subhead">Filter by category. Every card links to a live demo, repo, or artifact.</p>
-
+    <div class="tab-heading">
+      <h2>Selected <span class="grad">Work</span>.</h2>
+      <p>Filter by category. Every card links to a live demo, repo, or artifact.</p>
+    </div>
     <div class="filter-row" id="filters">
       <button class="filter-chip active" data-filter="all">All <span class="count" id="count-all">18</span></button>
       <button class="filter-chip" data-filter="ai">AI / Agents</button>
@@ -801,7 +1015,6 @@
       <button class="filter-chip" data-filter="trading">Trading</button>
       <button class="filter-chip" data-filter="n8n">n8n workflows</button>
     </div>
-
     <div class="work-grid" id="work-grid">
       <!-- 1: Intraday ORB -->
       <article class="project-card" data-tags="ai,trading,n8n">
@@ -1146,57 +1359,15 @@
       </article>
     </div>
   </div>
-</section>
+</main>
 
-<!-- ═══════════════════ IMPACT RECEIPTS ═══════════════════ -->
-<section id="impact" class="alt">
+<!-- ═══════════════════ TAB: OPEN SOURCE ═══════════════════ -->
+<main class="tab-panel" id="tab-opensource" role="tabpanel">
   <div class="inner">
-    <div class="eyebrow-wrap"><span class="eyebrow">Receipts</span></div>
-    <h2>Numbers, not narratives.</h2>
-    <p class="subhead">The case for the hire, expressed as outcomes.</p>
-
-    <div class="receipts-grid">
-      <div class="receipt reveal">
-        <div class="big">$21M+</div>
-        <div class="label">Measurable business impact</div>
-        <div class="ctx">Delivered for a $100M-ARR US-based company via AI-driven search, personalization, agentic automation, and CRO.</div>
-      </div>
-      <div class="receipt reveal warm">
-        <div class="big">🏆 2021</div>
-        <div class="label">Indian Achiever's Award</div>
-        <div class="ctx">National recognition for technology-led innovation at Vrozart.</div>
-      </div>
-      <div class="receipt reveal">
-        <div class="big">2×</div>
-        <div class="label">0→1 ventures founded</div>
-        <div class="ctx">Viazene and SuperParent — both secured seed funding and VC incubation.</div>
-      </div>
-      <div class="receipt reveal">
-        <div class="big">10+ yrs</div>
-        <div class="label">In product, growth &amp; AI</div>
-        <div class="ctx">eCommerce, SaaS, health tech — across IC, lead, and founder roles.</div>
-      </div>
-      <div class="receipt reveal warm">
-        <div class="big">4×</div>
-        <div class="label">Google Professional Certificates</div>
-        <div class="ctx">UX Design · Data Analytics · Project Management · Digital Marketing &amp; eComm.</div>
-      </div>
-      <div class="receipt reveal">
-        <div class="big">15 days</div>
-        <div class="label">Notice period</div>
-        <div class="ctx">Effectively immediate joiner for the right role.</div>
-      </div>
+    <div class="tab-heading">
+      <h2>Built in <span class="grad">Public</span>.</h2>
+      <p>Eight repos at <a href="https://github.com/darshakbhatt-aiproductlabs" target="_blank" rel="noopener">github.com/darshakbhatt-aiproductlabs</a>. Five have hosted demos or microsites.</p>
     </div>
-  </div>
-</section>
-
-<!-- ═══════════════════ BUILT IN PUBLIC (REPOS) ═══════════════════ -->
-<section id="built">
-  <div class="inner">
-    <div class="eyebrow-wrap"><span class="eyebrow">Built in Public</span></div>
-    <h2>Open-source &amp; live repos.</h2>
-    <p class="subhead">Eight repos at <a href="https://github.com/darshakbhatt-aiproductlabs" target="_blank" rel="noopener">github.com/darshakbhatt-aiproductlabs</a>. Five have hosted demos or microsites.</p>
-
     <div class="repos-grid">
       <a class="repo-card" href="https://github.com/darshakbhatt-aiproductlabs/jira-digest" target="_blank" rel="noopener">
         <div class="repo-head"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/></svg> jira-digest</div>
@@ -1240,16 +1411,141 @@
       </a>
     </div>
   </div>
-</section>
+</main>
 
-<!-- ═══════════════════ CERTS + TOOLBELT ═══════════════════ -->
-<section class="alt">
+<!-- ═══════════════════ TAB: BEYOND WORK ═══════════════════ -->
+<main class="tab-panel" id="tab-beyond" role="tabpanel">
   <div class="inner">
-    <div class="eyebrow-wrap"><span class="eyebrow">Credentials &amp; Toolbelt</span></div>
-    <h2>Certified, opinionated, well-armed.</h2>
-    <p class="subhead">Four Google Professional Certificates and a rotating kit of AI/automation tools.</p>
+    <div class="tab-heading">
+      <h2>Beyond <span class="grad">work</span>.</h2>
+      <p>The operator outside the operator. Trading content on YouTube; reflections on mortality and attention on Instagram.</p>
+    </div>
 
-    <div class="certs-grid">
+    <div class="channel-card">
+      <div class="channel-head">
+        <div class="brand">
+          <div class="brand-icon yt">▶</div>
+          <div>
+            <h3>Trader's Terminal</h3>
+            <div class="meta">YouTube · Indian equity trading strategies, beginner-friendly</div>
+          </div>
+        </div>
+        <a class="btn btn-secondary" href="https://www.youtube.com/@TradersTerminal" target="_blank" rel="noopener">↗ Visit channel</a>
+      </div>
+      <div class="video-grid">
+        <a class="video-card" href="https://youtu.be/xRpfFEsKSBo" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img src="https://i.ytimg.com/vi/xRpfFEsKSBo/hqdefault.jpg" alt="Intraday Trading Strategy with ADX and RSI" loading="lazy">
+            <div class="play-overlay"><div class="play-icon">▶</div></div>
+          </div>
+          <div class="vid-title">INTRADAY TRADING STRATEGY · ADX + RSI</div>
+        </a>
+        <a class="video-card" href="https://youtu.be/yN7ECy602bw" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img src="https://i.ytimg.com/vi/yN7ECy602bw/hqdefault.jpg" alt="How To Trade in Hindi" loading="lazy">
+            <div class="play-overlay"><div class="play-icon">▶</div></div>
+          </div>
+          <div class="vid-title">HOW TO TRADE? In Hindi · Quantity &amp; Stop Loss</div>
+        </a>
+        <a class="video-card" href="https://youtu.be/8LYtbTy-tVU" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img src="https://i.ytimg.com/vi/8LYtbTy-tVU/hqdefault.jpg" alt="Pre-Trade Routine" loading="lazy">
+            <div class="play-overlay"><div class="play-icon">▶</div></div>
+          </div>
+          <div class="vid-title">PRE-TRADE ROUTINE · Intraday for Beginners</div>
+        </a>
+        <a class="video-card" href="https://youtu.be/p16UoPt3Oi8" target="_blank" rel="noopener">
+          <div class="thumb-wrap">
+            <img src="https://i.ytimg.com/vi/p16UoPt3Oi8/hqdefault.jpg" alt="RSI Trading Strategy" loading="lazy">
+            <div class="play-overlay"><div class="play-icon">▶</div></div>
+          </div>
+          <div class="vid-title">RSI Trading Strategy · Stock Recommendations</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="channel-card">
+      <div class="channel-head">
+        <div class="brand">
+          <div class="brand-icon ig">📷</div>
+          <div>
+            <h3>@food_for_worms</h3>
+            <div class="meta">Instagram · &ldquo;That Thou Art&rdquo;</div>
+          </div>
+        </div>
+        <div class="stats">
+          <div><b>87</b>posts</div>
+          <div><b>2,680</b>followers</div>
+        </div>
+        <a class="btn btn-secondary" href="https://www.instagram.com/food_for_worms" target="_blank" rel="noopener">↗ Visit profile</a>
+      </div>
+      <blockquote class="ig-tagline">
+        Because, believe it or not, each and every one of us is one day going to stop breathing, turn cold and die. We are food for worms.
+      </blockquote>
+      <div class="ig-grid">
+        <a class="ig-tile dark" href="https://www.instagram.com/food_for_worms" target="_blank" rel="noopener">The alluring mirage. Many fascinating gapers.</a>
+        <a class="ig-tile serif-large dark" href="https://www.instagram.com/food_for_worms" target="_blank" rel="noopener">Agathokakological Epiphany — journey of little forevers.<span class="play-mark">▶</span></a>
+        <a class="ig-tile quote with-bg" href="https://www.instagram.com/food_for_worms" target="_blank" rel="noopener">None of us will ever accomplish anything excellent or commanding except when we listen to that which is heard by each of us alone.<span class="attribution">— Emerson</span></a>
+        <a class="ig-tile dark text-sm" href="https://www.instagram.com/food_for_worms" target="_blank" rel="noopener">Remember the last time you were happy without trying to be?</a>
+        <a class="ig-tile dark serif-large" href="https://www.instagram.com/food_for_worms" target="_blank" rel="noopener">That Thou Art.<span class="play-mark">▶</span></a>
+        <a class="ig-tile quote dark" href="https://www.instagram.com/food_for_worms" target="_blank" rel="noopener">Memento mori — remember that you have to die. The most useful piece of attention.</a>
+      </div>
+    </div>
+
+    <div class="philosophy">
+      <blockquote>The will to win is important, but the will to prepare is vital.</blockquote>
+    </div>
+
+  </div>
+</main>
+
+<!-- ═══════════════════ TAB: HIRE ME ═══════════════════ -->
+<main class="tab-panel" id="tab-hire" role="tabpanel">
+  <div class="inner">
+    <div class="tab-heading">
+      <h2>Hire <span class="grad">me</span>.</h2>
+      <p>The recruiter checklist — impact, credentials, FAQs, and how to reach me.</p>
+    </div>
+
+    <div class="subsection">
+      <h3 class="sub-h">Impact receipts · numbers, not narratives</h3>
+      <div class="receipts-grid">
+      <div class="receipt reveal">
+        <div class="big">$21M+</div>
+        <div class="label">Measurable business impact</div>
+        <div class="ctx">Delivered for a $100M-ARR US-based company via AI-driven search, personalization, agentic automation, and CRO.</div>
+      </div>
+      <div class="receipt reveal warm">
+        <div class="big">🏆 2021</div>
+        <div class="label">Indian Achiever's Award</div>
+        <div class="ctx">National recognition for technology-led innovation at Vrozart.</div>
+      </div>
+      <div class="receipt reveal">
+        <div class="big">2×</div>
+        <div class="label">0→1 ventures founded</div>
+        <div class="ctx">Viazene and SuperParent — both secured seed funding and VC incubation.</div>
+      </div>
+      <div class="receipt reveal">
+        <div class="big">10+ yrs</div>
+        <div class="label">In product, growth &amp; AI</div>
+        <div class="ctx">eCommerce, SaaS, health tech — across IC, lead, and founder roles.</div>
+      </div>
+      <div class="receipt reveal warm">
+        <div class="big">4×</div>
+        <div class="label">Google Professional Certificates</div>
+        <div class="ctx">UX Design · Data Analytics · Project Management · Digital Marketing &amp; eComm.</div>
+      </div>
+      <div class="receipt reveal">
+        <div class="big">15 days</div>
+        <div class="label">Notice period</div>
+        <div class="ctx">Effectively immediate joiner for the right role.</div>
+      </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="sub-h">Google Professional Certificates</h3>
+      <div class="certs-grid">
       <a class="cert" href="https://media.journoportfolio.com/users/327690/uploads/2005c037-032e-4219-ad03-93e02f82ca8d.pdf" target="_blank" rel="noopener">
         <span class="badge">Google · Coursera</span>
         <h4>Digital Marketing &amp; E-commerce</h4>
@@ -1270,10 +1566,9 @@
         <h4>Project Management</h4>
         <div class="issuer">Professional Certificate</div>
       </a>
-    </div>
-
-    <h3 style="text-align:center; font-size:14px; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-faint); font-weight:600; margin: 36px 0 16px;">Toolbelt</h3>
-    <div class="toolbelt">
+      </div>
+      <h3 style="text-align:center; font-size:14px; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-faint); font-weight:600; margin:36px 0 16px;">Toolbelt</h3>
+      <div class="toolbelt">
       <span class="tool hl">Product Strategy</span>
       <span class="tool hl">AI Product Management</span>
       <span class="tool hl">CRO</span>
@@ -1297,40 +1592,12 @@
       <span class="tool">Upstox API</span>
       <span class="tool">LinkedIn API</span>
       <span class="tool">Google Sheets</span>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════ BEYOND WORK ═══════════════════ -->
-<section>
-  <div class="inner">
-    <div class="eyebrow-wrap"><span class="eyebrow">Beyond Work</span></div>
-    <h2>What I make when no one's paying.</h2>
-    <p class="subhead">Poetry, equity trading, philosophy. The shape of the operator outside the operator.</p>
-
-    <div class="beyond-grid">
-      <div class="beyond-card reveal">
-        <h3>📝 Poetry &amp; writing</h3>
-        <p>"Are you living?" and "Listen To Me" — two pieces sitting in the margins of work, on slowness and attention.</p>
-        <p class="quote">The will to win is important, but the will to prepare is vital.</p>
-      </div>
-      <div class="beyond-card reveal">
-        <h3>📺 Trader's Terminal</h3>
-        <p>A YouTube channel on equity trading strategies and stock market insights — companion to the intraday ORB agent on the work shelf.</p>
-        <a class="btn btn-secondary" href="https://www.youtube.com/@TradersTerminal" target="_blank" rel="noopener" style="margin-top:8px;">↗ Watch on YouTube</a>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ═══════════════════ FAQs ═══════════════════ -->
-<section id="faqs" class="alt">
-  <div class="inner">
-    <div class="eyebrow-wrap"><span class="eyebrow">FAQs</span></div>
-    <h2>Recruiter-shaped FAQ.</h2>
-    <p class="subhead">The questions I get on every first call, answered upfront.</p>
-
-    <div class="faqs">
+    <div class="subsection">
+      <h3 class="sub-h">Recruiter-shaped FAQ</h3>
+      <div class="faqs">
       <details class="faq">
         <summary>Where are you based, and where are you open to working?</summary>
         <div class="answer">Based in Mumbai, Maharashtra. Currently on-site in Bengaluru. Open to <strong>remote and hybrid</strong> roles globally, and to relocation for the right opportunity.</div>
@@ -1359,14 +1626,11 @@
         <summary>Are you open to founding-team / 0→1 roles?</summary>
         <div class="answer">Yes — I've done it twice (Viazene, SuperParent, both seed-funded). I bring 0→1 mileage and the discipline of having had to ship under constraint.</div>
       </details>
+      </div>
     </div>
-  </div>
-</section>
 
-<!-- ═══════════════════ FINAL CTA / CONTACT ═══════════════════ -->
-<section id="contact" class="tight">
-  <div class="inner">
-    <div class="final-cta">
+    <div class="subsection">
+      <div class="final-cta">
       <h2>Let's <span class="grad">speak</span>.</h2>
       <p>I'm keen to assess fit for the opportunity you have for me. Reach out — I'll respond within 24 hours.</p>
       <div class="hero-ctas" style="justify-content:center;">
@@ -1378,11 +1642,12 @@
         <button class="reveal-phone" id="reveal-phone">📞 Show phone</button>
         <a href="https://media.journoportfolio.com/users/327690/uploads/64022180-ce94-42d9-b754-ee676dbd2d6a.pdf" target="_blank" rel="noopener">📄 Resume PDF</a>
       </div>
+      </div>
     </div>
-  </div>
-</section>
 
-<!-- ═══════════════════ FOOTER ═══════════════════ -->
+  </div>
+</main>
+
 <footer>
   <div class="inner">
     <div class="credit">© 2026 <a href="#top">Darshak Bhatt</a> · Built with vanilla HTML/CSS on GitHub Pages.</div>
@@ -1419,9 +1684,27 @@
     showToast._t = setTimeout(() => toast.classList.remove('show'), 1800);
   }
 
+  /* ───────── Tabs ───────── */
+  const TABS = ['overview','work','opensource','beyond','hire'];
+  function switchTab(name, push = true) {
+    if (!TABS.includes(name)) name = 'overview';
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === name));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === 'tab-' + name));
+    if (push) history.replaceState(null, '', '#' + name);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+  });
+  window.addEventListener('hashchange', () => switchTab(location.hash.replace('#',''), false));
+  // Initialize from hash
+  const initial = location.hash.replace('#','');
+  if (initial && initial !== 'overview') switchTab(initial, false);
+
   /* ───────── Project filter ───────── */
-  const cards = document.querySelectorAll('.project-card');
-  document.getElementById('count-all').textContent = cards.length;
+  const cards = document.querySelectorAll('#tab-work .project-card');
+  const countEl = document.getElementById('count-all');
+  if (countEl) countEl.textContent = cards.length;
   document.querySelectorAll('.filter-chip').forEach(chip => {
     chip.addEventListener('click', () => {
       document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
@@ -1463,16 +1746,17 @@
 
   /* ───────── Cmd-K palette ───────── */
   const PALETTE_ITEMS = [
-    { label: 'Jump to: Story', hint: '#story', action: () => location.hash = '#story' },
-    { label: 'Jump to: Selected Work', hint: '#work', action: () => location.hash = '#work' },
-    { label: 'Jump to: Impact receipts', hint: '#impact', action: () => location.hash = '#impact' },
-    { label: 'Jump to: Built in Public', hint: '#built', action: () => location.hash = '#built' },
-    { label: 'Jump to: FAQs', hint: '#faqs', action: () => location.hash = '#faqs' },
-    { label: 'Jump to: Contact', hint: '#contact', action: () => location.hash = '#contact' },
+    { label: 'Tab: Overview', hint: '📋', action: () => switchTab('overview') },
+    { label: 'Tab: Work (18 projects)', hint: '🚀', action: () => switchTab('work') },
+    { label: 'Tab: Open Source (8 repos)', hint: '‹/›', action: () => switchTab('opensource') },
+    { label: 'Tab: Beyond Work', hint: '🎬', action: () => switchTab('beyond') },
+    { label: 'Tab: Hire Me', hint: '💼', action: () => switchTab('hire') },
     { label: 'Open: Resume PDF', hint: '↗', action: () => window.open('https://media.journoportfolio.com/users/327690/uploads/64022180-ce94-42d9-b754-ee676dbd2d6a.pdf', '_blank') },
     { label: 'Open: LinkedIn', hint: '↗', action: () => window.open('https://www.linkedin.com/in/darshak-bhatt/', '_blank') },
     { label: 'Open: GitHub org', hint: '↗', action: () => window.open('https://github.com/darshakbhatt-aiproductlabs', '_blank') },
     { label: 'Open: Video resume', hint: '▶', action: () => window.open('https://drive.google.com/file/d/1L9ak7Mc122cenm8RX6FfFv4tZqdcmXsD/view?usp=sharing', '_blank') },
+    { label: "Open: Trader's Terminal (YouTube)", hint: '📺', action: () => window.open('https://www.youtube.com/@TradersTerminal', '_blank') },
+    { label: 'Open: @food_for_worms (Instagram)', hint: '📷', action: () => window.open('https://www.instagram.com/food_for_worms', '_blank') },
     { label: 'Copy email', hint: '📋', action: () => { navigator.clipboard.writeText('darshakbhatt94@gmail.com'); showToast('📋 Email copied'); } },
     { label: 'Open llms.txt (AI profile)', hint: 'agent', action: () => window.open('llms.txt', '_blank') },
     { label: 'Open resume.json', hint: 'agent', action: () => window.open('resume.json', '_blank') },
@@ -1485,7 +1769,7 @@
     const q = query.toLowerCase();
     const matches = PALETTE_ITEMS.filter(i => i.label.toLowerCase().includes(q));
     paletteResults.innerHTML = matches.map((m, i) =>
-      `<li class="${i === activeIdx ? 'active' : ''}" data-idx="${i}"><span class="label">${m.label}</span><span class="hint">${m.hint}</span></li>`
+      `<li class="${{i === activeIdx ? 'active' : ''}}" data-idx="${{i}}"><span class="label">${{m.label}}</span><span class="hint">${{m.hint}}</span></li>`
     ).join('');
     paletteResults._matches = matches;
   }
