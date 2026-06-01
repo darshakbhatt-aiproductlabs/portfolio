@@ -1769,7 +1769,7 @@
     const q = query.toLowerCase();
     const matches = PALETTE_ITEMS.filter(i => i.label.toLowerCase().includes(q));
     paletteResults.innerHTML = matches.map((m, i) =>
-      `<li class="${{i === activeIdx ? 'active' : ''}}" data-idx="${{i}}"><span class="label">${{m.label}}</span><span class="hint">${{m.hint}}</span></li>`
+      `<li class="${i === activeIdx ? 'active' : ''}" data-idx="${i}"><span class="label">${m.label}</span><span class="hint">${m.hint}</span></li>`
     ).join('');
     paletteResults._matches = matches;
   }
