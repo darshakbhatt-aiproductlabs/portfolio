@@ -1,4 +1,4 @@
-# robots.txt for darshakbhatt-portfolio.pages.dev/
+# robots.txt for darshakbhatt-aiproductlabs.github.io/portfolio/
 # This is a personal portfolio. AI crawlers and search engines are explicitly welcome.
 
 User-agent: *
@@ -45,4 +45,4 @@ User-agent: Meta-ExternalAgent
 Allow: /
 
 # Pointers
-Sitemap: https://darshakbhatt-portfolio.pages.dev/sitemap.xml
+Sitemap: https://darshakbhatt-aiproductlabs.github.io/portfolio/sitemap.xml
