@@ -793,33 +793,75 @@
     <p class="subhead">Filter by category. Every card links to a live demo, repo, or artifact.</p>
 
     <div class="filter-row" id="filters">
-      <button class="filter-chip active" data-filter="all">All <span class="count" id="count-all">16</span></button>
+      <button class="filter-chip active" data-filter="all">All <span class="count" id="count-all">18</span></button>
       <button class="filter-chip" data-filter="ai">AI / Agents</button>
       <button class="filter-chip" data-filter="pm">PM &amp; Strategy</button>
       <button class="filter-chip" data-filter="design">UX / Design</button>
       <button class="filter-chip" data-filter="founder">Founder / 0→1</button>
       <button class="filter-chip" data-filter="trading">Trading</button>
+      <button class="filter-chip" data-filter="n8n">n8n workflows</button>
     </div>
 
     <div class="work-grid" id="work-grid">
       <!-- 1: Intraday ORB -->
-      <article class="project-card" data-tags="ai,trading">
+      <article class="project-card" data-tags="ai,trading,n8n">
         <div class="ribbon">Live</div>
         <div class="head">
           <span class="emoji">📈</span>
           <div>
-            <h3>Intraday ORB Trading Strategy</h3>
-            <div class="subtitle">Automated agentic trading · Dec 2025</div>
+            <h3>Intraday ORB Trading Agent</h3>
+            <div class="subtitle">Algorithmic n8n + Upstox v3 · Dec 2025</div>
           </div>
         </div>
-        <p class="desc">n8n + OpenAI + Upstox API agent that runs an Opening Range Breakout strategy with technical filters. Frontend built in Lovable.</p>
+        <p class="desc">Algorithmic Opening Range Breakout intraday trading agent. Triggers on a Sheet cell, fetches Upstox v3 candles, scores breakouts against ADX + RSI + Bollinger squeeze + volume. Lovable frontend.</p>
         <div class="tech">
-          <span class="tag">n8n</span><span class="tag">OpenAI</span><span class="tag">Upstox API</span><span class="tag">Lovable</span>
+          <span class="tag">n8n</span><span class="tag">Upstox v3</span><span class="tag">technicalindicators</span><span class="tag">Lovable</span>
         </div>
         <div class="links">
+          <a href="https://darshakbhatt-aiproductlabs.github.io/intraday-orb-strategy-db/" target="_blank" rel="noopener">📄 Strategy explainer</a>
           <a href="https://intraday-orb-strategy-db.lovable.app" target="_blank" rel="noopener">↗ Live app</a>
-          <a href="https://youtu.be/4ZS6SnbiF1s" target="_blank" rel="noopener">▶ YouTube demo</a>
+          <a href="https://youtu.be/4ZS6SnbiF1s" target="_blank" rel="noopener">▶ Demo</a>
           <a href="https://github.com/darshakbhatt-aiproductlabs/intraday-orb-strategy-db" target="_blank" rel="noopener">‹/› Code</a>
+        </div>
+      </article>
+
+      <!-- 1.5: Peer & Competitor Monitor -->
+      <article class="project-card" data-tags="ai,pm,n8n">
+        <div class="ribbon">Open Source</div>
+        <div class="head">
+          <span class="emoji">🛰️</span>
+          <div>
+            <h3>Peer &amp; Competitor Monitor</h3>
+            <div class="subtitle">n8n agent · Discord + Gmail alerts</div>
+          </div>
+        </div>
+        <p class="desc">Two n8n workflows that watch a list of competitor URLs every 6 hours. v1 scores changes 1-10 with GPT-4; v2 uses MD5 hashing for cheap diffing. Critical changes fire Discord + Gmail.</p>
+        <div class="tech">
+          <span class="tag">n8n</span><span class="tag">GPT-4</span><span class="tag">MD5 hashing</span><span class="tag">Discord</span><span class="tag">Google Sheets</span>
+        </div>
+        <div class="links">
+          <a href="https://darshakbhatt-aiproductlabs.github.io/peer-competitor-monitor/" target="_blank" rel="noopener">📄 Microsite</a>
+          <a href="https://github.com/darshakbhatt-aiproductlabs/peer-competitor-monitor" target="_blank" rel="noopener">‹/› Repo</a>
+        </div>
+      </article>
+
+      <!-- 1.6: Prospect Research Agent -->
+      <article class="project-card" data-tags="ai,pm,n8n">
+        <div class="ribbon">Open Source</div>
+        <div class="head">
+          <span class="emoji">🧠</span>
+          <div>
+            <h3>Prospect Research Agent</h3>
+            <div class="subtitle">n8n + LangChain · 60s sales dossier</div>
+          </div>
+        </div>
+        <p class="desc">Type a prospect name → get a 10-section psychological sales profile. Two-agent chain: Research Agent (GPT-4o + Perplexity Sonar Pro + LinkedIn) → Psychological Profiler → Gmail.</p>
+        <div class="tech">
+          <span class="tag">n8n</span><span class="tag">LangChain</span><span class="tag">GPT-4o</span><span class="tag">Perplexity Sonar</span><span class="tag">LinkedIn</span>
+        </div>
+        <div class="links">
+          <a href="https://darshakbhatt-aiproductlabs.github.io/prospect-research-agent/" target="_blank" rel="noopener">📄 Microsite</a>
+          <a href="https://github.com/darshakbhatt-aiproductlabs/prospect-research-agent" target="_blank" rel="noopener">‹/› Repo</a>
         </div>
       </article>
 
@@ -1153,13 +1195,23 @@
   <div class="inner">
     <div class="eyebrow-wrap"><span class="eyebrow">Built in Public</span></div>
     <h2>Open-source &amp; live repos.</h2>
-    <p class="subhead">Six repos at <a href="https://github.com/darshakbhatt-aiproductlabs" target="_blank" rel="noopener">github.com/darshakbhatt-aiproductlabs</a>. Two have hosted demos — the rest ship to Lovable.</p>
+    <p class="subhead">Eight repos at <a href="https://github.com/darshakbhatt-aiproductlabs" target="_blank" rel="noopener">github.com/darshakbhatt-aiproductlabs</a>. Five have hosted demos or microsites.</p>
 
     <div class="repos-grid">
       <a class="repo-card" href="https://github.com/darshakbhatt-aiproductlabs/jira-digest" target="_blank" rel="noopener">
         <div class="repo-head"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/></svg> jira-digest</div>
         <p class="repo-desc">Daily Jira digest → email/Slack/Teams. One YAML, any company. Replaces the morning Jira ritual.</p>
         <div class="repo-meta"><span><span class="lang-dot python"></span>Python</span><span>🌐 Pages live</span></div>
+      </a>
+      <a class="repo-card" href="https://github.com/darshakbhatt-aiproductlabs/peer-competitor-monitor" target="_blank" rel="noopener">
+        <div class="repo-head"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/></svg> peer-competitor-monitor</div>
+        <p class="repo-desc">n8n agents that watch competitor URLs every 6h. Hash-diff or GPT-4 scored. Discord + Gmail alerts.</p>
+        <div class="repo-meta"><span>n8n + Python</span><span>🌐 Pages live</span></div>
+      </a>
+      <a class="repo-card" href="https://github.com/darshakbhatt-aiproductlabs/prospect-research-agent" target="_blank" rel="noopener">
+        <div class="repo-head"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/></svg> prospect-research-agent</div>
+        <p class="repo-desc">Two-agent n8n + LangChain chain. Prospect name → 10-section psychological sales dossier in ~60s.</p>
+        <div class="repo-meta"><span>n8n + LangChain</span><span>🌐 Pages live</span></div>
       </a>
       <a class="repo-card" href="https://github.com/darshakbhatt-aiproductlabs/google-flow-app-redesign" target="_blank" rel="noopener">
         <div class="repo-head"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/></svg> google-flow-app-redesign</div>
@@ -1168,8 +1220,8 @@
       </a>
       <a class="repo-card" href="https://github.com/darshakbhatt-aiproductlabs/intraday-orb-strategy-db" target="_blank" rel="noopener">
         <div class="repo-head"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/></svg> intraday-orb-strategy-db</div>
-        <p class="repo-desc">Opening Range Breakout intraday trading agent. n8n + OpenAI + Upstox.</p>
-        <div class="repo-meta"><span><span class="lang-dot typescript"></span>TypeScript</span><span>↗ Lovable demo</span></div>
+        <p class="repo-desc">Algorithmic Opening Range Breakout intraday trading agent. n8n + Upstox v3 + Lovable.</p>
+        <div class="repo-meta"><span><span class="lang-dot typescript"></span>TypeScript</span><span>🌐 Pages + Lovable</span></div>
       </a>
       <a class="repo-card" href="https://github.com/darshakbhatt-aiproductlabs/hrtech" target="_blank" rel="noopener">
         <div class="repo-head"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/></svg> hrtech (HiringFlow)</div>

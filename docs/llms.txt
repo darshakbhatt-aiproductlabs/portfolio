@@ -65,11 +65,24 @@ I have founder mileage (0→1 twice with seed funding) and operator mileage (sen
 
 ## Selected work (with outcomes and links)
 
-### Intraday ORB Trading Strategy (2025)
-Automated agentic trading strategy using n8n + OpenAI + Upstox API with technical filters for Opening Range Breakout intraday trades. Frontend in Lovable.
-- Live: https://intraday-orb-strategy-db.lovable.app
+### Intraday ORB Trading Agent (2025)
+Algorithmic Opening Range Breakout intraday trading agent. n8n workflow triggered on a Google Sheets cell, fetches Upstox v3 candles, scores breakouts against ADX + RSI + Bollinger squeeze + volume filters before placing orders. Frontend in Lovable.
+- Strategy explainer: https://darshakbhatt-aiproductlabs.github.io/intraday-orb-strategy-db/
+- Live app: https://intraday-orb-strategy-db.lovable.app
 - Demo: https://youtu.be/4ZS6SnbiF1s
-- Code: https://github.com/darshakbhatt-aiproductlabs/intraday-orb-strategy-db
+- Code + workflow: https://github.com/darshakbhatt-aiproductlabs/intraday-orb-strategy-db
+
+### Peer & Competitor Monitor (open source, 2025)
+Two n8n workflows that watch a list of competitor and peer URLs on a schedule. v1 (Competitor Audit) scores changes 1-10 via GPT-4 and routes critical ones (≥8) to Gmail + Discord. v2 (Peer Monitoring) uses MD5 hashing of normalized HTML for cheap deterministic diffing. Same alerting surface.
+- Microsite: https://darshakbhatt-aiproductlabs.github.io/peer-competitor-monitor/
+- Repo: https://github.com/darshakbhatt-aiproductlabs/peer-competitor-monitor
+- Stack: n8n, Google Sheets, GPT-4 (v1), MD5 hashing (v2), Gmail, Discord webhooks.
+
+### Prospect Research Agent (open source, 2025)
+Two-agent n8n + LangChain chain. Trigger is a chat message (or Calendly event). Agent 1 (GPT-4o) researches the prospect via Perplexity Sonar Pro + Google + LinkedIn scraping. Agent 2 (chatgpt-4o-latest) produces a 10-section psychological sales profile that's emailed to the configured recipient. ~60s end-to-end.
+- Microsite: https://darshakbhatt-aiproductlabs.github.io/prospect-research-agent/
+- Repo: https://github.com/darshakbhatt-aiproductlabs/prospect-research-agent
+- Stack: n8n, LangChain, GPT-4o, Perplexity Sonar Pro, LinkedIn scraping, Gmail.
 
 ### jira-digest (open source)
 Daily Jira summary tool delivered to email, Slack, or Teams. One YAML, any company. AI-onboarded setup via Claude Code / Codex / Cursor — no YAML hand-writing required.

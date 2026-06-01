@@ -102,12 +102,30 @@
   ],
   "projects": [
     {
-      "name": "Intraday ORB Trading Strategy",
-      "description": "Automated agentic trading agent using n8n + OpenAI + Upstox API with technical filters for Opening Range Breakout intraday trades.",
-      "highlights": ["Frontend in Lovable", "Live demo + YouTube walkthrough"],
-      "keywords": ["AI", "Trading", "Agents", "n8n"],
+      "name": "Intraday ORB Trading Agent",
+      "description": "Algorithmic Opening Range Breakout intraday trading agent. n8n triggered on a Sheet cell, fetches Upstox v3 candles, scores breakouts against ADX + RSI + Bollinger squeeze + volume filters before placing orders.",
+      "highlights": ["n8n + Upstox v3 + technicalindicators (npm)", "Lovable frontend", "Strategy explainer + JSON download on GitHub Pages"],
+      "keywords": ["AI", "Trading", "Agents", "n8n", "Upstox"],
       "startDate": "2025-12",
-      "url": "https://intraday-orb-strategy-db.lovable.app",
+      "url": "https://darshakbhatt-aiproductlabs.github.io/intraday-orb-strategy-db/",
+      "roles": ["Builder", "PM"]
+    },
+    {
+      "name": "Peer & Competitor Monitor",
+      "description": "Two n8n workflows that watch competitor/peer URLs on a schedule. v1 GPT-4 scored 1-10 with critical alerts to Discord + Gmail; v2 MD5 hash-based diff for cheap deterministic monitoring.",
+      "highlights": ["n8n + Google Sheets + Gmail + Discord webhooks", "GPT-4 impact scoring (v1) and MD5 hashing (v2)", "Microsite with architecture diagram + sanitized JSON downloads"],
+      "keywords": ["AI", "n8n", "Open source", "Monitoring", "GPT-4"],
+      "startDate": "2025",
+      "url": "https://darshakbhatt-aiproductlabs.github.io/peer-competitor-monitor/",
+      "roles": ["Builder", "PM"]
+    },
+    {
+      "name": "Prospect Research Agent",
+      "description": "Two-agent n8n + LangChain chain. Prospect name → 10-section psychological sales profile in ~60s. Research Agent (GPT-4o + Perplexity Sonar Pro + LinkedIn) feeds Psychological Profiler (chatgpt-4o-latest), emailed via Gmail.",
+      "highlights": ["LangChain agents inside n8n", "Three research tools: Perplexity, Google, LinkedIn", "Includes ethics-use guidance"],
+      "keywords": ["AI", "Agents", "LangChain", "n8n", "Open source", "Sales"],
+      "startDate": "2025",
+      "url": "https://darshakbhatt-aiproductlabs.github.io/prospect-research-agent/",
       "roles": ["Builder", "PM"]
     },
     {
