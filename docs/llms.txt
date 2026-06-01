@@ -7,12 +7,11 @@
 ## Identity
 
 - Name: Darshak Bhatt
-- Title: Senior Product Leader
-- Tagline: AI-Driven Growth & CRO Strategist · Driving $21M+ in Business Impact · AI Generalist
-- Years of experience: 10+ total, 8+ in Product Management
-- Based in: Mumbai, Maharashtra, India
-- Currently working on-site in: Bengaluru, India
-- Open to: Remote, hybrid, and relocation roles
+- Title: Senior Product Manager
+- Tagline: AI-Driven Growth & CRO · $21M+ in Business Impact · Agentic-AI Product Manager
+- Years of experience: 10+ total in product (founder + operator)
+- Current role: Senior Product Manager at Testsigma Technologies (Bengaluru), since March 2026
+- Location preference: Relocating closer to family in the Mumbai region. Open to — On-site: Mumbai. Hybrid: Mumbai, Navi Mumbai, Pune, Bengaluru. Remote: anywhere, globally.
 - Notice period: 15 days (effectively immediate joiner)
 - Languages: English (fluent), Hindi (native), Gujarati (native)
 
@@ -29,16 +28,29 @@
 
 ## Headline outcomes (the case for the hire)
 
-- **$21M+ in measurable business impact** delivered for a $100M-ARR US-based company, via AI-driven search, personalization, agentic automation, and CRO.
-- **Indian Achiever's Award (2021)** — national recognition for technology-led innovation at Vrozart.
-- **Founded two ventures** — Viazene and SuperParent — both secured seed funding and VC incubation.
-- **4× Google Professional Certificates** — UX Design, Data Analytics, Project Management, Digital Marketing & E-commerce.
+- **$21M+ in revenue impact** at ZiniosEdge for a US-based e-commerce client (~$100M ARR), via CRO, AI-powered in-site search (+$4M incremental, +12% mobile conversion), a Shopify migration (+19% conversion), and subscription work (+40% CLTV).
+- **Agentic AI, shipped:** at Jeeva (Involve.AI) launched Outbound AI (60% adoption in a month) and an agentic ICP engine (100K leads, +25% lead-to-opportunity, $450K booked revenue); now at Testsigma shaping an AI-first agentic quality-intelligence platform.
+- **Two-time founder** — Viazene (women-first commerce; "Make My Match" 78% acceptance, $10K angel) and SuperParent (bank-backed child wallet, 36% subscription, VC incubation).
+- **Indian Achiever's Award (2021)** — Govt. of India Startup Initiative, for technology-led innovation at Vrozart.
+- **Credentials:** Vanderbilt Agentic AI & AI Agents; Duke ML Foundations for PMs; 4× Google Professional Certificates; Google Analytics; NSE Certified Market Professional Level 3.
+
+## Roles (most recent first)
+
+- Senior Product Manager — Testsigma Technologies, Bengaluru (Mar 2026–present) — AI-first agentic quality-intelligence platform; no-code recorders; cleared 110+ bug backlog with SLA prioritization.
+- Senior AI Product Manager (freelance) — Jeeva/Involve.AI, Pune (Oct 2025–Jan 2026) — Outbound AI, agentic ICP engine, $450K booked.
+- Senior Product Manager — ZiniosEdge, Bengaluru (May 2022–Oct 2025) — $21M+ revenue for a US e-commerce client (~$100M ARR).
+- Product Manager — Dhani Services/Indiabulls, Mumbai (Jan–May 2022) — UX redesign +15% conversion.
+- Product Manager — Vrozart, Gurgaon (Dec 2020–Jan 2022) — $100K seed raised; Indian Achiever's Award 2021.
+- Co-founder (Product) — SuperParent/Inversa, Bengaluru (Mar 2019–Dec 2020) — concept→launch, VC incubation.
+- Product Marketing Manager — Auxesis, Mumbai (Sep 2018–Mar 2019) — blockchain; 45K ICO community.
+- Associate Product Marketing Manager — Comezzo, Bengaluru (Aug 2017–Sep 2018) — Towards.AI, $2M partnerships.
+- Co-founder — Viazene LLP, Mumbai (Mar 2015–Jun 2017) — first venture; left engineering to build it.
 
 ## What I do (positioning)
 
-I'm a Senior Product Leader who blends AI innovation with business goals. I treat AI as a substrate for shipped product outcomes — search, personalization, CRO, agentic automation, AI-assisted workflows — not a separate "AI strategy" stream. My work spans product strategy, roadmap ownership, analytics, and go-to-market across eCommerce, SaaS, and health tech.
+I'm a Senior Product Manager who blends AI innovation with business goals. I treat AI as a substrate for shipped product outcomes — search, personalization, CRO, agentic automation, AI-assisted workflows — not a separate "AI strategy" stream. My work spans product strategy, roadmap ownership, analytics, and go-to-market across B2B and B2C.
 
-I have founder mileage (0→1 twice with seed funding) and operator mileage (senior PM at a $100M-ARR company). I bring both.
+I have founder mileage (0→1 twice) and operator mileage (senior PM driving $21M+ impact, now building agentic-AI products). I bring both.
 
 ## Domains of expertise
 

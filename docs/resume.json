@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Darshak Bhatt",
-    "label": "Senior Product Leader · AI-driven Growth · CRO Strategist",
+    "label": "Senior Product Manager · AI-driven Growth · CRO",
     "image": "https://darshakbhatt-aiproductlabs.github.io/portfolio/assets/headshot.jpg",
     "email": "darshakbhatt94@gmail.com",
     "phone": "+91-8433-655-561",
     "url": "https://darshakbhatt-aiproductlabs.github.io/portfolio/",
-    "summary": "Senior Product Leader with 10+ years delivering $21M+ in measurable business impact through AI-powered innovation, product-led growth, and CRO across eCommerce, SaaS, and health tech. Founder of Viazene and SuperParent (both seed-funded). Indian Achiever's Award 2021. Open to remote and hybrid roles globally; 15-day notice.",
+    "summary": "Senior Product Manager with 10+ years driving AI-enabled innovation, product strategy, and cross-functional execution across B2B and B2C. At ZiniosEdge, drove $21M+ revenue impact for a US-based e-commerce client (~$100M ARR) via CRO, AI search, and subscriptions. Now building agentic AI products (Jeeva/Involve.AI, Testsigma). Two-time founder (Viazene, SuperParent). Indian Achiever's Award 2021. Relocating closer to family in the Mumbai region; on-site Mumbai / hybrid Mumbai-Navi Mumbai-Pune-Bengaluru / remote globally; 15-day notice.",
     "location": {
       "city": "Mumbai",
       "region": "Maharashtra",
@@ -21,60 +21,134 @@
   },
   "work": [
     {
-      "name": "AI Product Labs (independent)",
-      "position": "Founder / AI Product Builder",
-      "startDate": "2025-01",
-      "summary": "Independent AI product lab — shipping experimental tools that turn AI into durable PM workflows.",
+      "name": "Testsigma Technologies Inc",
+      "position": "Senior Product Manager",
+      "location": "Bengaluru, IN",
+      "startDate": "2026-03",
+      "summary": "Leading AI-first initiatives for an agentic quality-intelligence platform.",
       "highlights": [
-        "jira-digest: open-source daily Jira summarizer in Python + GitHub Actions, AI-onboarded setup",
-        "Intraday ORB Trading agent: n8n + OpenAI + Upstox API with Lovable frontend",
-        "Google Flow App: 19-screen interactive PRD + 5 prototypes + competitive audit + pricing model",
-        "HiringFlow: B2B HR-tech webapp — AI job posting, bias scoring, AI interviews",
-        "AstroPA: LLM-powered astrology assistant (frontend for ChittaDhyana)"
-      ],
-      "url": "https://github.com/darshakbhatt-aiproductlabs"
-    },
-    {
-      "name": "$100M-ARR US-based eCommerce company",
-      "position": "Senior Product Leader (AI-driven Growth & CRO)",
-      "summary": "Delivered $21M+ in measurable business impact via AI-driven search, personalization, agentic automation, and CRO. Owned strategy, roadmap, and cross-functional execution.",
-      "highlights": [
-        "$21M+ measurable business impact from AI-powered growth initiatives",
-        "Led AI-driven search and personalization initiatives that lifted retention and revenue",
-        "Drove CRO programs across funnel stages — landing, browse, PDP, checkout",
-        "Stood up agentic automation for ops workflows"
+        "Shaping roadmap, user journeys, and workflows for autonomous test planning, execution, and insights",
+        "Launched Element Recorder and Step Recorder for Windows desktop apps (no-code element capture & step authoring)",
+        "Cleared a 110+ bug Jira backlog for US enterprise clients with SLA-driven prioritization and an executive dashboard"
       ]
     },
     {
-      "name": "SuperParent",
-      "position": "Co-founder",
-      "summary": "Technology-enabled parenting platform redefining teenage child-rearing. Seed funding raised and VC incubation secured.",
+      "name": "Jeeva · Involve.AI",
+      "position": "Senior AI Product Manager (Freelance Consultant)",
+      "location": "Pune, IN",
+      "startDate": "2025-10",
+      "endDate": "2026-01",
+      "summary": "Agentic AI for sales/GTM.",
       "highlights": [
-        "0→1 product, fundraising, and GTM",
-        "Seed funding + VC incubation"
+        "Launched Outbound AI within the SLG workspace — 60% adoption in one month",
+        "Built an agentic ICP engine — 100,000-lead list in two months, +25% lead-to-opportunity conversion",
+        "Drove ARPU growth via PLG onboarding & pricing optimization — $450,000 in booked revenue",
+        "Orchestrated a Data Integrity & Idempotency framework (Source Priority Matrix)"
       ]
     },
     {
-      "name": "Viazene",
-      "position": "Co-founder",
-      "summary": "Earlier 0→1 venture; also secured seed funding."
+      "name": "ZiniosEdge Software Technologies",
+      "position": "Senior Product Manager",
+      "location": "Bengaluru, IN",
+      "startDate": "2022-05",
+      "endDate": "2025-10",
+      "summary": "Product for a US-based legacy e-commerce client (~$100M ARR).",
+      "highlights": [
+        "Delivered $21M+ in revenue through data-driven conversion optimization over 3 years",
+        "Launched AI-powered in-site search — $4M+ incremental revenue, +12% mobile conversion",
+        "Subscription product strategy — +40% CLTV",
+        "Shopify migration end-to-end — +19% conversion uplift",
+        "Owned KPI/OKR; cut tracking delta 30%, improving hypothesis-driven experimentation 40%"
+      ]
     },
     {
-      "name": "Vrozart",
-      "position": "Product (Technology-led innovation)",
-      "endDate": "2021",
-      "summary": "Technology-led innovation work that earned the Indian Achiever's Award (2021).",
+      "name": "Dhani Services Ltd (Indiabulls Group)",
+      "position": "Product Manager",
+      "location": "Mumbai, IN",
+      "startDate": "2022-01",
+      "endDate": "2022-05",
       "highlights": [
-        "Indian Achiever's Award (2021)"
+        "UX redesign roadmap — +15% conversion, −30% bounce",
+        "Owned B2B onboarding roadmap & discovery; PRDs, backlog, agile delivery",
+        "Led GTM for category expansion — 14% CTR in pilot campaigns"
+      ]
+    },
+    {
+      "name": "Vrozart Group",
+      "position": "Product Manager",
+      "location": "Gurgaon, IN",
+      "startDate": "2020-12",
+      "endDate": "2022-01",
+      "highlights": [
+        "Secured $100K seed funding for two startups in 3 months (Vrozart Future Incubators)",
+        "Vrozart Health services expansion — $110K revenue growth in 6 months",
+        "Awarded the 2021 Indian Achiever's Award (Govt. of India Startup Initiative)"
+      ]
+    },
+    {
+      "name": "Super Parent App · Inversa Technosoft",
+      "position": "Co-founder (Product)",
+      "location": "Bengaluru, IN",
+      "startDate": "2019-03",
+      "endDate": "2020-12",
+      "highlights": [
+        "Led the app concept → launch with a phased release strategy",
+        "Partnered with a leading bank for an in-app child wallet — 36% subscription rate",
+        "Reduced churn 23% via A/B testing and cross-border trials",
+        "Secured technology incubation from a leading VC"
+      ]
+    },
+    {
+      "name": "Auxesis Group",
+      "position": "Product Marketing Manager",
+      "location": "Mumbai, IN",
+      "startDate": "2018-09",
+      "endDate": "2019-03",
+      "highlights": [
+        "Owned product marketing roadmap for blockchain projects",
+        "Built a 45,000+ member community for an ICO launch",
+        "+24% community activation; +15% adoption"
+      ]
+    },
+    {
+      "name": "Comezzo Marketing Tech",
+      "position": "Associate Product Marketing Manager",
+      "location": "Bengaluru, IN",
+      "startDate": "2017-08",
+      "endDate": "2018-09",
+      "highlights": [
+        "Led product development of Towards.AI with Hotify AI — $2M value-exchange partnerships",
+        "140%+ ROI on real-estate influencer marketing campaigns"
+      ]
+    },
+    {
+      "name": "Viazene LLP",
+      "position": "Co-founder",
+      "location": "Mumbai, IN",
+      "startDate": "2015-03",
+      "endDate": "2017-06",
+      "summary": "Women-exclusive lifestyle shopping & services app (left engineering in the 4th semester to build it).",
+      "highlights": [
+        "Owned end-to-end product lifecycle",
+        "Shipped 'Make My Match' recommendations — 78% user acceptance",
+        "Secured $10K angel investment"
       ]
     }
   ],
-  "education": [],
+  "education": [
+    { "institution": "K.J. Somaiya College of Engineering (KJSCE)", "studyType": "B.Tech, Electronics & Telecom (EXTC)", "score": "8.5 CGPA (3rd sem)", "note": "Dropped out in the 4th semester to build Viazene." },
+    { "institution": "SVKM's Mithibai College (Chauhan Institute of Science)", "studyType": "HSC, Science", "score": "78.33%" },
+    { "institution": "Jamnabai Narsee School", "studyType": "ICSE", "score": "90%" }
+  ],
   "certificates": [
-    { "name": "Google Digital Marketing & E-commerce Professional Certificate", "issuer": "Google / Coursera", "url": "https://media.journoportfolio.com/users/327690/uploads/2005c037-032e-4219-ad03-93e02f82ca8d.pdf" },
-    { "name": "Google UX Design Professional Certificate", "issuer": "Google / Coursera", "url": "https://coursera.org/share/861864707e662b22fc3f15393805221a" },
+    { "name": "Agentic AI & AI Agents", "issuer": "Vanderbilt University" },
+    { "name": "Machine Learning Foundations for Product Managers", "issuer": "Duke University" },
     { "name": "Google Data Analytics Professional Certificate", "issuer": "Google / Coursera", "url": "https://coursera.org/share/ab6adb7c92b6d03db3c1d2d844866688" },
-    { "name": "Google Project Management Professional Certificate", "issuer": "Google / Coursera", "url": "https://media.journoportfolio.com/users/327690/uploads/f423acd3-8be6-4dd5-b12a-c83d54551cc4.pdf" }
+    { "name": "Google UX Design Professional Certificate", "issuer": "Google / Coursera", "url": "https://coursera.org/share/861864707e662b22fc3f15393805221a" },
+    { "name": "Google Project Management Professional Certificate", "issuer": "Google / Coursera", "url": "https://media.journoportfolio.com/users/327690/uploads/f423acd3-8be6-4dd5-b12a-c83d54551cc4.pdf" },
+    { "name": "Google Digital Marketing & E-commerce Professional Certificate", "issuer": "Google / Coursera", "url": "https://media.journoportfolio.com/users/327690/uploads/2005c037-032e-4219-ad03-93e02f82ca8d.pdf" },
+    { "name": "Google Analytics Certification", "issuer": "Google" },
+    { "name": "NSE Certified Market Professional — Level 3", "issuer": "NISM" }
   ],
   "awards": [
     { "title": "Indian Achiever's Award", "date": "2021", "awarder": "Indian Achievers Forum", "summary": "Technology-led innovation at Vrozart." }
