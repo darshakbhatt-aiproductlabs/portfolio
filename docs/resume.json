@@ -1,0 +1,170 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Darshak Bhatt",
+    "label": "Senior Product Leader · AI-driven Growth · CRO Strategist",
+    "image": "https://darshakbhatt-aiproductlabs.github.io/portfolio/assets/headshot.jpg",
+    "email": "darshakbhatt94@gmail.com",
+    "phone": "+91-8433-655-561",
+    "url": "https://darshakbhatt-aiproductlabs.github.io/portfolio/",
+    "summary": "Senior Product Leader with 10+ years delivering $21M+ in measurable business impact through AI-powered innovation, product-led growth, and CRO across eCommerce, SaaS, and health tech. Founder of Viazene and SuperParent (both seed-funded). Indian Achiever's Award 2021. Open to remote and hybrid roles globally; 15-day notice.",
+    "location": {
+      "city": "Mumbai",
+      "region": "Maharashtra",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      { "network": "LinkedIn", "username": "darshak-bhatt", "url": "https://www.linkedin.com/in/darshak-bhatt/" },
+      { "network": "GitHub", "username": "darshakbhatt-aiproductlabs", "url": "https://github.com/darshakbhatt-aiproductlabs" },
+      { "network": "YouTube", "username": "TradersTerminal", "url": "https://www.youtube.com/@TradersTerminal" }
+    ]
+  },
+  "work": [
+    {
+      "name": "AI Product Labs (independent)",
+      "position": "Founder / AI Product Builder",
+      "startDate": "2025-01",
+      "summary": "Independent AI product lab — shipping experimental tools that turn AI into durable PM workflows.",
+      "highlights": [
+        "jira-digest: open-source daily Jira summarizer in Python + GitHub Actions, AI-onboarded setup",
+        "Intraday ORB Trading agent: n8n + OpenAI + Upstox API with Lovable frontend",
+        "Google Flow App: 19-screen interactive PRD + 5 prototypes + competitive audit + pricing model",
+        "HiringFlow: B2B HR-tech webapp — AI job posting, bias scoring, AI interviews",
+        "AstroPA: LLM-powered astrology assistant (frontend for ChittaDhyana)"
+      ],
+      "url": "https://github.com/darshakbhatt-aiproductlabs"
+    },
+    {
+      "name": "$100M-ARR US-based eCommerce company",
+      "position": "Senior Product Leader (AI-driven Growth & CRO)",
+      "summary": "Delivered $21M+ in measurable business impact via AI-driven search, personalization, agentic automation, and CRO. Owned strategy, roadmap, and cross-functional execution.",
+      "highlights": [
+        "$21M+ measurable business impact from AI-powered growth initiatives",
+        "Led AI-driven search and personalization initiatives that lifted retention and revenue",
+        "Drove CRO programs across funnel stages — landing, browse, PDP, checkout",
+        "Stood up agentic automation for ops workflows"
+      ]
+    },
+    {
+      "name": "SuperParent",
+      "position": "Co-founder",
+      "summary": "Technology-enabled parenting platform redefining teenage child-rearing. Seed funding raised and VC incubation secured.",
+      "highlights": [
+        "0→1 product, fundraising, and GTM",
+        "Seed funding + VC incubation"
+      ]
+    },
+    {
+      "name": "Viazene",
+      "position": "Co-founder",
+      "summary": "Earlier 0→1 venture; also secured seed funding."
+    },
+    {
+      "name": "Vrozart",
+      "position": "Product (Technology-led innovation)",
+      "endDate": "2021",
+      "summary": "Technology-led innovation work that earned the Indian Achiever's Award (2021).",
+      "highlights": [
+        "Indian Achiever's Award (2021)"
+      ]
+    }
+  ],
+  "education": [],
+  "certificates": [
+    { "name": "Google Digital Marketing & E-commerce Professional Certificate", "issuer": "Google / Coursera", "url": "https://media.journoportfolio.com/users/327690/uploads/2005c037-032e-4219-ad03-93e02f82ca8d.pdf" },
+    { "name": "Google UX Design Professional Certificate", "issuer": "Google / Coursera", "url": "https://coursera.org/share/861864707e662b22fc3f15393805221a" },
+    { "name": "Google Data Analytics Professional Certificate", "issuer": "Google / Coursera", "url": "https://coursera.org/share/ab6adb7c92b6d03db3c1d2d844866688" },
+    { "name": "Google Project Management Professional Certificate", "issuer": "Google / Coursera", "url": "https://media.journoportfolio.com/users/327690/uploads/f423acd3-8be6-4dd5-b12a-c83d54551cc4.pdf" }
+  ],
+  "awards": [
+    { "title": "Indian Achiever's Award", "date": "2021", "awarder": "Indian Achievers Forum", "summary": "Technology-led innovation at Vrozart." }
+  ],
+  "skills": [
+    { "name": "Product Strategy", "level": "Expert", "keywords": ["Roadmap", "Vision", "OKRs", "Prioritization"] },
+    { "name": "AI Product Management", "level": "Expert", "keywords": ["LLMs", "Agents", "Search", "Personalization", "RAG", "Prompt design"] },
+    { "name": "Conversion Rate Optimization", "level": "Expert", "keywords": ["A/B testing", "Funnel analysis", "Landing", "Checkout"] },
+    { "name": "Product-Led Growth", "level": "Advanced", "keywords": ["Activation", "Retention", "Onboarding"] },
+    { "name": "Agentic Automation", "level": "Advanced", "keywords": ["n8n", "Make.com", "GitHub Actions", "Workflow design"] },
+    { "name": "Analytics", "level": "Advanced", "keywords": ["SQL basics", "Mixpanel", "GA4", "Data-driven decisions"] },
+    { "name": "Cross-Functional Leadership", "level": "Expert", "keywords": ["Eng", "Design", "GTM", "Sales", "CS"] },
+    { "name": "Design", "level": "Intermediate", "keywords": ["Figma", "AdobeXD", "Balsamiq", "Whimsical", "Lovable"] },
+    { "name": "Code (with AI assistance)", "level": "Intermediate", "keywords": ["Python", "TypeScript", "Claude Code", "Cursor"] }
+  ],
+  "languages": [
+    { "language": "English", "fluency": "Fluent" },
+    { "language": "Hindi", "fluency": "Native" },
+    { "language": "Gujarati", "fluency": "Native" }
+  ],
+  "interests": [
+    { "name": "Equity trading", "keywords": ["Intraday", "ORB", "Trader's Terminal"] },
+    { "name": "Poetry", "keywords": ["Writing"] },
+    { "name": "Conscious living", "keywords": ["Philosophy"] }
+  ],
+  "projects": [
+    {
+      "name": "Intraday ORB Trading Strategy",
+      "description": "Automated agentic trading agent using n8n + OpenAI + Upstox API with technical filters for Opening Range Breakout intraday trades.",
+      "highlights": ["Frontend in Lovable", "Live demo + YouTube walkthrough"],
+      "keywords": ["AI", "Trading", "Agents", "n8n"],
+      "startDate": "2025-12",
+      "url": "https://intraday-orb-strategy-db.lovable.app",
+      "roles": ["Builder", "PM"]
+    },
+    {
+      "name": "jira-digest",
+      "description": "Daily Jira digest delivered to email, Slack, or Teams. One YAML, any company. AI-onboarded setup via Claude Code / Codex / Cursor.",
+      "highlights": ["Open source", "GitHub Pages landing", "Python 3.11 + GitHub Actions"],
+      "keywords": ["AI", "PM tools", "Open source"],
+      "url": "https://darshakbhatt-aiproductlabs.github.io/jira-digest/",
+      "roles": ["Builder", "PM"]
+    },
+    {
+      "name": "Google Flow App — Vision Concept",
+      "description": "19-screen interactive PRD and 5 click-through prototypes for a NotebookLM-powered video workflow. Includes competitive audit (7 peers) and standalone pricing model.",
+      "keywords": ["PRD", "Prototype", "Strategy"],
+      "url": "https://darshakbhatt-aiproductlabs.github.io/google-flow-app-redesign",
+      "roles": ["PM", "Strategy"]
+    },
+    {
+      "name": "HiringFlow",
+      "description": "B2B HR-tech webapp: AI-assisted job posting, bias-elimination scoring, AI interview pipeline with bulk actions.",
+      "keywords": ["AI", "HR tech", "B2B SaaS"],
+      "url": "https://hireflow-sparkle-showcase.lovable.app",
+      "roles": ["Builder", "PM"]
+    },
+    {
+      "name": "LinkedIn Post Automation",
+      "description": "AI workflow: Google Sheets → Make.com → GPT (copy) → DALL·E (image) → LinkedIn API with human-in-loop review.",
+      "keywords": ["AI", "Automation", "GTM"],
+      "startDate": "2025-08",
+      "url": "https://youtu.be/A8aFxUURfHY",
+      "roles": ["Builder"]
+    },
+    {
+      "name": "LearninGPT",
+      "description": "Conversational upskilling platform with add-on services like job search. Mini-PRD with JTBD framing and user research.",
+      "keywords": ["AI", "EdTech"],
+      "url": "https://docs.google.com/document/d/1f5LnK3JIFVSqqLDorTDQnVvaRfhYeIlkUZaioikthXY/edit",
+      "roles": ["PM"]
+    },
+    {
+      "name": "ChittaDhyana & AstroPA",
+      "description": "Platform for conscious living — astrology, e-pujas, yatra services. AstroPA is the LLM-powered astrology assistant frontend.",
+      "keywords": ["AI", "Founder", "Consumer"],
+      "url": "https://chittadhyana.com/",
+      "roles": ["Founder", "Product"]
+    },
+    {
+      "name": "CliQUE — Housewife Community",
+      "description": "Community platform connecting housewives with learning, peer support, and P2P marketplace. End-to-end UX cycle.",
+      "keywords": ["UX", "Community"],
+      "url": "https://media.journoportfolio.com/users/327690/uploads/1c32c9ff-fdea-4edb-a707-68de39ef5eac.pdf",
+      "roles": ["UX", "PM"]
+    }
+  ],
+  "meta": {
+    "canonical": "https://darshakbhatt-aiproductlabs.github.io/portfolio/resume.json",
+    "lastModified": "2026-06-01",
+    "version": "v1.0.0"
+  }
+}
