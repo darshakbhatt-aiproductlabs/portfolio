@@ -736,6 +736,22 @@
       text-align: center; margin: 0 0 24px;
     }
 
+    /* ───────── Experience timeline ───────── */
+    .exp-timeline { max-width: 760px; margin: 0 auto; position: relative; padding-left: 28px; }
+    .exp-timeline::before { content:""; position:absolute; left:7px; top:8px; bottom:8px; width:2px; background:var(--border); }
+    .exp-item { position: relative; padding: 0 0 26px; }
+    .exp-item:last-child { padding-bottom: 0; }
+    .exp-dot { position:absolute; left:-28px; top:5px; width:16px; height:16px; border-radius:50%; background:var(--surface); border:2px solid var(--border); }
+    .exp-item.featured .exp-dot { background: var(--accent-grad); border-color: transparent; box-shadow: 0 0 0 4px rgba(167,139,250,0.14); }
+    .exp-meta { display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; }
+    .exp-co { font-weight:700; font-size:16px; color:var(--text); letter-spacing:-0.01em; }
+    .exp-when { font-size:12.5px; color:var(--text-faint); }
+    .exp-role { font-size:13.5px; color:var(--accent-2); font-weight:600; margin:3px 0 7px; }
+    .exp-desc { margin:0; color:var(--text-dim); font-size:14px; line-height:1.58; }
+    .exp-desc b { color: var(--text); font-weight:600; }
+    .exp-item.compact .exp-desc { font-size:13px; color:var(--text-faint); }
+    .exp-item.compact .exp-co { font-size:15px; }
+
     /* ───────── Journey mini-game ───────── */
     .journey-wrap { position: relative; max-width: 980px; margin: 0 auto; }
     .journey-bar {
@@ -1017,11 +1033,71 @@
     </div>
 
     <div class="subsection">
-      <h3 class="sub-h">The story · three arcs in one operator</h3>
+      <h3 class="sub-h">The story · founder → operator → AI-first</h3>
       <div class="story reveal">
-        <p>I'm a <strong>Senior Product Leader</strong> with 10+ years of building products that move numbers. I cut my teeth on eCommerce and SaaS, and I've spent the last several years doubling down on AI — not as a buzzword, but as the substrate for <strong>search, personalization, agentic automation, and CRO</strong>. The headline outcome: <strong>$21M+ in measurable business impact</strong> for a $100M-ARR US-based company, delivered by combining product strategy with applied AI.</p>
-        <p>Before that, I went 0→1 twice. I co-founded <strong>Viazene</strong> and <strong>SuperParent</strong> — both secured seed funding and VC incubation. Earlier, at <strong>Vrozart</strong>, my work on technology-led innovation won the <strong>Indian Achiever's Award (2021)</strong>. Founder mode taught me to ship under constraint, to treat the roadmap as a hypothesis, and to never confuse activity with outcome.</p>
-        <p>Today I split time between <strong>shipping AI tooling for daily PM workflows</strong> (jira-digest, intraday trading agents, AI-assisted hiring flows, an interactive Google Flow vision concept) and <strong>helping teams turn AI from a demo into a durable line item</strong>. I'm based in Mumbai, currently on-site in Bengaluru, and open to remote/hybrid roles — with a 15-day notice period.</p>
+        <p>I'm a <strong>Senior Product Manager</strong> with 10+ years building products that move numbers across B2B and B2C. At <strong>ZiniosEdge</strong>, I led product for a US-based e-commerce client (~$100M ARR) and drove <strong>$21M+ in revenue impact</strong> over three years — through conversion-rate optimization, an <strong>AI-powered in-site search</strong> (+$4M incremental, +12% mobile conversion), a Shopify migration (+19% conversion), and subscription work that lifted CLTV <strong>40%</strong>.</p>
+        <p>Lately I've gone deep on <strong>agentic AI</strong>. As a Senior AI PM at <strong>Jeeva (Involve.AI)</strong> I shipped Outbound AI (<strong>60% adoption</strong> in a month) and an agentic ICP engine — <strong>100K leads</strong> and a <strong>+25%</strong> lead-to-opportunity lift. Now at <strong>Testsigma</strong>, I'm shaping an <strong>AI-first agentic quality-intelligence</strong> platform: autonomous test planning, execution, and insights.</p>
+        <p>Before the operator chapters, I went <strong>0→1 twice</strong> — co-founding <strong>Viazene</strong> (women-first commerce; I left engineering in my 4th semester to build it) and <strong>SuperParent</strong> (a parenting app with a bank-backed child wallet and VC incubation). Earlier work on technology-led innovation won the <strong>2021 Indian Achiever's Award</strong>. On the side I build in public under <strong>AI Product Labs</strong> — jira-digest, trading agents, and AI sales tooling. I'm relocating closer to family in the <strong>Mumbai region</strong>.</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="sub-h">Experience · 9 roles, 11 years</h3>
+      <div class="exp-timeline reveal">
+        <article class="exp-item featured">
+          <div class="exp-dot"></div>
+          <div class="exp-meta"><span class="exp-co">Testsigma Technologies</span><span class="exp-when">Mar 2026 – Present · Bengaluru</span></div>
+          <div class="exp-role">Senior Product Manager</div>
+          <p class="exp-desc">Shaping an <b>AI-first agentic quality-intelligence</b> platform — autonomous test planning, execution &amp; insights. Shipped no-code Element/Step Recorders for Windows; cleared a <b>110+ bug</b> backlog with SLA-driven prioritization and an exec dashboard.</p>
+        </article>
+        <article class="exp-item featured">
+          <div class="exp-dot"></div>
+          <div class="exp-meta"><span class="exp-co">Jeeva · Involve.AI</span><span class="exp-when">Oct 2025 – Jan 2026 · Pune · Freelance</span></div>
+          <div class="exp-role">Senior AI Product Manager</div>
+          <p class="exp-desc">Launched <b>Outbound AI</b> (60% adoption in a month), built an <b>agentic ICP</b> engine (<b>100K leads</b>, +25% lead→opp), drove <b>$450K</b> booked revenue via PLG onboarding/pricing, and shipped a Data Integrity &amp; Idempotency framework.</p>
+        </article>
+        <article class="exp-item featured">
+          <div class="exp-dot"></div>
+          <div class="exp-meta"><span class="exp-co">ZiniosEdge Software</span><span class="exp-when">May 2022 – Oct 2025 · Bengaluru</span></div>
+          <div class="exp-role">Senior Product Manager</div>
+          <p class="exp-desc">For a US-based e-commerce client (~$100M ARR): drove <b>$21M+ revenue</b> via CRO over 3 years, shipped <b>AI in-site search</b> (+$4M incremental, +12% mobile conv.), led a Shopify migration (+19% conversion), and lifted subscription <b>CLTV +40%</b>.</p>
+        </article>
+        <article class="exp-item compact">
+          <div class="exp-dot"></div>
+          <div class="exp-meta"><span class="exp-co">Dhani Services · Indiabulls</span><span class="exp-when">Jan – May 2022 · Mumbai</span></div>
+          <div class="exp-role">Product Manager</div>
+          <p class="exp-desc">UX-redesign roadmap (+15% conversion, −30% bounce); owned B2B onboarding discovery; led GTM for category expansion (14% CTR in pilots).</p>
+        </article>
+        <article class="exp-item compact">
+          <div class="exp-dot"></div>
+          <div class="exp-meta"><span class="exp-co">Vrozart Group</span><span class="exp-when">Dec 2020 – Jan 2022 · Gurgaon</span></div>
+          <div class="exp-role">Product Manager · 🏆 Indian Achiever's Award 2021</div>
+          <p class="exp-desc">Raised <b>$100K seed</b> for two startups in 3 months; grew Vrozart Health <b>+$110K</b>. Won the 2021 Indian Achiever's Award (Govt. of India Startup Initiative).</p>
+        </article>
+        <article class="exp-item featured">
+          <div class="exp-dot"></div>
+          <div class="exp-meta"><span class="exp-co">SuperParent · Inversa Technosoft</span><span class="exp-when">Mar 2019 – Dec 2020 · Bengaluru</span></div>
+          <div class="exp-role">Co-founder (Product)</div>
+          <p class="exp-desc">Took the app concept → launch; partnered with a bank for an in-app child wallet (<b>36% subscription</b>); cut churn <b>23%</b> via A/B testing; secured <b>VC incubation</b> validating product-market fit.</p>
+        </article>
+        <article class="exp-item compact">
+          <div class="exp-dot"></div>
+          <div class="exp-meta"><span class="exp-co">Auxesis Group</span><span class="exp-when">Sep 2018 – Mar 2019 · Mumbai</span></div>
+          <div class="exp-role">Product Marketing Manager</div>
+          <p class="exp-desc">Owned product marketing for blockchain projects; built a <b>45,000+ member</b> ICO community; lifted activation <b>+24%</b>.</p>
+        </article>
+        <article class="exp-item compact">
+          <div class="exp-dot"></div>
+          <div class="exp-meta"><span class="exp-co">Comezzo Marketing Tech</span><span class="exp-when">Aug 2017 – Sep 2018 · Bengaluru</span></div>
+          <div class="exp-role">Associate Product Marketing Manager</div>
+          <p class="exp-desc">Led product development of Towards.AI with Hotify AI — orchestrated <b>$2M</b> value-exchange partnerships; 140%+ ROI on real-estate influencer campaigns.</p>
+        </article>
+        <article class="exp-item featured">
+          <div class="exp-dot"></div>
+          <div class="exp-meta"><span class="exp-co">Viazene LLP</span><span class="exp-when">Mar 2015 – Jun 2017 · Mumbai</span></div>
+          <div class="exp-role">Co-founder</div>
+          <p class="exp-desc">Founded a women-exclusive lifestyle commerce app; shipped <b>“Make My Match”</b> recommendations (78% acceptance) and raised <b>$10K</b> angel. The startup I left engineering to build.</p>
+        </article>
       </div>
     </div>
 
@@ -1642,6 +1718,16 @@
     <div class="subsection">
       <h3 class="sub-h">Google Professional Certificates</h3>
       <div class="certs-grid">
+      <a class="cert" href="#" onclick="return false;">
+        <span class="badge">Vanderbilt</span>
+        <h4>Agentic AI &amp; AI Agents</h4>
+        <div class="issuer">Specialization</div>
+      </a>
+      <a class="cert" href="#" onclick="return false;">
+        <span class="badge">Duke</span>
+        <h4>ML Foundations for Product Managers</h4>
+        <div class="issuer">Certificate</div>
+      </a>
       <a class="cert" href="https://media.journoportfolio.com/users/327690/uploads/2005c037-032e-4219-ad03-93e02f82ca8d.pdf" target="_blank" rel="noopener">
         <span class="badge">Google · Coursera</span>
         <h4>Digital Marketing &amp; E-commerce</h4>
