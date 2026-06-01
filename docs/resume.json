@@ -3,10 +3,10 @@
   "basics": {
     "name": "Darshak Bhatt",
     "label": "Senior Product Leader · AI-driven Growth · CRO Strategist",
-    "image": "https://darshakbhatt-aiproductlabs.github.io/portfolio/assets/headshot.jpg",
+    "image": "https://darshakbhatt-portfolio.pages.dev/assets/headshot.jpg",
     "email": "darshakbhatt94@gmail.com",
     "phone": "+91-8433-655-561",
-    "url": "https://darshakbhatt-aiproductlabs.github.io/portfolio/",
+    "url": "https://darshakbhatt-portfolio.pages.dev/",
     "summary": "Senior Product Leader with 10+ years delivering $21M+ in measurable business impact through AI-powered innovation, product-led growth, and CRO across eCommerce, SaaS, and health tech. Founder of Viazene and SuperParent (both seed-funded). Indian Achiever's Award 2021. Open to remote and hybrid roles globally; 15-day notice.",
     "location": {
       "city": "Mumbai",
@@ -107,7 +107,7 @@
       "highlights": ["n8n + Upstox v3 + technicalindicators (npm)", "Lovable frontend", "Strategy explainer + JSON download on GitHub Pages"],
       "keywords": ["AI", "Trading", "Agents", "n8n", "Upstox"],
       "startDate": "2025-12",
-      "url": "https://darshakbhatt-aiproductlabs.github.io/intraday-orb-strategy-db/",
+      "url": "https://db-orb-strategy.pages.dev/",
       "roles": ["Builder", "PM"]
     },
     {
@@ -116,7 +116,7 @@
       "highlights": ["n8n + Google Sheets + Gmail + Discord webhooks", "GPT-4 impact scoring (v1) and MD5 hashing (v2)", "Microsite with architecture diagram + sanitized JSON downloads"],
       "keywords": ["AI", "n8n", "Open source", "Monitoring", "GPT-4"],
       "startDate": "2025",
-      "url": "https://darshakbhatt-aiproductlabs.github.io/peer-competitor-monitor/",
+      "url": "https://db-peer-monitor.pages.dev/",
       "roles": ["Builder", "PM"]
     },
     {
@@ -125,7 +125,7 @@
       "highlights": ["LangChain agents inside n8n", "Three research tools: Perplexity, Google, LinkedIn", "Includes ethics-use guidance"],
       "keywords": ["AI", "Agents", "LangChain", "n8n", "Open source", "Sales"],
       "startDate": "2025",
-      "url": "https://darshakbhatt-aiproductlabs.github.io/prospect-research-agent/",
+      "url": "https://db-prospect-research.pages.dev/",
       "roles": ["Builder", "PM"]
     },
     {
@@ -181,7 +181,7 @@
     }
   ],
   "meta": {
-    "canonical": "https://darshakbhatt-aiproductlabs.github.io/portfolio/resume.json",
+    "canonical": "https://darshakbhatt-portfolio.pages.dev/resume.json",
     "lastModified": "2026-06-01",
     "version": "v1.0.0"
   }

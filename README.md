@@ -2,7 +2,7 @@
 
 **Darshak Bhatt — AI-first portfolio.** Senior Product Leader · $21M+ impact · AI Generalist.
 
-🌐 **Live:** https://darshakbhatt-aiproductlabs.github.io/portfolio/
+🌐 **Live:** https://darshakbhatt-portfolio.pages.dev/
 📄 **Resume PDF:** [link](https://media.journoportfolio.com/users/327690/uploads/64022180-ce94-42d9-b754-ee676dbd2d6a.pdf)
 💼 **LinkedIn:** [in/darshak-bhatt](https://www.linkedin.com/in/darshak-bhatt/)
 ✉️ **Email:** darshakbhatt94@gmail.com
