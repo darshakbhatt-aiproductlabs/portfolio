@@ -2054,38 +2054,110 @@
       ctx.fillStyle='#FEB200'; ctx.beginPath(); ctx.arc(W-62,26,7,0,6.28); ctx.fill(); ctx.fillStyle='#e6edf3'; ctx.font='600 13px sans-serif'; ctx.textAlign='left'; ctx.textBaseline='middle'; ctx.fillText('× '+coinCount,W-50,27);
     }
 
+    // Illustrated "Bitmoji-style" cartoon avatar of Darshak — dark hair,
+    // glasses, beard, indigo suit — with a real walk cycle.
     function drawPlayer(px,py){
-      const cx=px+player.w/2, headR=17, headY=py+2;
-      const sw=Math.sin(player.phase)*4.5;
-      const footY=py+player.h, torsoTop=headY+headR-4, torsoBot=footY-9;
-      // soft drop shadow
-      ctx.fillStyle='rgba(0,0,0,0.32)'; ctx.beginPath(); ctx.ellipse(cx,ground-2,16,4.5,0,0,6.28); ctx.fill();
-      // legs (feet land on the ground line)
-      ctx.strokeStyle='#5b8def'; ctx.lineWidth=5; ctx.lineCap='round';
-      ctx.beginPath(); ctx.moveTo(cx-6,torsoBot); ctx.lineTo(cx-6+sw,footY); ctx.moveTo(cx+6,torsoBot); ctx.lineTo(cx+6-sw,footY); ctx.stroke();
-      // torso: rounded shoulders in brand gradient
-      const g=ctx.createLinearGradient(cx-16,torsoTop,cx+16,torsoBot); g.addColorStop(0,'#a78bfa'); g.addColorStop(1,'#38bdf8'); ctx.fillStyle=g;
+      const cx=px+player.w/2, footY=py+player.h;
+      const moving=Math.abs(player.vx)>0.3 && player.onGround;
+      const air=!player.onGround;
+      const t=player.phase;
+      const swing=moving?Math.sin(t)*6:0;
+      const bob=moving?Math.abs(Math.sin(t))*1.8:0;
+
+      const SKIN='#e3ad7e', HAIR='#15151c', BEARD='#1c1c26', SUIT='#4b5a86',
+            SUIT_D='#3a4668', SHIRT='#eef1f6', SHOE='#14141b', GLASS='#1f1f29';
+
+      // ground shadow (shrinks when airborne)
+      ctx.fillStyle='rgba(0,0,0,0.30)'; ctx.beginPath();
+      ctx.ellipse(cx,footY-1, air?9:15, air?3:4, 0,0,6.28); ctx.fill();
+
+      ctx.save();
+      ctx.translate(cx,0); ctx.scale(player.face,1); ctx.translate(-cx,0); // face travel direction
+      ctx.translate(0,-bob);
+
+      const headR=11, headCy=footY-46, neckY=footY-37, shoulderY=footY-34, hipY=footY-15;
+
+      ctx.lineCap='round'; ctx.lineJoin='round';
+
+      // ── legs ──
+      ctx.strokeStyle='#2b3142'; ctx.lineWidth=6;
+      if(air){
+        ctx.beginPath(); ctx.moveTo(cx-4,hipY); ctx.lineTo(cx-6,footY-6); ctx.moveTo(cx+4,hipY); ctx.lineTo(cx+7,footY-7); ctx.stroke();
+        ctx.fillStyle=SHOE; ctx.beginPath(); ctx.ellipse(cx-7,footY-6,5,3,0,0,6.28); ctx.fill(); ctx.beginPath(); ctx.ellipse(cx+8,footY-7,5,3,0,0,6.28); ctx.fill();
+      } else {
+        ctx.beginPath(); ctx.moveTo(cx-3,hipY); ctx.lineTo(cx-3-swing,footY-2); ctx.moveTo(cx+3,hipY); ctx.lineTo(cx+3+swing,footY-2); ctx.stroke();
+        ctx.fillStyle=SHOE; ctx.beginPath(); ctx.ellipse(cx-3-swing+player.face*2,footY-1,5.5,3,0,0,6.28); ctx.fill(); ctx.beginPath(); ctx.ellipse(cx+3+swing+player.face*2,footY-1,5.5,3,0,0,6.28); ctx.fill();
+      }
+
+      // ── back arm (behind torso) ──
+      ctx.strokeStyle=SUIT_D; ctx.lineWidth=6;
+      ctx.beginPath(); ctx.moveTo(cx-9,shoulderY+3); ctx.lineTo(cx-10+swing*0.7, shoulderY+17); ctx.stroke();
+      ctx.fillStyle=SKIN; ctx.beginPath(); ctx.arc(cx-10+swing*0.7, shoulderY+18, 3,0,6.28); ctx.fill();
+
+      // ── torso (suit jacket) ──
+      const tg=ctx.createLinearGradient(0,shoulderY,0,hipY); tg.addColorStop(0,SUIT); tg.addColorStop(1,SUIT_D);
+      ctx.fillStyle=tg;
       ctx.beginPath();
-      ctx.moveTo(cx-14,torsoBot);
-      ctx.lineTo(cx-12,torsoTop+4);
-      ctx.quadraticCurveTo(cx-12,torsoTop-4, cx-4,torsoTop-5);
-      ctx.lineTo(cx+4,torsoTop-5);
-      ctx.quadraticCurveTo(cx+12,torsoTop-4, cx+12,torsoTop+4);
-      ctx.lineTo(cx+14,torsoBot);
+      ctx.moveTo(cx-12,hipY+1);
+      ctx.lineTo(cx-11,shoulderY+3);
+      ctx.quadraticCurveTo(cx-11,shoulderY-3, cx-5,shoulderY-3);
+      ctx.lineTo(cx+5,shoulderY-3);
+      ctx.quadraticCurveTo(cx+11,shoulderY-3, cx+11,shoulderY+3);
+      ctx.lineTo(cx+12,hipY+1);
       ctx.closePath(); ctx.fill();
-      // arms
-      ctx.strokeStyle='#7aa7f5'; ctx.lineWidth=5;
-      ctx.beginPath(); ctx.moveTo(cx-12,torsoTop+6); ctx.lineTo(cx-15-sw*0.4,torsoTop+22); ctx.moveTo(cx+12,torsoTop+6); ctx.lineTo(cx+15+sw*0.4,torsoTop+22); ctx.stroke();
-      // head = photo-face avatar (the focal point)
-      ctx.save(); ctx.beginPath(); ctx.arc(cx,headY,headR,0,6.28); ctx.closePath(); ctx.clip();
-      if(faceReady){ ctx.drawImage(faceImg, FACE.sx, FACE.sy, FACE.s, FACE.s, cx-headR, headY-headR, headR*2, headR*2); }
-      else { ctx.fillStyle='#e6edf3'; ctx.fillRect(cx-headR,headY-headR,headR*2,headR*2); }
+      // shirt V + open collar
+      ctx.fillStyle=SHIRT; ctx.beginPath(); ctx.moveTo(cx-4,shoulderY-2); ctx.lineTo(cx+4,shoulderY-2); ctx.lineTo(cx,shoulderY+11); ctx.closePath(); ctx.fill();
+      // lapels
+      ctx.fillStyle=SUIT_D; ctx.beginPath(); ctx.moveTo(cx-5,shoulderY-3); ctx.lineTo(cx-1,shoulderY+9); ctx.lineTo(cx-6,shoulderY+4); ctx.closePath(); ctx.fill();
+      ctx.beginPath(); ctx.moveTo(cx+5,shoulderY-3); ctx.lineTo(cx+1,shoulderY+9); ctx.lineTo(cx+6,shoulderY+4); ctx.closePath(); ctx.fill();
+      // haldi pocket square nod
+      ctx.fillStyle='#FEB200'; ctx.fillRect(cx+5,shoulderY+7,3,2);
+
+      // ── front arm ──
+      ctx.strokeStyle=SUIT; ctx.lineWidth=6;
+      ctx.beginPath(); ctx.moveTo(cx+9,shoulderY+3); ctx.lineTo(cx+10-swing*0.7, shoulderY+17); ctx.stroke();
+      ctx.fillStyle=SKIN; ctx.beginPath(); ctx.arc(cx+10-swing*0.7, shoulderY+18, 3,0,6.28); ctx.fill();
+
+      // ── neck ──
+      ctx.fillStyle=SKIN; ctx.fillRect(cx-3,neckY-2,6,7);
+
+      // ── head ── (skin face with hair on top third, beard on lower jaw)
+      ctx.fillStyle=SKIN; ctx.beginPath(); ctx.arc(cx,headCy,headR,0,6.28); ctx.fill();
+      ctx.save(); ctx.beginPath(); ctx.arc(cx,headCy,headR,0,6.28); ctx.clip();
+      // hair — top of head only, with a soft fringe dip
+      ctx.fillStyle=HAIR;
+      ctx.beginPath();
+      ctx.moveTo(cx-headR, headCy-headR-1);
+      ctx.lineTo(cx+headR, headCy-headR-1);
+      ctx.lineTo(cx+headR, headCy-5);
+      ctx.quadraticCurveTo(cx+4, headCy-3, cx, headCy-4);
+      ctx.quadraticCurveTo(cx-4, headCy-3, cx-headR, headCy-5);
+      ctx.closePath(); ctx.fill();
+      // beard — lower jaw only, leaving cheeks + upper face as skin
+      ctx.fillStyle=BEARD;
+      ctx.beginPath();
+      ctx.moveTo(cx-headR, headCy+3);
+      ctx.quadraticCurveTo(cx, headCy+7, cx+headR, headCy+3);
+      ctx.lineTo(cx+headR, headCy+headR+1);
+      ctx.lineTo(cx-headR, headCy+headR+1);
+      ctx.closePath(); ctx.fill();
       ctx.restore();
-      // double ring — white core + zone-tint glow
-      ctx.lineWidth=3; ctx.strokeStyle='#fff'; ctx.beginPath(); ctx.arc(cx,headY,headR,0,6.28); ctx.stroke();
-      ctx.lineWidth=2; ctx.strokeStyle=zoneTint(); ctx.beginPath(); ctx.arc(cx,headY,headR+2.5,0,6.28); ctx.stroke();
-      // airborne sparkle
-      if(!player.onGround){ ctx.font='13px sans-serif'; ctx.textAlign='center'; ctx.textBaseline='alphabetic'; ctx.fillText('✨',cx,headY-headR-8); }
+      // little quiff above the outline
+      ctx.fillStyle=HAIR; ctx.beginPath(); ctx.moveTo(cx-5,headCy-headR+1); ctx.quadraticCurveTo(cx-1,headCy-headR-5, cx+6,headCy-headR+1); ctx.closePath(); ctx.fill();
+      // mouth (subtle smile in the skin band, just above the beard)
+      ctx.strokeStyle='#b86b4f'; ctx.lineWidth=1.1; ctx.beginPath(); ctx.arc(cx,headCy+1.5,2.1,0.18*Math.PI,0.82*Math.PI); ctx.stroke();
+      // glasses (sit on the skin, just above centre)
+      const eyeY=headCy-1.5;
+      ctx.strokeStyle=GLASS; ctx.lineWidth=1.4;
+      ctx.beginPath(); ctx.arc(cx-4.2,eyeY,3,0,6.28); ctx.stroke();
+      ctx.beginPath(); ctx.arc(cx+4.2,eyeY,3,0,6.28); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(cx-1.2,eyeY); ctx.lineTo(cx+1.2,eyeY); ctx.stroke();
+      // eyes
+      ctx.fillStyle='#15151c'; ctx.beginPath(); ctx.arc(cx-4.2,eyeY,1,0,6.28); ctx.fill(); ctx.beginPath(); ctx.arc(cx+4.2,eyeY,1,0,6.28); ctx.fill();
+
+      ctx.restore();
+
+      if(air){ ctx.font='13px sans-serif'; ctx.fillStyle='#FEB200'; ctx.textAlign='center'; ctx.textBaseline='alphabetic'; ctx.fillText('✨',cx,headCy-headR-6-bob); }
     }
 
     let raf=0;
