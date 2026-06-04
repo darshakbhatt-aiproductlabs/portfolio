@@ -80,24 +80,25 @@
     *, *::before, *::after { box-sizing: border-box; }
 
     :root {
-      --bg:          #0d1117;
-      --surface:     #161b22;
-      --surface-2:   #21262d;
-      --border:      #30363d;
-      --border-soft: #21262d;
-      --text:        #e6edf3;
-      --text-dim:    #8b949e;
-      --text-faint:  #6e7681;
-      --accent:      #a78bfa;
-      --accent-2:    #38bdf8;
+      /* Espresso palette — deep warm brown + gold accent. Dark theme, masculine, AI-first. */
+      --bg:          #1F1A14;
+      --surface:     #2A241B;
+      --surface-2:   #3A3025;
+      --border:      #4A3E2E;
+      --border-soft: #3A3025;
+      --text:        #F5EFE0;
+      --text-dim:    #B5A88D;
+      --text-faint:  #8C8068;
+      --accent:      #FEB200;
+      --accent-2:    #FED56A;
       --haldi:       #FEB200;
-      --haldi-soft:  rgba(254, 178, 0, 0.12);
+      --haldi-soft:  rgba(254, 178, 0, 0.18);
       --accent-3:    #FEB200;
-      --accent-pink: #f472b6;
+      --accent-pink: #FEB200;
       --accent-green:#22c55e;
-      --accent-grad: linear-gradient(135deg, #a78bfa 0%, #38bdf8 100%);
-      --accent-grad-haldi: linear-gradient(135deg, #FEB200 0%, #f472b6 100%);
-      --accent-grad-warm: linear-gradient(135deg, #FEB200 0%, #f472b6 100%);
+      --accent-grad: linear-gradient(135deg, #FEB200 0%, #C77E08 100%);
+      --accent-grad-haldi: linear-gradient(135deg, #FEB200 0%, #C77E08 100%);
+      --accent-grad-warm: linear-gradient(135deg, #FEB200 0%, #C77E08 100%);
       --max-w:       1100px;
       --r-sm: 6px;
       --r-md: 10px;
@@ -134,7 +135,7 @@
     /* ───────── nav ───────── */
     nav.top {
       position: sticky; top: 0; z-index: 50;
-      background: rgba(13, 17, 23, 0.85);
+      background: rgba(31, 26, 20, 0.85);
       backdrop-filter: saturate(180%) blur(12px);
       -webkit-backdrop-filter: saturate(180%) blur(12px);
       border-bottom: 1px solid var(--border);
@@ -152,7 +153,7 @@
       background: var(--accent-grad); color: #fff;
       font-weight: 800; font-size: 14px; letter-spacing: -0.02em;
       display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 6px 18px -5px rgba(167,139,250,0.7), inset 0 0 0 1px rgba(255,255,255,0.12);
+      box-shadow: 0 6px 18px -5px rgba(254,178,0,0.7), inset 0 0 0 1px rgba(255,255,255,0.12);
     }
     nav.top .logo .logo-text {
       display: flex; flex-direction: column; line-height: 1.04;
@@ -202,8 +203,8 @@
     header.hero::before {
       content: ""; position: absolute; inset: 0;
       background:
-        radial-gradient(900px at 18% 0%, rgba(167,139,250,0.16), transparent 60%),
-        radial-gradient(800px at 82% 28%, rgba(56,189,248,0.10), transparent 60%),
+        radial-gradient(900px at 18% 0%, rgba(254,178,0,0.16), transparent 60%),
+        radial-gradient(800px at 82% 28%, rgba(199,126,8,0.10), transparent 60%),
         radial-gradient(700px at 50% 100%, rgba(251,191,36,0.06), transparent 60%);
       pointer-events: none;
     }
@@ -265,9 +266,9 @@
     }
     .btn-primary {
       background: var(--accent-grad); color: white;
-      box-shadow: 0 6px 24px -8px rgba(167,139,250,0.6);
+      box-shadow: 0 6px 24px -8px rgba(254,178,0,0.6);
     }
-    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 10px 28px -8px rgba(167,139,250,0.75); text-decoration: none; }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 10px 28px -8px rgba(254,178,0,0.75); text-decoration: none; }
     .btn-secondary {
       background: var(--surface); color: var(--text); border-color: var(--border);
     }
@@ -292,11 +293,11 @@
       border-radius: 24px;
       padding: 4px;
       background: var(--accent-grad);
-      box-shadow: 0 30px 80px -30px rgba(167,139,250,0.6);
+      box-shadow: 0 30px 80px -30px rgba(254,178,0,0.6);
     }
     .hero-portrait .frame::after {
       content: ""; position: absolute; inset: -30px;
-      background: radial-gradient(circle, rgba(167,139,250,0.18), transparent 60%);
+      background: radial-gradient(circle, rgba(254,178,0,0.18), transparent 60%);
       z-index: -1; border-radius: 24px;
     }
     .hero-portrait img, .hero-portrait .initials {
@@ -376,7 +377,7 @@
     }
     .eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(167,139,250,0.10);
+      background: rgba(254,178,0,0.10);
       color: var(--accent);
       padding: 5px 12px; border-radius: 999px;
       font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
@@ -413,7 +414,7 @@
     }
     .filter-chip:hover { color: var(--text); border-color: var(--accent); }
     .filter-chip.active {
-      background: rgba(167,139,250,0.12);
+      background: rgba(254,178,0,0.12);
       border-color: var(--accent);
       color: var(--text);
     }
@@ -436,7 +437,7 @@
     .project-card:hover {
       border-color: var(--accent);
       transform: translateY(-3px);
-      box-shadow: 0 18px 36px -18px rgba(167,139,250,0.35);
+      box-shadow: 0 18px 36px -18px rgba(254,178,0,0.35);
     }
     .project-card .head {
       display: flex; align-items: flex-start; gap: 14px; margin-bottom: 12px;
@@ -588,7 +589,7 @@
       padding: 6px 12px; border-radius: 6px;
       font-size: 13px; font-weight: 500;
     }
-    .tool.hl { color: var(--text); border-color: rgba(167,139,250,0.4); background: rgba(167,139,250,0.08); }
+    .tool.hl { color: var(--text); border-color: rgba(254,178,0,0.4); background: rgba(254,178,0,0.08); }
 
     /* ───────── Beyond work ───────── */
     .beyond-grid {
@@ -637,7 +638,7 @@
     .final-cta {
       max-width: 720px; margin: 0 auto; text-align: center;
       padding: 60px 32px;
-      background: linear-gradient(135deg, rgba(167,139,250,0.10), rgba(56,189,248,0.07));
+      background: linear-gradient(135deg, rgba(254,178,0,0.10), rgba(199,126,8,0.07));
       border: 1px solid var(--border);
       border-radius: 18px;
     }
@@ -709,7 +710,7 @@
     /* ───────── Tab bar ───────── */
     .tab-bar {
       position: sticky; top: 66px; z-index: 45;
-      background: rgba(13,17,23,0.92);
+      background: rgba(31,26,20,0.92);
       backdrop-filter: saturate(180%) blur(12px);
       -webkit-backdrop-filter: saturate(180%) blur(12px);
       border-bottom: 1px solid var(--border);
@@ -731,7 +732,7 @@
       font-size: 11.5px; color: var(--text-faint); font-weight: 500;
       background: var(--surface-2); padding: 1px 7px; border-radius: 999px;
     }
-    .tab-btn.active .count { color: var(--accent); background: rgba(167,139,250,0.12); }
+    .tab-btn.active .count { color: var(--accent); background: rgba(254,178,0,0.12); }
 
     .tab-panel { display: none; padding: 40px 24px 80px; scroll-margin-top: 132px; }
     .tab-panel.active { display: block; animation: fadeInTab 260ms ease; }
@@ -767,7 +768,7 @@
     .exp-item { position: relative; padding: 0 0 26px; }
     .exp-item:last-child { padding-bottom: 0; }
     .exp-dot { position:absolute; left:-28px; top:5px; width:16px; height:16px; border-radius:50%; background:var(--surface); border:2px solid var(--border); }
-    .exp-item.featured .exp-dot { background: var(--accent-grad); border-color: transparent; box-shadow: 0 0 0 4px rgba(167,139,250,0.14); }
+    .exp-item.featured .exp-dot { background: var(--accent-grad); border-color: transparent; box-shadow: 0 0 0 4px rgba(254,178,0,0.14); }
     .exp-meta { display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; }
     .exp-co { font-weight:700; font-size:16px; color:var(--text); letter-spacing:-0.01em; }
     .exp-when { font-size:12.5px; color:var(--text-faint); }
@@ -788,12 +789,12 @@
       width: 100%; height: 440px; display: block;
       border: 1px solid var(--border); border-radius: 14px;
       background: #0b1020; touch-action: none;
-      box-shadow: 0 30px 80px -42px rgba(167,139,250,0.55);
+      box-shadow: 0 30px 80px -42px rgba(254,178,0,0.55);
     }
     @media (max-width: 640px){ #journey-canvas { height: 340px; } }
     .journey-hint {
       position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
-      background: rgba(13,17,23,0.82); border: 1px solid var(--border);
+      background: rgba(31,26,20,0.82); border: 1px solid var(--border);
       color: var(--text-dim); padding: 8px 16px; border-radius: 999px;
       font-size: 13px; pointer-events: none;
       backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
@@ -948,7 +949,7 @@
     .philosophy {
       margin-top: 32px; text-align: center;
       padding: 44px 32px;
-      background: linear-gradient(135deg, rgba(167,139,250,0.06), rgba(56,189,248,0.04));
+      background: linear-gradient(135deg, rgba(254,178,0,0.06), rgba(199,126,8,0.04));
       border: 1px solid var(--border); border-radius: 16px;
     }
     .philosophy blockquote {
@@ -2021,14 +2022,14 @@
       // far skyline
       ctx.save(); ctx.globalAlpha=0.16; ctx.fillStyle=tint; const off=(camera*0.35)%90; for(let i=-1;i<W/90+2;i++){ const bx=i*90-off; const bh=34+((i*37)%5)*14; ctx.fillRect(bx,ground-bh,60,bh);} ctx.restore();
       // stars
-      ctx.save(); ctx.globalAlpha=0.5; ctx.fillStyle='#30363d'; const o2=(camera*0.5)%44; for(let i=-1;i<W/44+2;i++){ const sx=i*44-o2; ctx.fillRect(sx,(i*53)%(ground-90)+18,2,2);} ctx.restore();
+      ctx.save(); ctx.globalAlpha=0.5; ctx.fillStyle='#4A3E2E'; const o2=(camera*0.5)%44; for(let i=-1;i<W/44+2;i++){ const sx=i*44-o2; ctx.fillRect(sx,(i*53)%(ground-90)+18,2,2);} ctx.restore();
       // ground
-      ctx.fillStyle='#161b22'; ctx.fillRect(0,ground,W,H-ground);
+      ctx.fillStyle='#2A241B'; ctx.fillRect(0,ground,W,H-ground);
       ctx.strokeStyle=tint; ctx.globalAlpha=0.55; ctx.beginPath(); ctx.moveTo(0,ground+0.5); ctx.lineTo(W,ground+0.5); ctx.stroke(); ctx.globalAlpha=1;
       // coins
       coins.forEach(c=>{ if(c.got)return; const sx=c.x-camera; if(sx<-20||sx>W+20)return; const by=c.y+Math.sin(Date.now()/300+c.bob)*4; ctx.fillStyle='#fbbf24'; ctx.beginPath(); ctx.arc(sx,by,8,0,6.28); ctx.fill(); ctx.fillStyle='#0b1020'; ctx.font='bold 10px sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText('$',sx,by+0.5); });
       // milestone signposts
-      MILES.forEach((m,i)=>{ const sx=m.x-camera; if(sx<-90||sx>W+90)return; const done=reached.has(i); ctx.strokeStyle=done?m.tint:'#30363d'; ctx.lineWidth=4; ctx.beginPath(); ctx.moveTo(sx,ground); ctx.lineTo(sx,ground-92); ctx.stroke(); const bw=60,bh=48,bx=sx-bw/2,by=ground-92-bh+6; ctx.fillStyle=done?lerpHex('#161b22',m.tint,0.24):'#161b22'; ctx.strokeStyle=done?m.tint:'#30363d'; ctx.lineWidth=2; roundRect(bx,by,bw,bh,10); ctx.fill(); ctx.stroke(); ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.font='26px sans-serif'; ctx.fillText(m.emoji,sx,by+bh/2-4); ctx.font='600 9px sans-serif'; ctx.fillStyle=done?m.tint:'#6e7681'; ctx.fillText(m.year.split(' · ')[0],sx,by+bh-7); });
+      MILES.forEach((m,i)=>{ const sx=m.x-camera; if(sx<-90||sx>W+90)return; const done=reached.has(i); ctx.strokeStyle=done?m.tint:'#4A3E2E'; ctx.lineWidth=4; ctx.beginPath(); ctx.moveTo(sx,ground); ctx.lineTo(sx,ground-92); ctx.stroke(); const bw=60,bh=48,bx=sx-bw/2,by=ground-92-bh+6; ctx.fillStyle=done?lerpHex('#2A241B',m.tint,0.24):'#2A241B'; ctx.strokeStyle=done?m.tint:'#4A3E2E'; ctx.lineWidth=2; roundRect(bx,by,bw,bh,10); ctx.fill(); ctx.stroke(); ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.font='26px sans-serif'; ctx.fillText(m.emoji,sx,by+bh/2-4); ctx.font='600 9px sans-serif'; ctx.fillStyle=done?m.tint:'#8C8068'; ctx.fillText(m.year.split(' · ')[0],sx,by+bh-7); });
       // finish flag
       const fx=FINISH-camera; if(fx>-50&&fx<W+50){ ctx.strokeStyle='#e6edf3'; ctx.lineWidth=4; ctx.beginPath(); ctx.moveTo(fx,ground); ctx.lineTo(fx,ground-122); ctx.stroke(); const wave=Math.sin(Date.now()/200)*3; ctx.fillStyle='#22c55e'; ctx.beginPath(); ctx.moveTo(fx,ground-122); ctx.lineTo(fx+48,ground-110+wave); ctx.lineTo(fx,ground-96); ctx.closePath(); ctx.fill(); ctx.fillStyle='#e6edf3'; ctx.font='700 10px sans-serif'; ctx.textAlign='left'; ctx.fillText('HIRE ME',fx+6,ground-112); }
       // player
@@ -2040,7 +2041,7 @@
       const hb={x:14,y:14,w:Math.min(348,W-92),h:50};
       ctx.save();
       ctx.shadowColor='rgba(0,0,0,0.5)'; ctx.shadowBlur=18; ctx.shadowOffsetY=6;
-      ctx.fillStyle='rgba(13,17,23,0.78)'; roundRect(hb.x,hb.y,hb.w,hb.h,14); ctx.fill();
+      ctx.fillStyle='rgba(31,26,20,0.78)'; roundRect(hb.x,hb.y,hb.w,hb.h,14); ctx.fill();
       ctx.shadowColor='transparent';
       ctx.lineWidth=1.5; ctx.strokeStyle=m.tint; roundRect(hb.x,hb.y,hb.w,hb.h,14); ctx.stroke();
       // accent dot + emoji
