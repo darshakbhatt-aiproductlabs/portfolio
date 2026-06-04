@@ -308,13 +308,16 @@
     @media (max-width: 720px) {
       .pill {
         font-size: 11px;
-        padding: 5px 11px;
-        gap: 6px;
+        padding: 7px 16px;
+        gap: 7px;
         margin-bottom: 18px;
         flex-wrap: wrap;
         letter-spacing: -0.005em;
       }
-      .pill .dot { width: 5px; height: 5px; }
+      .pill .dot {
+        width: 5px; height: 5px;
+        box-shadow: 0 0 0 2px rgba(34,197,94,0.18);
+      }
     }
     @keyframes pulse {
       0%, 100% { box-shadow: 0 0 0 3px rgba(34,197,94,0.18); }
@@ -1238,7 +1241,7 @@
   <div class="inner">
     <div>
       <span class="pill"><span class="dot"></span> Immediate joiner · On-site Mumbai &amp; Pune · Hybrid India · Remote global</span>
-      <h1>Senior Product Leader.<br>Customer-first. AI-led. Outcome-driven.<br><span class="grad">$21M+ shipped.</span></h1>
+      <h1>Senior Product Leader.<br>Customer-first. AI-led.<br><span class="grad">$21M+ shipped.</span></h1>
       <p class="lead">10+ years pairing <strong>AI innovation</strong> with <strong>data-driven growth</strong> — building products, features, and experiences that move retention, engagement, and revenue.</p>
       <div class="hero-sectors" aria-label="Industries I've shipped products in">
         <span class="hs hl">AI / Agentic</span>
