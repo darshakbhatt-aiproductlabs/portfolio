@@ -1144,7 +1144,6 @@
 <div class="tab-bar">
   <div class="tab-bar-inner">
     <button class="tab-btn active" data-tab="overview"><svg class="tab-ico"><use href="#i-overview"/></svg> Overview</button>
-    <button class="tab-btn" data-tab="journey"><svg class="tab-ico"><use href="#i-journey"/></svg> Journey</button>
     <button class="tab-btn" data-tab="work"><svg class="tab-ico"><use href="#i-work"/></svg> Work <span class="count">18</span></button>
     <button class="tab-btn" data-tab="opensource"><svg class="tab-ico"><use href="#i-oss"/></svg> Open Source <span class="count">8</span></button>
     <button class="tab-btn" data-tab="beyond"><svg class="tab-ico"><use href="#i-beyond"/></svg> Beyond Work</button>
@@ -1163,6 +1162,31 @@
         <p>My focus today is <strong>agentic AI for product growth and customer adoption</strong>. At <strong>Jeeva (Involve.AI)</strong> I shaped strategy and shipped <strong>Outbound AI</strong> (60% adoption in a month) plus an <strong>agentic ICP engine</strong> — 100K leads and a +25% lead-to-opportunity uplift — and lifted PLG ARPU with a $450K revenue print. At <strong>Testsigma</strong>, I'm leading product for an <strong>AI-first agentic quality-intelligence</strong> platform: roadmap, user journeys, and autonomous workflows for test planning, execution, and insights.</p>
         <p>Earlier, I went <strong>0→1 twice</strong> — co-founding <strong>Viazene</strong> (women-first commerce; I left engineering in my 4th semester to build it) and <strong>SuperParent</strong> (a parenting app with a bank-backed child wallet and VC incubation). My work on technology-led innovation won the <strong>2021 Indian Achiever's Award</strong>. On the side I build in public under <strong>AI Product Labs</strong> — jira-digest, trading agents, and AI sales tooling. <strong>Due to a personal situation, I'm actively looking for roles in Mumbai</strong> — on-site or hybrid preferred, open to remote globally. Immediate joiner.</p>
       </div>
+    </div>
+
+    <div class="subsection">
+      <h3 class="sub-h">The Journey · play through 11 years</h3>
+      <p style="color:var(--text-dim);font-size:14px;margin:0 0 18px;max-width:760px;">Eleven years in one playable run — from a college dropout's first startup to AI-first product leadership. Use <kbd class="kbd">←</kbd> <kbd class="kbd">→</kbd> to walk, <kbd class="kbd">↑</kbd> / <kbd class="kbd">Space</kbd> to jump. Reach each checkpoint to unlock the story.</p>
+      <div class="journey-wrap">
+        <div class="journey-bar"><div id="journey-progress"></div></div>
+        <canvas id="journey-canvas" aria-label="Playable career-journey side-scroller"></canvas>
+        <div id="journey-hint" class="journey-hint">▶ Press <kbd class="kbd">→</kbd> to begin your journey</div>
+        <div class="journey-touch" aria-hidden="true">
+          <button id="jbtn-left" aria-label="Move left">◀</button>
+          <div class="journey-touch-right">
+            <button id="jbtn-jump" aria-label="Jump">⤒ Jump</button>
+            <button id="jbtn-right" aria-label="Move right">▶</button>
+          </div>
+        </div>
+        <div id="journey-card" class="journey-card" role="dialog" aria-live="polite">
+          <div id="journey-card-body"></div>
+          <button id="journey-card-btn" class="btn btn-primary">Continue →</button>
+        </div>
+      </div>
+      <p class="journey-foot" style="margin-top:18px;">
+        Short on time? <button class="btn btn-secondary" onclick="switchTab('work')" style="padding:6px 14px;">Skip to the work →</button>
+        &nbsp; <button class="btn btn-ghost" onclick="if(window.journeyReset)window.journeyReset()" style="padding:6px 10px;">↺ Restart</button>
+      </p>
     </div>
 
     <div class="subsection">
@@ -1262,36 +1286,6 @@
       </p>
     </div>
 
-  </div>
-</main>
-
-<!-- ═══════════════════ TAB: JOURNEY (mini-game) ═══════════════════ -->
-<main class="tab-panel" id="tab-journey" role="tabpanel">
-  <div class="inner">
-    <div class="tab-heading">
-      <h2>The <span class="grad">Journey</span>.</h2>
-      <p>Eleven years in one playable run — from a college dropout's first startup to AI-first product leadership. Use <kbd class="kbd">←</kbd> <kbd class="kbd">→</kbd> to walk, <kbd class="kbd">↑</kbd> / <kbd class="kbd">Space</kbd> to jump. Reach each checkpoint to unlock the story.</p>
-    </div>
-    <div class="journey-wrap">
-      <div class="journey-bar"><div id="journey-progress"></div></div>
-      <canvas id="journey-canvas" aria-label="Playable career-journey side-scroller"></canvas>
-      <div id="journey-hint" class="journey-hint">▶ Press <kbd class="kbd">→</kbd> to begin your journey</div>
-      <div class="journey-touch" aria-hidden="true">
-        <button id="jbtn-left" aria-label="Move left">◀</button>
-        <div class="journey-touch-right">
-          <button id="jbtn-jump" aria-label="Jump">⤒ Jump</button>
-          <button id="jbtn-right" aria-label="Move right">▶</button>
-        </div>
-      </div>
-      <div id="journey-card" class="journey-card" role="dialog" aria-live="polite">
-        <div id="journey-card-body"></div>
-        <button id="journey-card-btn" class="btn btn-primary">Continue →</button>
-      </div>
-    </div>
-    <p class="journey-foot">
-      Short on time? <button class="btn btn-secondary" onclick="switchTab('work')" style="padding:6px 14px;">Skip to the work →</button>
-      &nbsp; <button class="btn btn-ghost" onclick="if(window.journeyReset)window.journeyReset()" style="padding:6px 10px;">↺ Restart</button>
-    </p>
   </div>
 </main>
 
@@ -2242,7 +2236,7 @@
   })();
 
   /* ───────── Tabs ───────── */
-  const TABS = ['overview','journey','work','opensource','beyond','hire'];
+  const TABS = ['overview','work','opensource','beyond','hire'];
   function switchTab(name, push = true, doScroll = true) {
     if (!TABS.includes(name)) name = 'overview';
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === name));
@@ -2259,8 +2253,9 @@
         if (window.scrollY < anchorY - 4) window.scrollTo({ top: anchorY, behavior: 'smooth' });
       }
     }
-    // Start/stop the Journey mini-game only while its tab is active.
-    if (name === 'journey') { if (window.journeyStart) window.journeyStart(); }
+    // Journey game lives in the Overview tab now; keep it running only while
+    // Overview is the active tab so we don't burn cycles on hidden canvases.
+    if (name === 'overview') { if (window.journeyStart) window.journeyStart(); }
     else if (window.journeyStop) window.journeyStop();
   }
   document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -2273,6 +2268,11 @@
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   const initial = location.hash.replace('#','');
   if (initial && TABS.includes(initial) && initial !== 'overview') switchTab(initial, false, false);
+  // Overview is the default landing tab. Kick the game off so the canvas
+  // isn't a frozen frame on first paint. (switchTab handles other tabs.)
+  if (document.getElementById('tab-overview').classList.contains('active')) {
+    if (window.journeyStart) window.journeyStart();
+  }
   window.scrollTo(0, 0);
   window.addEventListener('load', () => window.scrollTo(0, 0));
 
