@@ -305,18 +305,27 @@
       animation: pulse 2.4s ease-in-out infinite;
       flex-shrink: 0;
     }
+    .pill-text { display: inline-block; }
     @media (max-width: 720px) {
       .pill {
         font-size: 11px;
-        padding: 7px 16px;
-        gap: 7px;
+        padding: 8px 16px;
+        gap: 8px;
         margin-bottom: 18px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;            /* dot stays on the row with text — never on its own line */
+        align-items: flex-start;      /* anchor dot to the top so multi-line text doesn't slide under it */
         letter-spacing: -0.005em;
       }
       .pill .dot {
         width: 5px; height: 5px;
         box-shadow: 0 0 0 2px rgba(34,197,94,0.18);
+        margin-top: 6px;              /* drop the dot to align with first-line text baseline */
+        flex-shrink: 0;
+      }
+      .pill-text {
+        flex: 1 1 auto;
+        min-width: 0;
+        line-height: 1.55;
       }
     }
     @keyframes pulse {
@@ -1240,7 +1249,7 @@
 <header class="hero">
   <div class="inner">
     <div>
-      <span class="pill"><span class="dot"></span> Immediate joiner · On-site Mumbai &amp; Pune · Hybrid India · Remote global</span>
+      <span class="pill"><span class="dot"></span><span class="pill-text">Immediate joiner · On-site Mumbai &amp; Pune · Hybrid India · Remote global</span></span>
       <h1>Senior Product Leader.<br>Customer-first. AI-led.<br><span class="grad">$21M+ shipped.</span></h1>
       <p class="lead">10+ years pairing <strong>AI innovation</strong> with <strong>data-driven growth</strong> — building products, features, and experiences that move retention, engagement, and revenue.</p>
       <div class="hero-sectors" aria-label="Industries I've shipped products in">
@@ -1250,7 +1259,7 @@
         <span class="hs">FinTech</span>
         <span class="hs">HealthTech</span>
         <span class="hs">MarTech</span>
-        <span class="hs">HRTech</span>
+        <span class="hs">Enterprise Software</span>
         <span class="hs">Blockchain / Web3</span>
       </div>
       <div class="hero-ctas">
