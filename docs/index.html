@@ -103,6 +103,10 @@
       --tab-bar-bg:  rgba(13, 17, 23, 0.92);
       --floating-bg: rgba(13, 17, 23, 0.82);
       --shadow-tint: rgba(96,165,250,0.7);
+      --tagline-bg:     linear-gradient(135deg, rgba(96,165,250,0.14), rgba(56,189,248,0.06));
+      --tagline-border: rgba(96,165,250,0.32);
+      --chip-bg:        rgba(96,165,250,0.10);
+      --chip-border:    rgba(96,165,250,0.30);
       --max-w:       1100px;
       --r-sm: 6px;
       --r-md: 10px;
@@ -133,6 +137,10 @@
       --tab-bar-bg:  rgba(248, 250, 252, 0.95);
       --floating-bg: rgba(255, 255, 255, 0.92);
       --shadow-tint: rgba(30,64,175,0.40);
+      --tagline-bg:     linear-gradient(135deg, rgba(30,64,175,0.10), rgba(37,99,235,0.05));
+      --tagline-border: rgba(30,64,175,0.32);
+      --chip-bg:        rgba(30,64,175,0.07);
+      --chip-border:    rgba(30,64,175,0.28);
     }
 
     html { scroll-behavior: smooth; }
@@ -315,8 +323,32 @@
       color: var(--text-dim);
       font-size: clamp(16px, 2vw, 19px);
       line-height: 1.6;
-      margin: 0 0 28px;
-      max-width: 560px;
+      margin: 0 0 18px;
+      max-width: 580px;
+    }
+    /* hero sector chips — sectors I've shipped across */
+    .hero-sectors {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0 0 26px;
+      max-width: 580px;
+    }
+    .hero-sectors .hs {
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--chip-bg);
+      border: 1px solid var(--chip-border);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    .hero-sectors .hs.hl {
+      background: var(--haldi-soft);
+      border-color: rgba(254,178,0,0.45);
+      color: var(--haldi);
     }
     .hero-ctas { display: flex; gap: 10px; flex-wrap: wrap; }
     .btn {
@@ -447,6 +479,63 @@
       font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
     }
     .eyebrow-wrap { text-align: center; margin-bottom: 16px; }
+
+    /* ───────── Tagline banner (Overview hero) ───────── */
+    .tagline-banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 16px;
+      padding: 18px 24px;
+      margin: 0 auto 28px;
+      max-width: 920px;
+      border: 1px solid var(--tagline-border);
+      background: var(--tagline-bg);
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.005em;
+      position: relative;
+      overflow: hidden;
+    }
+    .tagline-banner::before {
+      content: "";
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 180px; height: 180px;
+      background: radial-gradient(circle, var(--haldi-soft) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .tagline-banner > * { position: relative; z-index: 1; }
+    .tagline-banner .tb-primary {
+      font-size: 18px;
+      font-weight: 800;
+      background: var(--accent-grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.025em;
+    }
+    .tagline-banner .tb-item {
+      color: var(--text);
+    }
+    .tagline-banner .tb-item.hl {
+      color: var(--haldi);
+      font-weight: 700;
+    }
+    .tagline-banner .tb-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      opacity: 0.65;
+    }
+    @media (max-width: 720px) {
+      .tagline-banner { font-size: 13px; padding: 14px 16px; gap: 8px 12px; }
+      .tagline-banner .tb-primary { font-size: 15px; }
+      .tagline-banner .tb-dot { width: 4px; height: 4px; }
+    }
 
     /* ───────── Story ───────── */
     .story {
@@ -1122,7 +1211,19 @@
     <div>
       <span class="pill"><span class="dot"></span> Immediate joiner · On-site Mumbai &amp; Pune · Hybrid India · Remote global</span>
       <h1>Senior Product Leader.<br><span class="grad">AI-driven growth, $21M+ shipped.</span></h1>
-      <p class="lead">10+ years across eCommerce, SaaS, and health tech. I blend AI innovation with business outcomes — building products, features, and experiences that move retention, engagement, and revenue.</p>
+      <p class="lead">10+ years blending AI innovation with business outcomes — building products, features, and experiences that move retention, engagement, and revenue.</p>
+      <div class="hero-sectors" aria-label="Sectors I've shipped products in">
+        <span class="hs hl">AI / Agentic</span>
+        <span class="hs">eCommerce</span>
+        <span class="hs">SaaS / B2B</span>
+        <span class="hs">FinTech</span>
+        <span class="hs">HealthTech</span>
+        <span class="hs">MarTech</span>
+        <span class="hs">HRTech</span>
+        <span class="hs">DevTools</span>
+        <span class="hs">Blockchain / Web3</span>
+        <span class="hs">Consumer / Lifestyle</span>
+      </div>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="https://drive.google.com/file/d/1KwLeWrhVl1OWBgUsw_ROTf_l2NnBWE-N/view?usp=sharing" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> Resume · Dark</a>
         <a class="btn btn-secondary" href="https://drive.google.com/file/d/1jUy4QrRqLHxVXZr0-9nx0HzZi5tBkFmO/view?usp=sharing" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> Resume · Light</a>
@@ -1156,7 +1257,17 @@
   <div class="inner">
 
     <div class="subsection">
-      <h3 class="sub-h">Senior Product Leader · AI-Driven Adoption &amp; Growth · CRO Strategist · $21M+ Impact · AI Generalist</h3>
+      <div class="tagline-banner reveal" aria-label="Headline positioning">
+        <span class="tb-primary">Senior Product Leader</span>
+        <span class="tb-dot"></span>
+        <span class="tb-item">AI-Driven Adoption &amp; Growth</span>
+        <span class="tb-dot"></span>
+        <span class="tb-item">CRO Strategist</span>
+        <span class="tb-dot"></span>
+        <span class="tb-item hl">$21M+ Impact</span>
+        <span class="tb-dot"></span>
+        <span class="tb-item">AI Generalist</span>
+      </div>
       <div class="story reveal">
         <p>I'm a <strong>customer-centric Senior Product Manager</strong> with 10+ years building products that move retention, engagement, and revenue across B2B and B2C. At <strong>ZiniosEdge</strong>, I owned product strategy for a US-based e-commerce client (~$100M ARR), delivering <strong>$21M+ in measurable business impact</strong> over three years — through conversion-rate optimization, an <strong>AI-powered in-site search</strong> (+$4M incremental, +12% mobile conversion), a Shopify migration (+19% conversion), and subscription work that lifted CLTV <strong>40%</strong>.</p>
         <p>My focus today is <strong>agentic AI for product growth and customer adoption</strong>. At <strong>Jeeva (Involve.AI)</strong> I shaped strategy and shipped <strong>Outbound AI</strong> (60% adoption in a month) plus an <strong>agentic ICP engine</strong> — 100K leads and a +25% lead-to-opportunity uplift — and lifted PLG ARPU with a $450K revenue print. At <strong>Testsigma</strong>, I'm leading product for an <strong>AI-first agentic quality-intelligence</strong> platform: roadmap, user journeys, and autonomous workflows for test planning, execution, and insights.</p>
