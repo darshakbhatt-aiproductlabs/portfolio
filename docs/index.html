@@ -295,12 +295,26 @@
       border-radius: 999px;
       font-size: 13px; color: var(--text-dim);
       margin-bottom: 24px;
+      line-height: 1.4;
+      max-width: 100%;
     }
     .pill .dot {
       width: 6px; height: 6px; border-radius: 50%;
       background: var(--accent-green);
       box-shadow: 0 0 0 3px rgba(34,197,94,0.18);
       animation: pulse 2.4s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    @media (max-width: 720px) {
+      .pill {
+        font-size: 11px;
+        padding: 5px 11px;
+        gap: 6px;
+        margin-bottom: 18px;
+        flex-wrap: wrap;
+        letter-spacing: -0.005em;
+      }
+      .pill .dot { width: 5px; height: 5px; }
     }
     @keyframes pulse {
       0%, 100% { box-shadow: 0 0 0 3px rgba(34,197,94,0.18); }
@@ -800,8 +814,11 @@
       .final-cta { padding: 40px 22px; }
     }
     /* In the Let's Connect tab, the contact card sits flush under the
-       tab heading without the usual subsection divider line. */
-    #tab-hire .subsection:first-of-type {
+       tab heading without the usual subsection divider line. Use the
+       adjacent-sibling selector — :first-of-type misses because
+       tab-heading is also a <div>, so the first .subsection isn't
+       its parent's first <div>-child. */
+    #tab-hire .tab-heading + .subsection {
       margin-top: 0;
       padding-top: 0;
       border-top: 0;
@@ -1221,7 +1238,7 @@
   <div class="inner">
     <div>
       <span class="pill"><span class="dot"></span> Immediate joiner · On-site Mumbai &amp; Pune · Hybrid India · Remote global</span>
-      <h1>Built Around Customers. Accelerated by AI.<br><span class="grad">Measured by Outcomes — $21M+</span></h1>
+      <h1>Senior Product Leader.<br>Customer-first. AI-led. Outcome-driven.<br><span class="grad">$21M+ shipped.</span></h1>
       <p class="lead">10+ years pairing <strong>AI innovation</strong> with <strong>data-driven growth</strong> — building products, features, and experiences that move retention, engagement, and revenue.</p>
       <div class="hero-sectors" aria-label="Sectors I've shipped products in">
         <span class="hs hl">AI / Agentic</span>
