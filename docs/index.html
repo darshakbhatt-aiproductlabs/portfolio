@@ -100,6 +100,8 @@
       --accent-grad-haldi: linear-gradient(135deg, #FEB200 0%, #f472b6 100%);
       --accent-grad-warm: linear-gradient(135deg, #FEB200 0%, #f472b6 100%);
       --nav-bg:      rgba(13, 17, 23, 0.85);
+      --tab-bar-bg:  rgba(13, 17, 23, 0.92);
+      --floating-bg: rgba(13, 17, 23, 0.82);
       --shadow-tint: rgba(96,165,250,0.7);
       --max-w:       1100px;
       --r-sm: 6px;
@@ -128,6 +130,8 @@
       --accent-grad-haldi: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
       --accent-grad-warm: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
       --nav-bg:      rgba(255, 255, 255, 0.88);
+      --tab-bar-bg:  rgba(248, 250, 252, 0.95);
+      --floating-bg: rgba(255, 255, 255, 0.92);
       --shadow-tint: rgba(30,64,175,0.40);
     }
 
@@ -770,7 +774,7 @@
     /* ───────── Tab bar ───────── */
     .tab-bar {
       position: sticky; top: 66px; z-index: 45;
-      background: rgba(13,17,23,0.92);
+      background: var(--tab-bar-bg);
       backdrop-filter: saturate(180%) blur(12px);
       -webkit-backdrop-filter: saturate(180%) blur(12px);
       border-bottom: 1px solid var(--border);
@@ -854,7 +858,7 @@
     @media (max-width: 640px){ #journey-canvas { height: 340px; } }
     .journey-hint {
       position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
-      background: rgba(13,17,23,0.82); border: 1px solid var(--border);
+      background: var(--floating-bg); border: 1px solid var(--border);
       color: var(--text-dim); padding: 8px 16px; border-radius: 999px;
       font-size: 13px; pointer-events: none;
       backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
@@ -1120,8 +1124,8 @@
       <h1>Senior Product Leader.<br><span class="grad">AI-driven growth, $21M+ shipped.</span></h1>
       <p class="lead">10+ years across eCommerce, SaaS, and health tech. I blend AI innovation with business outcomes — building products, features, and experiences that move retention, engagement, and revenue.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1CN1hHVd6ivv3PoW3s5LKwRX2NPyePawc/view?usp=sharing" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> Resume · Dark</a>
-        <a class="btn btn-secondary" href="https://drive.google.com/file/d/1ZGs967V94w569Xa53mLqDVuIrFHoT_K1/view?usp=sharing" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> Resume · Light</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1KwLeWrhVl1OWBgUsw_ROTf_l2NnBWE-N/view?usp=sharing" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> Resume · Dark</a>
+        <a class="btn btn-secondary" href="https://drive.google.com/file/d/1jUy4QrRqLHxVXZr0-9nx0HzZi5tBkFmO/view?usp=sharing" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> Resume · Light</a>
         <a class="btn btn-secondary" href="https://www.linkedin.com/in/darshak-bhatt/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-linkedin"/></svg> LinkedIn</a>
         <a class="btn btn-ghost" href="https://drive.google.com/file/d/1L9ak7Mc122cenm8RX6FfFv4tZqdcmXsD/view?usp=sharing" target="_blank" rel="noopener"><svg class="ico"><use href="#i-play"/></svg> Video resume</a>
       </div>
@@ -1957,8 +1961,8 @@
       <div class="contact-row">
         <button class="copy-mail" id="copy-mail">📋 Copy email</button>
         <button class="reveal-phone" id="reveal-phone">📞 Show phone</button>
-        <a href="https://drive.google.com/file/d/1CN1hHVd6ivv3PoW3s5LKwRX2NPyePawc/view?usp=sharing" target="_blank" rel="noopener">📄 Resume · Dark</a>
-        <a href="https://drive.google.com/file/d/1ZGs967V94w569Xa53mLqDVuIrFHoT_K1/view?usp=sharing" target="_blank" rel="noopener">📄 Resume · Light</a>
+        <a href="https://drive.google.com/file/d/1KwLeWrhVl1OWBgUsw_ROTf_l2NnBWE-N/view?usp=sharing" target="_blank" rel="noopener">📄 Resume · Dark</a>
+        <a href="https://drive.google.com/file/d/1jUy4QrRqLHxVXZr0-9nx0HzZi5tBkFmO/view?usp=sharing" target="_blank" rel="noopener">📄 Resume · Light</a>
       </div>
       </div>
     </div>
@@ -2333,8 +2337,8 @@
     { label: 'Tab: Open Source (8 repos)', hint: '‹/›', action: () => switchTab('opensource') },
     { label: 'Tab: Beyond Work', hint: '🎬', action: () => switchTab('beyond') },
     { label: 'Tab: Hire Me', hint: '💼', action: () => switchTab('hire') },
-    { label: 'Open: Resume · Dark', hint: '↗', action: () => window.open('https://drive.google.com/file/d/1CN1hHVd6ivv3PoW3s5LKwRX2NPyePawc/view?usp=sharing', '_blank') },
-    { label: 'Open: Resume · Light', hint: '↗', action: () => window.open('https://drive.google.com/file/d/1ZGs967V94w569Xa53mLqDVuIrFHoT_K1/view?usp=sharing', '_blank') },
+    { label: 'Open: Resume · Dark', hint: '↗', action: () => window.open('https://drive.google.com/file/d/1KwLeWrhVl1OWBgUsw_ROTf_l2NnBWE-N/view?usp=sharing', '_blank') },
+    { label: 'Open: Resume · Light', hint: '↗', action: () => window.open('https://drive.google.com/file/d/1jUy4QrRqLHxVXZr0-9nx0HzZi5tBkFmO/view?usp=sharing', '_blank') },
     { label: 'Open: LinkedIn', hint: '↗', action: () => window.open('https://www.linkedin.com/in/darshak-bhatt/', '_blank') },
     { label: 'Open: GitHub org', hint: '↗', action: () => window.open('https://github.com/darshakbhatt-aiproductlabs', '_blank') },
     { label: 'Open: Video resume', hint: '▶', action: () => window.open('https://drive.google.com/file/d/1L9ak7Mc122cenm8RX6FfFv4tZqdcmXsD/view?usp=sharing', '_blank') },
