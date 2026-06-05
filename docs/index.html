@@ -865,6 +865,140 @@
        the top of the card (otherwise the card scrolls behind the
        chrome and Impact Receipts ends up looking like the landing). */
     #contact-card { scroll-margin-top: 130px; }
+    #cover-letter { scroll-margin-top: 130px; }
+
+    /* ───────── Cover-letter generator (Let's Connect tab) ───────── */
+    .cl-intro {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 14.5px;
+      margin: 0 auto 22px;
+      max-width: 680px;
+      line-height: 1.6;
+    }
+    .cl-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 16px;
+      max-width: 720px;
+      margin: 0 auto 24px;
+    }
+    .cl-field { display: flex; flex-direction: column; gap: 6px; }
+    .cl-field label {
+      font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--text-faint);
+    }
+    .cl-field input {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 11px 14px;
+      font-size: 14px;
+      color: var(--text);
+      font-family: inherit;
+      transition: border-color 150ms ease;
+    }
+    .cl-field input::placeholder { color: var(--text-faint); opacity: 0.7; }
+    .cl-field input:focus { outline: none; border-color: var(--accent); }
+    .cl-tone-toggle {
+      display: inline-flex;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 3px;
+      align-self: flex-start;
+    }
+    .cl-tone {
+      background: none; border: 0;
+      padding: 7px 14px;
+      font-size: 12.5px; font-weight: 600;
+      font-family: inherit;
+      color: var(--text-dim);
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 150ms ease;
+    }
+    .cl-tone.active {
+      background: var(--accent-grad);
+      color: #ffffff;
+      box-shadow: 0 2px 8px -2px var(--shadow-tint);
+    }
+    [data-theme="light"] .cl-tone.active { color: #ffffff; }
+    #cl-generate {
+      grid-column: 2 / 3;
+      align-self: end;
+      justify-content: center;
+      padding: 11px 22px;
+      font-size: 14px;
+    }
+    .cl-output-wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+      overflow: hidden;
+      box-shadow: 0 18px 36px -22px var(--shadow-tint);
+    }
+    .cl-output-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 18px;
+      background: var(--surface-2);
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .cl-output-meta {
+      font-size: 12px;
+      color: var(--text-faint);
+      font-family: "SF Mono", Menlo, monospace;
+    }
+    .cl-output-actions { display: flex; gap: 8px; }
+    .cl-output-actions button {
+      padding: 6px 12px;
+      font-size: 12.5px;
+      font-weight: 600;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: border-color 150ms ease, color 150ms ease;
+    }
+    .cl-output-actions button:hover { border-color: var(--accent); color: var(--accent); }
+    .cl-output {
+      margin: 0;
+      padding: 28px 32px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Iowan Old Style", "Charter", Georgia, "Times New Roman", serif;
+      font-size: 14.5px;
+      line-height: 1.7;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      min-height: 200px;
+      outline: none;
+    }
+    .cl-output:focus { background: linear-gradient(180deg, var(--bg), rgba(96,165,250,0.04)); }
+    .cl-output-hint {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-faint);
+      font-style: italic;
+      margin: 0;
+      padding: 10px 14px 14px;
+      background: var(--surface);
+    }
+    @media (max-width: 720px) {
+      .cl-form { grid-template-columns: 1fr; }
+      #cl-generate { grid-column: 1 / -1; align-self: stretch; }
+      .cl-output { padding: 22px 18px; font-size: 13.5px; }
+      .cl-output-toolbar { padding: 10px 14px; }
+    }
     .final-cta h2 { margin-top: 0; }
     .final-cta p { color: var(--text-dim); margin-bottom: 28px; }
     .final-cta .contact-row {
@@ -1961,6 +2095,40 @@
       </div>
     </div>
 
+    <div class="subsection" id="cover-letter">
+      <h3 class="sub-h">Generate a tailored cover letter</h3>
+      <p class="cl-intro">Type the company and role — I'll draft a cover letter grounded in this portfolio's actual proof points. Pick a tone, tweak inline, then copy or download. <b>Runs entirely in your browser</b> — nothing is sent to any server.</p>
+      <div class="cl-form">
+        <div class="cl-field">
+          <label for="cl-company">Company</label>
+          <input id="cl-company" type="text" placeholder="e.g. Stripe" autocomplete="off">
+        </div>
+        <div class="cl-field">
+          <label for="cl-title">Role / Job title</label>
+          <input id="cl-title" type="text" placeholder="e.g. Senior AI Product Manager" autocomplete="off">
+        </div>
+        <div class="cl-field">
+          <label>Tone</label>
+          <div class="cl-tone-toggle" role="radiogroup" aria-label="Cover letter tone">
+            <button type="button" class="cl-tone active" data-tone="formal" role="radio" aria-checked="true">Formal</button>
+            <button type="button" class="cl-tone" data-tone="conversational" role="radio" aria-checked="false">Conversational</button>
+          </div>
+        </div>
+        <button id="cl-generate" class="btn btn-primary" type="button">✍ Generate</button>
+      </div>
+      <div class="cl-output-wrap" id="cl-output-wrap" hidden>
+        <div class="cl-output-toolbar">
+          <div class="cl-output-meta" id="cl-output-meta">—</div>
+          <div class="cl-output-actions">
+            <button id="cl-copy" type="button">📋 Copy</button>
+            <button id="cl-download" type="button">⬇ Download .txt</button>
+          </div>
+        </div>
+        <pre class="cl-output" id="cl-output" contenteditable="true" spellcheck="false"></pre>
+        <p class="cl-output-hint">Editable in place — click anywhere in the draft to tweak before copying.</p>
+      </div>
+    </div>
+
     <div class="subsection">
       <h3 class="sub-h">Impact receipts · numbers, not narratives</h3>
       <div class="receipts-grid">
@@ -2538,6 +2706,14 @@
     { label: 'Tab: Open Source (8 repos)', hint: '‹/›', action: () => switchTab('opensource') },
     { label: 'Tab: Beyond Work', hint: '🎬', action: () => switchTab('beyond') },
     { label: "Tab: Let's Connect", hint: '💼', action: () => switchTab('hire') },
+    { label: 'Generate cover letter for a role', hint: '✍', action: () => {
+        switchTab('hire');
+        setTimeout(() => {
+          const sec = document.getElementById('cover-letter');
+          if (sec) sec.scrollIntoView({behavior: 'smooth', block: 'start'});
+          document.getElementById('cl-company')?.focus();
+        }, 220);
+      } },
     { label: 'Open: Resume · Dark', hint: '↗', action: () => window.open('https://drive.google.com/file/d/1KwLeWrhVl1OWBgUsw_ROTf_l2NnBWE-N/view?usp=sharing', '_blank') },
     { label: 'Open: Resume · Light', hint: '↗', action: () => window.open('https://drive.google.com/file/d/1jUy4QrRqLHxVXZr0-9nx0HzZi5tBkFmO/view?usp=sharing', '_blank') },
     { label: 'Open: LinkedIn', hint: '↗', action: () => window.open('https://www.linkedin.com/in/darshak-bhatt/', '_blank') },
@@ -2589,6 +2765,167 @@
     const item = paletteResults._matches[parseInt(li.dataset.idx, 10)];
     if (item) { closePalette(); item.action(); }
   });
+
+  /* ───────── Cover-letter generator ─────────
+     Pure client-side. Detects role-keywords in the title and assembles
+     a tailored draft from a paragraph library grounded in the actual
+     portfolio. Nothing is sent to any server. */
+  const CL = {
+    KW: {
+      ai:         ['ai','agentic','llm','gpt','ml ',' ml','machine learning','automation','agent','genai','rag'],
+      growth:     ['growth','cro','conversion','retention','plg','product-led','product led','activation','funnel'],
+      founder:    ['founding','0->1','0-1','0 to 1','mvp','early-stage','early stage','seed','founder','startup'],
+      senior:     ['senior','principal','lead','head','director','vp','vice president','chief','staff'],
+      enterprise: ['enterprise','b2b','saas','platform'],
+      consumer:   ['consumer','b2c','ecommerce','e-commerce','retail','shop','d2c','marketplace'],
+      fintech:    ['fintech','finance','trading','payments','bank','banking','wealth'],
+      health:     ['health','medical','wellness','fitness','patient','clinical'],
+      hr:         ['hr ',' hr','hiring','talent','recruit','workforce','people ops'],
+      data:       ['data','analytics','insight','metrics','observability']
+    },
+    detect(title) {
+      const t = ' ' + title.toLowerCase() + ' ';
+      return Object.entries(this.KW).filter(([k, kws]) => kws.some(w => t.includes(w))).map(([k]) => k);
+    },
+    P: {
+      opening: {
+        formal: (c,t) => `Dear Hiring Team at ${c},\n\nI'm writing to express my strong interest in the ${t} role. As a Senior Product Leader with 10+ years across B2B and B2C — including $21M+ in measurable business impact and a recent shift into agentic AI — I believe my background maps directly to what you're building.`,
+        conversational: (c,t) => `Hi ${c} team,\n\nI'd love to be considered for the ${t} role. Quick context — I've spent the last decade building products that move retention, engagement, and revenue. $21M+ shipped, two ventures founded, now deep into agentic AI. Customer outcomes accelerated by AI is where I do my best work.`
+      },
+      ai: {
+        formal: (c) => `My current focus is applied AI. At Testsigma I led product strategy for an AI-first agentic quality-intelligence platform — shaping roadmap, user journeys, and workflows for autonomous test planning, execution, and insights. Before that, at Jeeva (Involve.AI), I launched Outbound AI to 60% adoption in one month and built an agentic ICP engine that generated 100,000 leads in two months with a +25% lead-to-opportunity uplift and $450,000 in booked revenue. The pattern that maps to ${c}: I treat AI as a substrate for shipped outcomes, not a separate "AI strategy" stream.`,
+        conversational: (c) => `My current focus is agentic AI. At Jeeva (Involve.AI) I shipped Outbound AI and an agentic ICP engine — 60% adoption in a month, 100K leads, +25% L2O, $450K booked. At Testsigma I led product on an AI-first quality-intelligence platform with autonomous test planning. The lesson that's worked: treat AI as a substrate for shipped product outcomes, not a separate "AI strategy" stream. That mindset travels well into what ${c} is building.`
+      },
+      growth: {
+        formal: (c) => `On the growth and CRO side, my anchor proof is ZiniosEdge: I owned product strategy for a US-based eCommerce client (~$100M ARR) and delivered $21M+ in measurable business impact over three years — through data-driven growth experiments, conversion-rate optimization, an AI-powered in-site search that produced +$4M incremental revenue and a +12% mobile conversion lift, a Shopify migration that delivered a +19% conversion uplift, and subscription work that lifted CLTV by 40%. For ${c}, I'd bring the same hypothesis-driven discipline at scale.`,
+        conversational: (c) => `Growth/CRO proof: three years at ZiniosEdge owning product for a US-based eCommerce client (~$100M ARR), compounding into $21M+ in revenue. Biggest unlocks — AI-powered in-site search (+$4M, +12% mobile conv.), Shopify migration (+19% conv.), subscription work (+40% CLTV). I'd bring the same data-driven cadence to ${c}.`
+      },
+      founder: {
+        formal: (c) => `I've also gone 0→1 twice — co-founding Viazene, a women-first lifestyle commerce app I left engineering in my fourth semester to build, and SuperParent, a parenting platform that secured a bank partnership for an in-app child wallet (36% subscription rate) and VC incubation. My earlier work on technology-led innovation at Vrozart won the 2021 Indian Achiever's Award from the Government of India's Startup Initiative. For ${c}, that translates to the discipline of shipping under constraint and the ability to define a product from a blank page.`,
+        conversational: (c) => `0→1 chops if relevant: I founded Viazene (women-first commerce — left engineering in my 4th semester to build it) and co-founded SuperParent (bank-backed child wallet, 36% subscription, VC incubation). Earlier work on tech-led innovation at Vrozart won the 2021 Indian Achiever's Award. If ${c} needs someone who can define a product from nothing and ship under constraint, that's been the pattern.`
+      },
+      senior: {
+        formal: (c) => `Across my senior-PM range, I've owned product strategy and execution for products serving both small early-stage teams and enterprise clients with hundred-million-dollar ARRs. I'm comfortable operating across the IC-to-leadership spectrum and would bring that range to ${c}.`,
+        conversational: (c) => `Senior-PM altitude: I've owned $100M-ARR-client roadmaps and I've been the only PM at seed-stage ventures. ${c} can dial the altitude up or down — strategy, execution, hands-on, all on the table.`
+      },
+      enterprise: {
+        formal: (c) => `On the enterprise side, I've operated end-to-end with stakeholders ranging from a US-based legacy eCommerce client (~$100M ARR) at ZiniosEdge to Testsigma's enterprise quality-intelligence customers, where I cleared a 110+ bug Jira backlog using SLA-driven prioritization and stood up an executive dashboard for real-time stakeholder visibility. The enterprise rhythm of long cycles and layered approvals is familiar territory.`,
+        conversational: (c) => `Enterprise rhythm: $100M-ARR eCommerce client at ZiniosEdge and Testsigma's enterprise QI customers. Cleared a 110+ bug Jira backlog with SLA-driven prioritization, stood up an exec dashboard. Long cycles and stakeholder management don't intimidate me.`
+      },
+      consumer: {
+        formal: (c) => `My B2C and eCommerce track record spans Viazene (the women-first lifestyle commerce app I founded), a US-based eCommerce client (~$100M ARR) at ZiniosEdge where I delivered $21M+ in revenue, and Chitta Dhyana — a Shopify D2C store I own end-to-end across catalog, checkout, and growth. Obsessing over micro-conversion moments is core to how I think.`,
+        conversational: (c) => `Consumer/B2C track record: founded Viazene (women-first commerce), drove $21M+ at a $100M-ARR US eCommerce client at ZiniosEdge, and run Chitta Dhyana (Shopify D2C, end-to-end). I obsess over the micro-conversion moments.`
+      },
+      fintech: {
+        formal: (c) => `My fintech exposure includes Dhani Services (Indiabulls Group), where I owned the B2B onboarding roadmap and delivered a UX redesign that produced a +15% conversion uplift and a 30% bounce-rate reduction. I also hold the NSE Certified Market Professional Level-3 (NISM) and build algorithmic trading workflows in my own time (Intraday ORB Trading Agent).`,
+        conversational: (c) => `Fintech background: B2B onboarding roadmap at Dhani Services (Indiabulls Group), +15% conversion, −30% bounce. NSE Certified Market Professional Level-3. I also build algorithmic trading agents on the side (Intraday ORB).`
+      },
+      health: {
+        formal: (c) => `On the healthtech side, I co-founded SuperParent — a technology-enabled parenting platform that secured a bank partnership for an in-app child wallet and VC incubation — and worked at Vrozart Health, growing services revenue by $110K in 6 months. Healthtech's trust-heavy environment is something I've shipped in.`,
+        conversational: (c) => `Healthtech: co-founded SuperParent (parenting platform with bank partnership + VC incubation) and ran product at Vrozart Health (+$110K services revenue in 6 months). I know the trust-and-regulation pressure of the space.`
+      },
+      hr: {
+        formal: (c) => `For HR-tech specifically: I built HiringFlow, a B2B HR-tech web app with AI-assisted job posting, bias-elimination scoring, and an AI interview pipeline with bulk actions. The product is live and demonstrates my view of how AI should reduce — not amplify — bias in hiring decisions.`,
+        conversational: (c) => `HR-tech: I built HiringFlow — a B2B HR-tech app with AI job posting, bias-elimination scoring, and an AI interview pipeline with bulk actions. Live, shippable. I have a thesis on how AI should reduce bias in hiring, not amplify it.`
+      },
+      data: {
+        formal: (c) => `My data discipline is core to how I work: at ZiniosEdge, I owned KPI/OKR tracking and cut tracking delta by 30%, which improved hypothesis-driven experimentation throughput by 40%. I drive decisions with PostHog, Datadog, Grafana, Mixpanel, and GA, not with anecdotes.`,
+        conversational: (c) => `Data discipline: at ZiniosEdge I cut tracking delta 30%, lifted experimentation throughput 40%. My stack — PostHog, Datadog, Grafana, Mixpanel, GA. Decisions over anecdotes.`
+      },
+      closing: {
+        formal: (c,t) => `I'm an immediate joiner. Due to a personal situation, I'm currently focused on roles in Mumbai — on-site or hybrid preferred, with full openness to remote globally. My portfolio (darshakbhatt-aiproductlabs.github.io/portfolio) and references are available at your convenience. I'd welcome the chance to discuss how the ${t} role at ${c} aligns with my experience.\n\nThank you for your time and consideration.\n\nWarm regards,\nDarshak Bhatt\ndarshakbhatt94@gmail.com · +91-8433 655 561`,
+        conversational: (c,t) => `One last thing — I'm an immediate joiner. Due to a personal situation, I'm focused on Mumbai (on-site or hybrid), but open to remote globally. Portfolio's at darshakbhatt-aiproductlabs.github.io/portfolio. Happy to dig in on whether the ${t} role at ${c} is the right next chapter.\n\nLooking forward,\nDarshak Bhatt\ndarshakbhatt94@gmail.com · +91-8433 655 561`
+      }
+    },
+    PRIORITY: ['ai','growth','founder','enterprise','consumer','fintech','health','hr','data','senior'],
+    generate(company, title, tone) {
+      const c = (company || '').trim() || 'your team';
+      const t = (title || '').trim() || 'Product Manager';
+      const cats = this.detect(t);
+      const ranked = this.PRIORITY.filter(k => cats.includes(k));
+      let pick = ranked.length >= 2 ? ranked.slice(0,2) : (ranked.length === 1 ? [ranked[0], ranked[0] === 'growth' ? 'ai' : 'growth'] : ['ai','growth']);
+      pick = [...new Set(pick)].slice(0,2);
+      const opening = this.P.opening[tone](c, t);
+      const proofs  = pick.map(k => this.P[k]?.[tone]?.(c)).filter(Boolean);
+      const closing = this.P.closing[tone](c, t);
+      return [opening, ...proofs, closing].join('\n\n');
+    }
+  };
+
+  (function () {
+    const companyInput = document.getElementById('cl-company');
+    const titleInput   = document.getElementById('cl-title');
+    const genBtn       = document.getElementById('cl-generate');
+    const output       = document.getElementById('cl-output');
+    const outputWrap   = document.getElementById('cl-output-wrap');
+    const metaEl       = document.getElementById('cl-output-meta');
+    const copyBtn      = document.getElementById('cl-copy');
+    const dlBtn        = document.getElementById('cl-download');
+    if (!genBtn) return;
+
+    let tone = 'formal';
+    let lastDraft = '';
+
+    document.querySelectorAll('.cl-tone').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.cl-tone').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-checked','false'); });
+        btn.classList.add('active');
+        btn.setAttribute('aria-checked','true');
+        tone = btn.dataset.tone;
+        if (lastDraft && (companyInput.value || titleInput.value)) doGenerate(false);
+      });
+    });
+
+    function doGenerate(scroll = true) {
+      const text = CL.generate(companyInput.value, titleInput.value, tone);
+      output.textContent = text;
+      lastDraft = text;
+      outputWrap.hidden = false;
+      const words = text.split(/\s+/).filter(Boolean).length;
+      metaEl.textContent = `${words} words · ${tone}`;
+      if (scroll) outputWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    genBtn.addEventListener('click', () => doGenerate(true));
+    [companyInput, titleInput].forEach(inp => {
+      inp.addEventListener('keydown', e => {
+        if (e.key === 'Enter') { e.preventDefault(); doGenerate(true); }
+      });
+    });
+
+    copyBtn.addEventListener('click', async () => {
+      const text = output.innerText;
+      const orig = copyBtn.textContent;
+      try {
+        await navigator.clipboard.writeText(text);
+        copyBtn.textContent = '✓ Copied';
+      } catch (e) {
+        const range = document.createRange();
+        range.selectNodeContents(output);
+        const sel = window.getSelection();
+        sel.removeAllRanges(); sel.addRange(range);
+        try { document.execCommand('copy'); copyBtn.textContent = '✓ Copied'; }
+        catch (_) { copyBtn.textContent = 'Copy failed'; }
+        sel.removeAllRanges();
+      }
+      setTimeout(() => { copyBtn.textContent = orig; }, 1800);
+    });
+
+    dlBtn.addEventListener('click', () => {
+      const text = output.innerText;
+      const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+      const url  = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      const co   = (companyInput.value || 'Company').replace(/[^A-Za-z0-9]+/g, '_').replace(/^_|_$/g, '');
+      const ti   = (titleInput.value   || 'Role'   ).replace(/[^A-Za-z0-9]+/g, '_').replace(/^_|_$/g, '');
+      a.href = url;
+      a.download = `Cover_Letter_${co}_${ti}.txt`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  })();
 
   // ───────── theme toggle ─────────
   (function () {
