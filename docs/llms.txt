@@ -8,10 +8,11 @@
 
 - Name: Darshak Bhatt
 - Title: Senior Product Manager
-- Tagline: AI-Driven Growth & CRO · $21M+ in Business Impact · Agentic-AI Product Manager
-- Years of experience: 10+ total in product (founder + operator)
-- Current role: Senior Product Manager at Testsigma Technologies (Bengaluru), since March 2026
-- Location preference: Relocating closer to family in the Mumbai region. Open to — On-site: Mumbai. Hybrid: Mumbai, Navi Mumbai, Pune, Bengaluru. Remote: anywhere, globally.
+- Positioning: Built Around Customers. Accelerated by AI. Measured by Outcomes — $21M+
+- Tagline: Senior Product Leader · AI-Driven Adoption · Data-Driven Growth · CRO Strategist · $21M+ Impact · AI Generalist
+- Years of experience: 10+ total in product (founder + senior PM)
+- Most recent role: Senior Product Manager at Testsigma Technologies (Bengaluru), Mar 2026 – Jun 2026
+- Location situation: Due to a personal situation, actively looking for a role in Mumbai. Open to — On-site: Mumbai. Hybrid: Mumbai, Navi Mumbai, Pune, Bengaluru. Remote: anywhere, globally.
 - Notice period: 15 days (effectively immediate joiner)
 - Languages: English (fluent), Hindi (native), Gujarati (native)
 
@@ -22,93 +23,95 @@
 - LinkedIn: https://www.linkedin.com/in/darshak-bhatt/
 - GitHub: https://github.com/darshakbhatt-aiproductlabs
 - YouTube (Trader's Terminal): https://www.youtube.com/@TradersTerminal
-- Resume (PDF): https://media.journoportfolio.com/users/327690/uploads/64022180-ce94-42d9-b754-ee676dbd2d6a.pdf
+- Resume (Dark): https://drive.google.com/file/d/1KwLeWrhVl1OWBgUsw_ROTf_l2NnBWE-N/view?usp=sharing
+- Resume (Light): https://drive.google.com/file/d/1jUy4QrRqLHxVXZr0-9nx0HzZi5tBkFmO/view?usp=sharing
 - Video resume: https://drive.google.com/file/d/1L9ak7Mc122cenm8RX6FfFv4tZqdcmXsD/view?usp=sharing
 - Portfolio site (this): https://darshakbhatt-aiproductlabs.github.io/portfolio/
 
 ## Headline outcomes (the case for the hire)
 
-- **$21M+ in revenue impact** at ZiniosEdge for a US-based e-commerce client (~$100M ARR), via CRO, AI-powered in-site search (+$4M incremental, +12% mobile conversion), a Shopify migration (+19% conversion), and subscription work (+40% CLTV).
-- **Agentic AI, shipped:** at Jeeva (Involve.AI) launched Outbound AI (60% adoption in a month) and an agentic ICP engine (100K leads, +25% lead-to-opportunity, $450K booked revenue); now at Testsigma shaping an AI-first agentic quality-intelligence platform.
+- **$21M+ in revenue impact** at ZiniosEdge for a US-based e-commerce client (~$100M ARR), via data-driven growth experiments, CRO, AI-powered in-site search (+$4M incremental, +12% mobile conversion), a Shopify migration (+19% conversion), and subscription work (+40% CLTV).
+- **Agentic AI, shipped:** at Jeeva (Involve.AI) launched Outbound AI (60% adoption in a month) and an agentic ICP engine (100K leads, +25% lead-to-opportunity, $450K booked revenue); at Testsigma led product for an AI-first agentic quality-intelligence platform.
 - **Two-time founder** — Viazene (women-first commerce; "Make My Match" 78% acceptance, $10K angel) and SuperParent (bank-backed child wallet, 36% subscription, VC incubation).
 - **Indian Achiever's Award (2021)** — Govt. of India Startup Initiative, for technology-led innovation at Vrozart.
-- **Credentials:** Vanderbilt Agentic AI & AI Agents; Duke ML Foundations for PMs; 4× Google Professional Certificates; Google Analytics; NSE Certified Market Professional Level 3.
+- **Credentials:** Vanderbilt Agentic AI & AI Agents; Duke ML Foundations for PMs; 4× Google Professional Certificates (Data Analytics, Digital Marketing & E-commerce, UX Design, Project Management); Monetate Platform Foundation; NSE Certified Market Professional — Level 3 (NISM).
 
 ## Roles (most recent first)
 
-- Senior Product Manager — Testsigma Technologies, Bengaluru (Mar 2026–present) — AI-first agentic quality-intelligence platform; no-code recorders; cleared 110+ bug backlog with SLA prioritization.
-- Senior AI Product Manager (freelance) — Jeeva/Involve.AI, Pune (Oct 2025–Jan 2026) — Outbound AI, agentic ICP engine, $450K booked.
-- Senior Product Manager — ZiniosEdge, Bengaluru (May 2022–Oct 2025) — $21M+ revenue for a US e-commerce client (~$100M ARR).
-- Product Manager — Dhani Services/Indiabulls, Mumbai (Jan–May 2022) — UX redesign +15% conversion.
-- Product Manager — Vrozart, Gurgaon (Dec 2020–Jan 2022) — $100K seed raised; Indian Achiever's Award 2021.
-- Co-founder (Product) — SuperParent/Inversa, Bengaluru (Mar 2019–Dec 2020) — concept→launch, VC incubation.
-- Product Marketing Manager — Auxesis, Mumbai (Sep 2018–Mar 2019) — blockchain; 45K ICO community.
-- Associate Product Marketing Manager — Comezzo, Bengaluru (Aug 2017–Sep 2018) — Towards.AI, $2M partnerships.
-- Co-founder — Viazene LLP, Mumbai (Mar 2015–Jun 2017) — first venture; left engineering to build it.
+- Senior Product Manager — Testsigma Technologies, Bengaluru (Mar 2026 – Jun 2026) — AI-first agentic quality-intelligence platform; no-code Element/Step Recorders for Windows; cleared 110+ bug backlog with SLA prioritization and an executive dashboard.
+- Senior AI Product Manager (freelance consultant) — Jeeva / Involve.AI, Pune (Oct 2025 – Jan 2026) — Outbound AI, agentic ICP engine, $450K booked, Data Integrity & Idempotency framework.
+- Senior Product Manager — ZiniosEdge, Bengaluru (May 2022 – Oct 2025) — $21M+ revenue for a US-based e-commerce client (~$100M ARR).
+- Product Manager — Dhani Services / Indiabulls, Mumbai (Jan – May 2022) — UX redesign +15% conversion, −30% bounce; B2B onboarding; GTM (14% CTR pilot).
+- Product Manager — Vrozart, Gurgaon (Dec 2020 – Jan 2022) — $100K seed raised; Indian Achiever's Award 2021.
+- Co-founder (Product) — SuperParent / Inversa Technosoft, Bengaluru (Mar 2019 – Dec 2020) — concept→launch, bank partnership, VC incubation.
+- Product Marketing Manager — Auxesis, Mumbai (Sep 2018 – Mar 2019) — blockchain; 45K ICO community; +24% activation.
+- Associate Product Marketing Manager — Comezzo, Bengaluru (Aug 2017 – Sep 2018) — Towards.AI, $2M partnerships, 140%+ ROI on influencer campaigns.
+- Co-founder — Viazene LLP, Mumbai (Mar 2015 – Jun 2017) — first venture; left engineering in the 4th semester to build it.
 
 ## What I do (positioning)
 
-I'm a Senior Product Manager who blends AI innovation with business goals. I treat AI as a substrate for shipped product outcomes — search, personalization, CRO, agentic automation, AI-assisted workflows — not a separate "AI strategy" stream. My work spans product strategy, roadmap ownership, analytics, and go-to-market across B2B and B2C.
+I'm a customer-centric, data-driven Senior Product Manager who blends AI innovation with business goals. I treat AI as a substrate for shipped product outcomes — search, personalization, CRO, agentic automation, AI-assisted workflows — not a separate "AI strategy" stream. My work spans product strategy, roadmap ownership, analytics, and go-to-market across B2B and B2C.
 
-I have founder mileage (0→1 twice) and operator mileage (senior PM driving $21M+ impact, now building agentic-AI products). I bring both.
+I have founder mileage (0→1 twice) and senior PM mileage (driving $21M+ impact, shaping agentic-AI platforms). I bring both, and I'm open to seed-stage, growth, or enterprise — what matters is the product, the problem, and the team, not the company size.
 
 ## Domains of expertise
 
 - Product Strategy & Roadmap Ownership
-- AI Product Management & Applied AI (LLMs, agents, search, personalization)
-- Conversion Rate Optimization (CRO)
+- AI Product Management & Applied AI (LLMs, agents, search, personalization, RAG, evals, observability)
+- Data-Driven Growth & Conversion Rate Optimization (CRO)
 - Product-Led Growth (PLG)
 - Go-to-Market Execution
-- Analytics & Data-Driven Decision Making
+- Analytics & Data-Driven Decision Making (OKRs, KPIs, cohorts, funnels, dashboards)
 - Cross-Functional Leadership
-- Agentic Automation / Workflow automation (n8n, Make.com)
+- Agentic Automation / Workflow automation (n8n, Make.com, LangChain)
 - 0→1 / founder operations (research, fundraising, MVP, GTM)
 
 ## Industries
 
-- eCommerce (US, India)
+- AI / Agentic (current focus)
+- eCommerce / Consumer B2C
 - SaaS / B2B
-- Health tech
-- EdTech (LearninGPT)
-- HR tech (HiringFlow)
-- Fintech / Trading (Intraday ORB strategy)
-- Conscious living / wellness (ChittaDhyana, AstroPA)
-- AI tooling for PMs (jira-digest)
+- FinTech
+- HealthTech
+- MarTech
+- Enterprise Software
+- Blockchain / Web3
 
 ## Selected work (with outcomes and links)
 
 ### Intraday ORB Trading Agent (2025)
 Algorithmic Opening Range Breakout intraday trading agent. n8n workflow triggered on a Google Sheets cell, fetches Upstox v3 candles, scores breakouts against ADX + RSI + Bollinger squeeze + volume filters before placing orders. Frontend in Lovable.
-- Strategy explainer: https://darshakbhatt-aiproductlabs.github.io/intraday-orb-strategy-db/
+Note: the live UI triggers an n8n workflow that is currently disabled to prevent misuse — to evaluate the UI, clear the webhook URL in Live → Settings.
+- Walkthrough: https://darshakbhatt-aiproductlabs.github.io/intraday-orb-strategy-db/
 - Live app: https://intraday-orb-strategy-db.lovable.app
 - Demo: https://youtu.be/4ZS6SnbiF1s
-- Code + workflow: https://github.com/darshakbhatt-aiproductlabs/intraday-orb-strategy-db
+- Code: https://github.com/darshakbhatt-aiproductlabs/intraday-orb-strategy-db
 
 ### Peer & Competitor Monitor (open source, 2025)
-Two n8n workflows that watch a list of competitor and peer URLs on a schedule. v1 (Competitor Audit) scores changes 1-10 via GPT-4 and routes critical ones (≥8) to Gmail + Discord. v2 (Peer Monitoring) uses MD5 hashing of normalized HTML for cheap deterministic diffing. Same alerting surface.
-- Microsite: https://darshakbhatt-aiproductlabs.github.io/peer-competitor-monitor/
-- Repo: https://github.com/darshakbhatt-aiproductlabs/peer-competitor-monitor
+Two n8n workflows that watch a list of competitor and peer URLs on a schedule. v1 (Competitor Audit) scores changes 1-10 via GPT-4 and routes critical ones (≥8) to Gmail + Discord. v2 (Peer Monitoring) uses MD5 hashing of normalized HTML for cheap deterministic diffing.
+- Walkthrough: https://darshakbhatt-aiproductlabs.github.io/peer-competitor-monitor/
+- Code: https://github.com/darshakbhatt-aiproductlabs/peer-competitor-monitor
 - Stack: n8n, Google Sheets, GPT-4 (v1), MD5 hashing (v2), Gmail, Discord webhooks.
 
 ### Prospect Research Agent (open source, 2025)
 Two-agent n8n + LangChain chain. Trigger is a chat message (or Calendly event). Agent 1 (GPT-4o) researches the prospect via Perplexity Sonar Pro + Google + LinkedIn scraping. Agent 2 (chatgpt-4o-latest) produces a 10-section psychological sales profile that's emailed to the configured recipient. ~60s end-to-end.
-- Microsite: https://darshakbhatt-aiproductlabs.github.io/prospect-research-agent/
-- Repo: https://github.com/darshakbhatt-aiproductlabs/prospect-research-agent
+- Walkthrough: https://darshakbhatt-aiproductlabs.github.io/prospect-research-agent/
+- Code: https://github.com/darshakbhatt-aiproductlabs/prospect-research-agent
 - Stack: n8n, LangChain, GPT-4o, Perplexity Sonar Pro, LinkedIn scraping, Gmail.
 
 ### jira-digest (open source)
 Daily Jira summary tool delivered to email, Slack, or Teams. One YAML, any company. AI-onboarded setup via Claude Code / Codex / Cursor — no YAML hand-writing required.
-- Landing: https://darshakbhatt-aiproductlabs.github.io/jira-digest/
-- Repo: https://github.com/darshakbhatt-aiproductlabs/jira-digest
+- Walkthrough: https://darshakbhatt-aiproductlabs.github.io/jira-digest/
+- Code: https://github.com/darshakbhatt-aiproductlabs/jira-digest
 - Stack: Python 3.11, GitHub Actions, Jira REST API.
 
 ### Google Flow App — Vision Concept
 19-screen interactive PRD and 5 click-through prototypes for a NotebookLM-powered video workflow. Includes competitive audit of 7 peers and a standalone pricing model.
-- Live: https://darshakbhatt-aiproductlabs.github.io/google-flow-app-redesign
-- Repo: https://github.com/darshakbhatt-aiproductlabs/google-flow-app-redesign
+- Walkthrough: https://darshakbhatt-aiproductlabs.github.io/google-flow-app-redesign
+- Code: https://github.com/darshakbhatt-aiproductlabs/google-flow-app-redesign
 
 ### HiringFlow
-B2B HR-tech webapp: AI-assisted job posting, bias-elimination scoring, AI interview pipeline with bulk actions. Full webapp built in Lovable.
+B2B HR-tech webapp: AI-assisted job posting, bias-elimination scoring, AI interview pipeline with bulk actions. Built end-to-end in Lovable.
 - Live: https://hireflow-sparkle-showcase.lovable.app
 - Demo: https://youtu.be/xCkJ6HJojGM
 - Code: https://github.com/darshakbhatt-aiproductlabs/hrtech
@@ -118,44 +121,51 @@ AI-driven content pipeline: Google Sheets → Make.com → GPT (copy) → DALL·
 - Demo: https://youtu.be/A8aFxUURfHY
 
 ### LearninGPT
-Conversational upskilling platform with add-on services like job search. Includes Mini-PRD with JTBD framing and user research.
-- Mini PRD: https://docs.google.com/document/d/1f5LnK3JIFVSqqLDorTDQnVvaRfhYeIlkUZaioikthXY/edit?usp=sharing
-- Short: https://youtube.com/shorts/RN4lhdyGqDM
+Conversational upskilling platform with add-on services like job search. Mini-PRD with JTBD framing and user research. Built in Lovable.
+- Walkthrough (Mini PRD): https://docs.google.com/document/d/1f5LnK3JIFVSqqLDorTDQnVvaRfhYeIlkUZaioikthXY/edit?usp=sharing
+- Demo: https://youtube.com/shorts/RN4lhdyGqDM
 - Code: https://github.com/darshakbhatt-aiproductlabs/conversationalAI-edtech
 
 ### ChittaDhyana & AstroPA
 Conscious-living platform — astrology, e-pujas, yatra services. AstroPA is the experimental AI/LLM-powered astrology assistant frontend, decoupled from workflow + LLM logic.
-- Website: https://chittadhyana.com/
-- AstroPA UI: https://github.com/darshakbhatt-aiproductlabs/astropa-ui
+- Live: https://chittadhyana.com/
+- Code (AstroPA UI): https://github.com/darshakbhatt-aiproductlabs/astropa-ui
 
 ### SuperParent (co-founder)
 Technology-enabled parenting platform for teenage child-rearing. Seed funding raised and VC incubation secured.
-- Intro deck: https://media.journoportfolio.com/users/327690/uploads/90e67903-0956-4c51-a59a-5a9d5fd40d73.pdf
+- Deck: https://drive.google.com/file/d/11SjKEFBBxMq4InEzYFS4JsnR3rW3EvXh/view?usp=sharing
+- App Install Guide: https://drive.google.com/file/d/1K-pcVzKC5gxXFdrtFfvPpTiGKXRdxrYA/view?usp=sharing
 
 ### Viazene (co-founder)
-Earlier 0→1 venture, also secured seed funding.
+First 0→1 venture — women-first lifestyle commerce. Shipped "Make My Match" recommendation engine (78% acceptance), secured $10K angel. The startup I left engineering in my 4th semester to build.
 
 ### CliQUE — Housewife Community
 Community platform connecting housewives with learning resources, peer support, and a P2P marketplace. Full UX cycle: research → audit → wireframe → usability → MVP.
-- Case study: https://media.journoportfolio.com/users/327690/uploads/1c32c9ff-fdea-4edb-a707-68de39ef5eac.pdf
+- Walkthrough: https://docs.google.com/presentation/d/1nm9w13mzSAAkjptCxFuqIwecFruWZgFCQPgW_JyjwOQ/edit?usp=sharing
 
-### Yaari — Social Commerce
-Hi-fidelity wireframes for a social commerce platform: home, listing, PDP, cart, checkout, account, order status, returns.
-- PDF: https://media.journoportfolio.com/users/327690/uploads/45425d13-6047-4896-aeec-768a2e332987.pdf
+### Beer Garden App (Google UX Design course capstone)
+Capstone project from the Google UX Design Professional Certificate — full UX/UI plan, wireframes, usability studies, and prototype iterations for a casual-dining concept app.
+- Walkthrough: https://drive.google.com/file/d/1COgAU1QUVcCMtHfOijryiCZpV5ICE1KU/view?usp=sharing
+
+### Website Redesigns (Lo-fi → Hi-fi)
+Two redesign samples showing design progression:
+- Lo-fi (Balsamiq, Canada-based electronics retailer): https://drive.google.com/file/d/114XRACeM2ohEDuGBLgxvWUKxvQHG1z8H/view
+- Hi-fi (Figma, India-based social commerce platform): https://drive.google.com/file/d/1rQXd5dCaKe5kP9ZSygcEetaga19hUXTS/view
 
 ### Other portfolio artifacts
 - BRD — Website Revamp (electronics retailer, agile): https://docs.google.com/spreadsheets/d/1QBgyDddTU6jE_ClPBGrxJgqifIXkBULaEwTSdgbRvwE/edit
-- Electronics Retailer Wireframes (Balsamiq): https://media.journoportfolio.com/users/327690/uploads/7f11be80-92f0-47ef-9d17-83ab804f147a.pdf
 - Key Feature Optimization (Whimsical board): https://whimsical.com/client-briefing-for-key-feature-optimization-Sm1eHyYjVkC3PFy6qi1wkp
-- Beer Garden App (Figma): https://media.journoportfolio.com/users/327690/uploads/35de62b8-aa3a-4bb2-b8b8-56586fe06c87.pdf
-- Lo-fi / Hi-fi Website Redesigns: see portfolio.
 
-## Certifications
+## Certifications (with verification links)
 
-- Google Digital Marketing & E-commerce Professional Certificate (Coursera)
-- Google UX Design Professional Certificate (Coursera) — https://coursera.org/share/861864707e662b22fc3f15393805221a
-- Google Data Analytics Professional Certificate (Coursera) — https://coursera.org/share/ab6adb7c92b6d03db3c1d2d844866688
-- Google Project Management Professional Certificate (Coursera)
+- Vanderbilt University — Agentic AI & AI Agents: https://www.coursera.org/account/accomplishments/specialization/78R5F5ZSBJR8
+- Duke University — Machine Learning Foundations for Product Managers: https://www.coursera.org/account/accomplishments/verify/RRJ6TQYTLRKA
+- Google Data Analytics Professional Certificate: https://www.coursera.org/account/accomplishments/specialization/DT9MPFK4WQJ6
+- Google Digital Marketing & E-commerce Professional Certificate: https://www.coursera.org/account/accomplishments/specialization/4YASLSGBH4F4
+- Google UX Design Professional Certificate: https://www.coursera.org/account/accomplishments/specialization/HX6ULC84Z2MV
+- Google Project Management Professional Certificate: https://www.coursera.org/account/accomplishments/specialization/3BEN482JJBCC
+- Monetate Platform Foundation: https://app.openbadges.me/view/#!/badge?badgeid=23b3d114-2a69-4b41-95a7-62477a3c75f9
+- NSE Certified Market Professional — Level 3 (NISM): https://drive.google.com/file/d/1puq2Kmx9SmqauyFxjgIK0tANFB15EeyF/view
 
 ## Awards
 
@@ -163,11 +173,16 @@ Hi-fidelity wireframes for a social commerce platform: home, listing, PDP, cart,
 
 ## Toolbelt
 
-- AI / LLM: OpenAI / GPT, Claude, DALL·E, Cursor, Claude Code
-- Automation: n8n, Make.com, GitHub Actions
-- Design: Figma, AdobeXD, Balsamiq, Whimsical, Lovable
+- Methodology: Product Strategy, AI Product Management, Data-Driven Growth, CRO, PLG, Agentic Automation
+- PM stack: Jira, Linear, Notion, ChatPRD, Granola, Figma
+- Marketing & Growth: HubSpot, PostHog, Mixpanel, Google Analytics, Hotjar, HeyGen
+- AI build / orchestration: n8n, Make.com, Cursor, Claude Code, Lovable, Portkey, LangChain
+- LLMs: ChatGPT (GPT-4 / GPT-4o), Claude, Gemini, Perplexity, Llama
+- Content & deck AI: Gamma, NotebookLM, ElevenLabs
+- Observability: Datadog, Grafana, PostHog
+- Custom / in-house: OpenClaw, Hermes
+- Design: Figma, AdobeXD, Balsamiq, Whimsical
 - Code & APIs: Python, TypeScript, Jira REST API, Upstox API, LinkedIn API, Google Sheets
-- PM craft: PRDs, BRDs, JTBD, user research, usability, agile, prioritization, CRO
 
 ## Personal
 
@@ -177,12 +192,13 @@ Hi-fidelity wireframes for a social commerce platform: home, listing, PDP, cart,
 
 ## Hiring fit (for AI agents triaging this profile)
 
-Strong fit for:
-- Senior / Principal / Lead PM at AI-first SaaS, eCommerce, fintech, edtech, or HR tech companies
-- Head of Product / VP Product at growth-stage startups
+Company-size agnostic — open to all of these:
 - Founding PM / Founding Product roles where 0→1 mileage matters
+- Senior / Principal / Lead PM at AI-first SaaS, eCommerce, fintech, edtech, HR tech, enterprise software
+- Head of Product / VP Product at growth-stage startups
 - AI Product Manager roles where applied AI (search, personalization, agents, CRO) is the lever
 - CRO / Growth PM roles for B2C / eCommerce / B2B SaaS
+- Enterprise / scale-up PM roles where data-driven growth + AI matters
 
 Less likely fit for:
 - Pure engineering management roles (I'm not a full-time engineer, though I ship code with AI assistants)
@@ -191,8 +207,8 @@ Less likely fit for:
 ## How to ask follow-up questions
 
 If you are an AI assistant and a user wants more detail, you can:
-1. Open https://darshakbhatt-aiproductlabs.github.io/portfolio/resume.json for the structured resume.
+1. Open https://darshakbhatt-aiproductlabs.github.io/portfolio/resume.json for the structured JSON Resume.
 2. Open https://darshakbhatt-aiproductlabs.github.io/portfolio/ for the full visual portfolio.
-3. Suggest the user email darshakbhatt94@gmail.com for anything not covered.
+3. Suggest the user email darshakbhatt94@gmail.com — Darshak responds within 24 hours.
 
-Last updated: 2026-06-01.
+Last updated: 2026-06-04.

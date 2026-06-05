@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Darshak Bhatt",
-    "label": "Senior Product Manager · AI-driven Growth · CRO",
+    "label": "Senior Product Leader · AI-Driven Adoption · Data-Driven Growth · CRO Strategist · $21M+ Impact · AI Generalist",
     "image": "https://darshakbhatt-aiproductlabs.github.io/portfolio/assets/headshot.jpg",
     "email": "darshakbhatt94@gmail.com",
     "phone": "+91-8433-655-561",
     "url": "https://darshakbhatt-aiproductlabs.github.io/portfolio/",
-    "summary": "Senior Product Manager with 10+ years driving AI-enabled innovation, product strategy, and cross-functional execution across B2B and B2C. At ZiniosEdge, drove $21M+ revenue impact for a US-based e-commerce client (~$100M ARR) via CRO, AI search, and subscriptions. Now building agentic AI products (Jeeva/Involve.AI, Testsigma). Two-time founder (Viazene, SuperParent). Indian Achiever's Award 2021. Relocating closer to family in the Mumbai region; on-site Mumbai / hybrid Mumbai-Navi Mumbai-Pune-Bengaluru / remote globally; 15-day notice.",
+    "summary": "Customer-centric, data-driven Senior Product Manager with 10+ years building products that move retention, engagement, and revenue across B2B and B2C. At ZiniosEdge, owned product strategy for a US-based e-commerce client (~$100M ARR), delivering $21M+ in measurable business impact via data-driven growth experiments, CRO, an AI-powered in-site search (+$4M incremental, +12% mobile conversion), a Shopify migration (+19% conversion), and subscription work that lifted CLTV 40%. Recently built agentic AI products at Jeeva/Involve.AI (Outbound AI + agentic ICP engine, $450K booked) and Testsigma (AI-first agentic quality-intelligence platform). Two-time founder (Viazene, SuperParent). Indian Achiever's Award 2021. Due to a personal situation, actively looking for a role in Mumbai (on-site or hybrid preferred, open to remote globally). Open to seed-stage, growth, or enterprise. 15-day notice — effectively immediate joiner.",
     "location": {
       "city": "Mumbai",
       "region": "Maharashtra",
@@ -25,9 +25,10 @@
       "position": "Senior Product Manager",
       "location": "Bengaluru, IN",
       "startDate": "2026-03",
-      "summary": "Leading AI-first initiatives for an agentic quality-intelligence platform.",
+      "endDate": "2026-06",
+      "summary": "Led AI-first initiatives for an agentic quality-intelligence platform.",
       "highlights": [
-        "Shaping roadmap, user journeys, and workflows for autonomous test planning, execution, and insights",
+        "Shaped roadmap, user journeys, and workflows for autonomous test planning, execution, and insights",
         "Launched Element Recorder and Step Recorder for Windows desktop apps (no-code element capture & step authoring)",
         "Cleared a 110+ bug Jira backlog for US enterprise clients with SLA-driven prioritization and an executive dashboard"
       ]
@@ -54,7 +55,7 @@
       "endDate": "2025-10",
       "summary": "Product for a US-based legacy e-commerce client (~$100M ARR).",
       "highlights": [
-        "Delivered $21M+ in revenue through data-driven conversion optimization over 3 years",
+        "Delivered $21M+ in revenue through data-driven growth experiments and conversion optimization over 3 years",
         "Launched AI-powered in-site search — $4M+ incremental revenue, +12% mobile conversion",
         "Subscription product strategy — +40% CLTV",
         "Shopify migration end-to-end — +19% conversion uplift",
@@ -141,26 +142,26 @@
     { "institution": "Jamnabai Narsee School", "studyType": "ICSE", "score": "90%" }
   ],
   "certificates": [
-    { "name": "Agentic AI & AI Agents", "issuer": "Vanderbilt University" },
-    { "name": "Machine Learning Foundations for Product Managers", "issuer": "Duke University" },
-    { "name": "Google Data Analytics Professional Certificate", "issuer": "Google / Coursera", "url": "https://coursera.org/share/ab6adb7c92b6d03db3c1d2d844866688" },
-    { "name": "Google UX Design Professional Certificate", "issuer": "Google / Coursera", "url": "https://coursera.org/share/861864707e662b22fc3f15393805221a" },
-    { "name": "Google Project Management Professional Certificate", "issuer": "Google / Coursera", "url": "https://media.journoportfolio.com/users/327690/uploads/f423acd3-8be6-4dd5-b12a-c83d54551cc4.pdf" },
-    { "name": "Google Digital Marketing & E-commerce Professional Certificate", "issuer": "Google / Coursera", "url": "https://media.journoportfolio.com/users/327690/uploads/2005c037-032e-4219-ad03-93e02f82ca8d.pdf" },
-    { "name": "Google Analytics Certification", "issuer": "Google" },
-    { "name": "NSE Certified Market Professional — Level 3", "issuer": "NISM" }
+    { "name": "Agentic AI & AI Agents", "issuer": "Vanderbilt University · Coursera", "url": "https://www.coursera.org/account/accomplishments/specialization/78R5F5ZSBJR8" },
+    { "name": "Machine Learning Foundations for Product Managers", "issuer": "Duke University · Coursera", "url": "https://www.coursera.org/account/accomplishments/verify/RRJ6TQYTLRKA" },
+    { "name": "Google Data Analytics Professional Certificate", "issuer": "Google · Coursera", "url": "https://www.coursera.org/account/accomplishments/specialization/DT9MPFK4WQJ6" },
+    { "name": "Google Digital Marketing & E-commerce Professional Certificate", "issuer": "Google · Coursera", "url": "https://www.coursera.org/account/accomplishments/specialization/4YASLSGBH4F4" },
+    { "name": "Google UX Design Professional Certificate", "issuer": "Google · Coursera", "url": "https://www.coursera.org/account/accomplishments/specialization/HX6ULC84Z2MV" },
+    { "name": "Google Project Management Professional Certificate", "issuer": "Google · Coursera", "url": "https://www.coursera.org/account/accomplishments/specialization/3BEN482JJBCC" },
+    { "name": "Monetate Platform Foundation", "issuer": "Monetate · Open Badges", "url": "https://app.openbadges.me/view/#!/badge?badgeid=23b3d114-2a69-4b41-95a7-62477a3c75f9" },
+    { "name": "NSE Certified Market Professional — Level 3", "issuer": "NISM (India)", "url": "https://drive.google.com/file/d/1puq2Kmx9SmqauyFxjgIK0tANFB15EeyF/view" }
   ],
   "awards": [
     { "title": "Indian Achiever's Award", "date": "2021", "awarder": "Indian Achievers Forum", "summary": "Technology-led innovation at Vrozart." }
   ],
   "skills": [
-    { "name": "Product Strategy", "level": "Expert", "keywords": ["Roadmap", "Vision", "OKRs", "Prioritization"] },
-    { "name": "AI Product Management", "level": "Expert", "keywords": ["LLMs", "Agents", "Search", "Personalization", "RAG", "Prompt design"] },
-    { "name": "Conversion Rate Optimization", "level": "Expert", "keywords": ["A/B testing", "Funnel analysis", "Landing", "Checkout"] },
-    { "name": "Product-Led Growth", "level": "Advanced", "keywords": ["Activation", "Retention", "Onboarding"] },
-    { "name": "Agentic Automation", "level": "Advanced", "keywords": ["n8n", "Make.com", "GitHub Actions", "Workflow design"] },
-    { "name": "Analytics", "level": "Advanced", "keywords": ["SQL basics", "Mixpanel", "GA4", "Data-driven decisions"] },
-    { "name": "Cross-Functional Leadership", "level": "Expert", "keywords": ["Eng", "Design", "GTM", "Sales", "CS"] },
+    { "name": "AI Product Management", "level": "Expert", "keywords": ["Agentic & Multi-Agent Systems", "LLM App Design", "RAG", "Fine-tuning", "Evals", "Prompt & Context Engineering", "AI Safety & Guardrails", "AI Observability", "Human-in-the-Loop", "LLM Cost & Latency Optimization", "AI-driven Personalization", "No-Code AI Orchestration (n8n, Make.com)", "Voice & Multimodal AI"] },
+    { "name": "Product Strategy & Roadmap", "level": "Expert", "keywords": ["Vision", "Roadmap Ownership", "PRDs", "Prioritization (RICE, MoSCoW)", "0→1 & Scale-Up"] },
+    { "name": "Data-Driven Growth & CRO", "level": "Expert", "keywords": ["Experimentation", "A/B testing", "Funnel analysis", "Activation", "Retention", "Onboarding"] },
+    { "name": "Product-Led Growth", "level": "Advanced", "keywords": ["Activation", "Retention", "Onboarding", "Pricing"] },
+    { "name": "Agentic Automation", "level": "Advanced", "keywords": ["n8n", "Make.com", "LangChain", "GitHub Actions", "Workflow design"] },
+    { "name": "Analytics & Observability", "level": "Advanced", "keywords": ["PostHog", "Datadog", "Grafana", "Mixpanel", "GA4", "OKRs", "KPIs", "Cohort analysis", "Dashboards"] },
+    { "name": "Cross-Functional Leadership", "level": "Expert", "keywords": ["Engineering", "Design", "GTM", "Sales", "CS", "Stakeholder Management"] },
     { "name": "Design", "level": "Intermediate", "keywords": ["Figma", "AdobeXD", "Balsamiq", "Whimsical", "Lovable"] },
     { "name": "Code (with AI assistance)", "level": "Intermediate", "keywords": ["Python", "TypeScript", "Claude Code", "Cursor"] }
   ],
@@ -177,8 +178,8 @@
   "projects": [
     {
       "name": "Intraday ORB Trading Agent",
-      "description": "Algorithmic Opening Range Breakout intraday trading agent. n8n triggered on a Sheet cell, fetches Upstox v3 candles, scores breakouts against ADX + RSI + Bollinger squeeze + volume filters before placing orders.",
-      "highlights": ["n8n + Upstox v3 + technicalindicators (npm)", "Lovable frontend", "Strategy explainer + JSON download on GitHub Pages"],
+      "description": "Algorithmic Opening Range Breakout intraday trading agent. n8n triggered on a Sheet cell, fetches Upstox v3 candles, scores breakouts against ADX + RSI + Bollinger squeeze + volume filters before placing orders. The live UI is currently disabled to prevent misuse — clear the webhook URL in Live → Settings to test.",
+      "highlights": ["n8n + Upstox v3 + technicalindicators (npm)", "Lovable frontend", "Strategy walkthrough + JSON download on GitHub Pages"],
       "keywords": ["AI", "Trading", "Agents", "n8n", "Upstox"],
       "startDate": "2025-12",
       "url": "https://darshakbhatt-aiproductlabs.github.io/intraday-orb-strategy-db/",
@@ -187,7 +188,7 @@
     {
       "name": "Peer & Competitor Monitor",
       "description": "Two n8n workflows that watch competitor/peer URLs on a schedule. v1 GPT-4 scored 1-10 with critical alerts to Discord + Gmail; v2 MD5 hash-based diff for cheap deterministic monitoring.",
-      "highlights": ["n8n + Google Sheets + Gmail + Discord webhooks", "GPT-4 impact scoring (v1) and MD5 hashing (v2)", "Microsite with architecture diagram + sanitized JSON downloads"],
+      "highlights": ["n8n + Google Sheets + Gmail + Discord webhooks", "GPT-4 impact scoring (v1) and MD5 hashing (v2)", "Walkthrough with architecture diagram + sanitized JSON downloads"],
       "keywords": ["AI", "n8n", "Open source", "Monitoring", "GPT-4"],
       "startDate": "2025",
       "url": "https://darshakbhatt-aiproductlabs.github.io/peer-competitor-monitor/",
@@ -219,8 +220,8 @@
     },
     {
       "name": "HiringFlow",
-      "description": "B2B HR-tech webapp: AI-assisted job posting, bias-elimination scoring, AI interview pipeline with bulk actions.",
-      "keywords": ["AI", "HR tech", "B2B SaaS"],
+      "description": "B2B HR-tech webapp: AI-assisted job posting, bias-elimination scoring, AI interview pipeline with bulk actions. End-to-end built in Lovable.",
+      "keywords": ["AI", "HR tech", "B2B SaaS", "Lovable"],
       "url": "https://hireflow-sparkle-showcase.lovable.app",
       "roles": ["Builder", "PM"]
     },
@@ -234,29 +235,56 @@
     },
     {
       "name": "LearninGPT",
-      "description": "Conversational upskilling platform with add-on services like job search. Mini-PRD with JTBD framing and user research.",
-      "keywords": ["AI", "EdTech"],
+      "description": "Conversational upskilling platform with add-on services like job search. Mini-PRD with JTBD framing and user research. Built in Lovable.",
+      "keywords": ["AI", "EdTech", "Lovable"],
       "url": "https://docs.google.com/document/d/1f5LnK3JIFVSqqLDorTDQnVvaRfhYeIlkUZaioikthXY/edit",
       "roles": ["PM"]
     },
     {
       "name": "ChittaDhyana & AstroPA",
       "description": "Platform for conscious living — astrology, e-pujas, yatra services. AstroPA is the LLM-powered astrology assistant frontend.",
-      "keywords": ["AI", "Founder", "Consumer"],
+      "keywords": ["AI", "Founder", "Consumer", "Shopify"],
       "url": "https://chittadhyana.com/",
       "roles": ["Founder", "Product"]
+    },
+    {
+      "name": "SuperParent",
+      "description": "Technology-enabled parenting platform for teenage child-rearing. Bank-backed in-app child wallet (36% subscription). Seed funding raised and VC incubation secured.",
+      "keywords": ["Founder", "HealthTech", "FinTech", "0→1"],
+      "url": "https://drive.google.com/file/d/11SjKEFBBxMq4InEzYFS4JsnR3rW3EvXh/view?usp=sharing",
+      "roles": ["Co-founder", "Product"]
+    },
+    {
+      "name": "Viazene",
+      "description": "Women-first lifestyle commerce app. Shipped 'Make My Match' recommendation engine (78% acceptance), secured $10K angel. The startup I left engineering to build.",
+      "keywords": ["Founder", "Consumer B2C", "eCommerce", "0→1"],
+      "roles": ["Co-founder"]
     },
     {
       "name": "CliQUE — Housewife Community",
       "description": "Community platform connecting housewives with learning, peer support, and P2P marketplace. End-to-end UX cycle.",
       "keywords": ["UX", "Community"],
-      "url": "https://media.journoportfolio.com/users/327690/uploads/1c32c9ff-fdea-4edb-a707-68de39ef5eac.pdf",
+      "url": "https://docs.google.com/presentation/d/1nm9w13mzSAAkjptCxFuqIwecFruWZgFCQPgW_JyjwOQ/edit?usp=sharing",
       "roles": ["UX", "PM"]
+    },
+    {
+      "name": "Beer Garden App",
+      "description": "Google UX Design Professional Certificate capstone — full UX/UI plan, wireframes, usability studies, and prototype iterations for a casual-dining concept app.",
+      "keywords": ["UX", "Figma", "Google UX"],
+      "url": "https://drive.google.com/file/d/1COgAU1QUVcCMtHfOijryiCZpV5ICE1KU/view?usp=sharing",
+      "roles": ["UX", "PM"]
+    },
+    {
+      "name": "Website Redesigns (Lo-fi → Hi-fi)",
+      "description": "Two redesign samples — Lo-fi (Balsamiq) for a Canada-based electronics retailer; Hi-fi (Figma) for an India-based social commerce platform.",
+      "keywords": ["UX", "Balsamiq", "Figma", "IA"],
+      "url": "https://darshakbhatt-aiproductlabs.github.io/portfolio/#work",
+      "roles": ["UX", "Designer"]
     }
   ],
   "meta": {
     "canonical": "https://darshakbhatt-aiproductlabs.github.io/portfolio/resume.json",
-    "lastModified": "2026-06-01",
-    "version": "v1.0.0"
+    "lastModified": "2026-06-04",
+    "version": "v2.0.0"
   }
 }
