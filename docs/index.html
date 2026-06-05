@@ -2402,7 +2402,7 @@
     function showCard(html,btn){ paused=true; cardBody.innerHTML=html; cardBtn.textContent=btn||'Continue →'; cardEl.classList.add('show'); }
     function showMilestone(m){ showCard(`<div class="jc-emoji">${m.emoji}</div><div class="jc-year">${m.year}</div><h3>${m.title}</h3><p>${m.desc}</p>`,'Keep walking →'); }
     function confettiBurst(){ for(let i=0;i<90;i++){ particles.push({x:W/2,y:H/2,vx:(Math.random()-0.5)*10,vy:(Math.random()-0.75)*10,life:70+Math.random()*40,c:['#60A5FA','#38bdf8','#fbbf24','#22c55e','#f472b6'][i%5]}); } }
-    function showFinish(){ finished=true; confettiBurst(); showCard(`<div class="jc-emoji">🎯</div><div class="jc-year">the next chapter</div><h3>Let&apos;s build together.</h3><p>That&apos;s 11 years in one run — two ventures, an Indian Achiever&apos;s Award, <b>$21M+</b> in impact, and a shift into agentic AI. You collected <b>${coinCount}</b> wins along the way. The next milestone could be yours.</p>`,"Let&apos;s Connect →"); }
+    function showFinish(){ finished=true; confettiBurst(); showCard(`<div class="jc-emoji">🎯</div><div class="jc-year">the next chapter</div><h3>Let&apos;s build together.</h3><p>That&apos;s 11 years in one run — two ventures, an Indian Achiever&apos;s Award, <b>$21M+</b> in impact, and a shift into agentic AI. You collected <b>${coinCount}</b> wins along the way. The next milestone could be yours.</p>`,"Let's Connect →"); }
     cardBtn.addEventListener('click',()=>{
       cardEl.classList.remove('show');
       paused=false;
