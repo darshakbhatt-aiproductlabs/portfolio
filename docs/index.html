@@ -643,6 +643,25 @@
       color: var(--text-dim); font-size: 14.5px; line-height: 1.6;
       margin: 0 0 14px; flex-grow: 1;
     }
+    /* Inline disclaimer note inside a project card (e.g., live-app caveats) */
+    .project-card .note {
+      font-size: 12.5px;
+      color: var(--text-dim);
+      margin: -6px 0 14px;
+      padding: 9px 12px;
+      background: var(--haldi-soft);
+      border-left: 3px solid var(--haldi);
+      border-radius: 4px;
+      line-height: 1.5;
+    }
+    .project-card .note code {
+      font-family: "SF Mono", Menlo, monospace;
+      font-size: 11.5px;
+      background: var(--surface-2);
+      padding: 1px 5px;
+      border-radius: 3px;
+      color: var(--text);
+    }
     .project-card .tech {
       display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px;
     }
@@ -1479,6 +1498,7 @@
           </div>
         </div>
         <p class="desc">Algorithmic Opening Range Breakout intraday trading agent. Triggers on a Sheet cell, fetches Upstox v3 candles, scores breakouts against ADX + RSI + Bollinger squeeze + volume. Lovable frontend.</p>
+        <p class="note">⚠️ The <b>Live</b> UI triggers an n8n workflow that has been <b>disabled to prevent misuse</b>. To test the UI safely, open <b>Live → Settings</b> and clear the <code>webhook URL</code> field before interacting.</p>
         <div class="tech">
           <span class="tag">n8n</span><span class="tag">Upstox v3</span><span class="tag">technicalindicators</span><span class="tag">Lovable</span>
         </div>
@@ -2445,8 +2465,19 @@
   // hash WITHOUT scrolling, and disable the browser's scroll restoration so a
   // hard refresh never lands mid-page.
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  // Tab-state policy on entry:
+  //  • Hard refresh / reload → always land on Overview, drop the hash so
+  //    subsequent refreshes also stay on Overview.
+  //  • Fresh navigation (deep link from email, Slack, etc., or first visit)
+  //    → honor the hash if it's a valid tab.
+  const navEntry = (performance.getEntriesByType && performance.getEntriesByType('navigation')[0]) || {};
+  const isReload = navEntry.type === 'reload';
   const initial = location.hash.replace('#','');
-  if (initial && TABS.includes(initial) && initial !== 'overview') switchTab(initial, false, false);
+  if (isReload) {
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  } else if (initial && TABS.includes(initial) && initial !== 'overview') {
+    switchTab(initial, false, false);
+  }
   // Overview is the default landing tab. Kick the game off so the canvas
   // isn't a frozen frame on first paint. (switchTab handles other tabs.)
   if (document.getElementById('tab-overview').classList.contains('active')) {
