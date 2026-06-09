@@ -36,23 +36,82 @@
 - **Indian Achiever's Award (2021)** — Govt. of India Startup Initiative, for technology-led innovation at Vrozart.
 - **Credentials:** Vanderbilt Agentic AI & AI Agents; Duke ML Foundations for PMs; 4× Google Professional Certificates (Data Analytics, Digital Marketing & E-commerce, UX Design, Project Management); Monetate Platform Foundation; NSE Certified Market Professional — Level 3 (NISM).
 
-## Roles (most recent first)
-
-- Senior Product Manager — Testsigma Technologies, Bengaluru (Mar 2026 – Jun 2026) — AI-first agentic quality-intelligence platform; no-code Element/Step Recorders for Windows; cleared 110+ bug backlog with SLA prioritization and an executive dashboard.
-- Senior AI Product Manager (freelance consultant) — Jeeva / Involve.AI, Pune (Oct 2025 – Jan 2026) — Outbound AI, agentic ICP engine, $450K booked, Data Integrity & Idempotency framework.
-- Senior Product Manager — ZiniosEdge, Bengaluru (May 2022 – Oct 2025) — $21M+ revenue for a US-based e-commerce client (~$100M ARR).
-- Product Manager — Dhani Services / Indiabulls, Mumbai (Jan – May 2022) — UX redesign +15% conversion, −30% bounce; B2B onboarding; GTM (14% CTR pilot).
-- Product Manager — Vrozart, Gurgaon (Dec 2020 – Jan 2022) — $100K seed raised; Indian Achiever's Award 2021.
-- Co-founder (Product) — SuperParent / Inversa Technosoft, Bengaluru (Mar 2019 – Dec 2020) — concept→launch, bank partnership, VC incubation.
-- Product Marketing Manager — Auxesis, Mumbai (Sep 2018 – Mar 2019) — blockchain; 45K ICO community; +24% activation.
-- Associate Product Marketing Manager — Comezzo, Bengaluru (Aug 2017 – Sep 2018) — Towards.AI, $2M partnerships, 140%+ ROI on influencer campaigns.
-- Co-founder — Viazene LLP, Mumbai (Mar 2015 – Jun 2017) — first venture; left engineering in the 4th semester to build it.
-
 ## What I do (positioning)
 
 I'm a customer-centric, data-driven Senior Product Manager who blends AI innovation with business goals. I treat AI as a substrate for shipped product outcomes — search, personalization, CRO, agentic automation, AI-assisted workflows — not a separate "AI strategy" stream. My work spans product strategy, roadmap ownership, analytics, and go-to-market across B2B and B2C.
 
 I have founder mileage (0→1 twice) and senior PM mileage (driving $21M+ impact, shaping agentic-AI platforms). I bring both, and I'm open to seed-stage, growth, or enterprise — what matters is the product, the problem, and the team, not the company size.
+
+## Work Experience (complete, most recent first)
+
+### Senior Product Manager — Testsigma Technologies Inc., Bengaluru
+**Dates:** March 2026 – June 2026
+
+- Launched Element Recorder and Step Recorder for Windows desktop apps to enable no-code element capture and step authoring for enterprises.
+- Led AI-first initiatives for Testsigma's agentic quality-intelligence platform — shaping roadmap, user journeys, and workflows for autonomous test planning, execution, and insights.
+- Cleared a 110+ bug Jira backlog for US-based enterprise clients while implementing SLA-driven prioritization and an executive dashboard for real-time stakeholder visibility.
+
+### Senior AI Product Manager (Freelance Consultant) — Jeeva · Involve.AI, Pune
+**Dates:** October 2025 – January 2026
+
+- Launched Outbound AI within the SLG workspace to enable outbound campaigns — achieved 60% adoption in one month.
+- Built an agentic workflow to deliver smarter ICP — delivered a 100,000-lead list in two months with a 25% increase in lead-to-opportunity conversion.
+- Led ARPU growth for PLG customers by optimizing onboarding flow and pricing plans — delivered $450,000 in booked revenue.
+- Orchestrated the Data Integrity & Idempotency Framework by implementing a Source Priority Matrix for the Outbound and Agentic ICP lead modules.
+
+### Senior Product Manager — ZiniosEdge Software Technologies Pvt. Ltd., Bengaluru
+**Dates:** May 2022 – October 2025
+
+- For a US-based legacy e-Commerce client (~$100M ARR), delivered over $21M in revenue through data-driven growth experiments and conversion optimization over 3 years.
+- Launched an AI-powered in-site search — generated $4M+ in incremental revenue and a +12% mobile conversion lift.
+- Defined product strategy and roadmap for subscription product offerings — delivered a 40% increase in CLTV.
+- Led product lifecycle from discovery to launch for a Shopify migration: created PRDs, prioritized features, managed sprints, executed GTM, and ran A/B tests — achieved a 19% conversion uplift.
+- Owned KPI/OKR tracking and reduced tracking delta by 30%, improving hypothesis-driven experimentation throughput by 40%.
+
+### Product Manager — Dhani Services Ltd (Indiabulls Group), Mumbai
+**Dates:** January 2022 – May 2022
+
+- Delivered a UX redesign roadmap optimizing the user journey — achieved a 15% conversion uplift and a 30% reduction in bounce rate.
+- Owned the product roadmap and discovery for B2B onboarding; created PRDs, prioritized the backlog, and managed agile delivery.
+- Led GTM execution for category expansion with a 14% CTR in pilot campaigns.
+
+### Product Manager — Vrozart Group, Gurgaon
+**Dates:** December 2020 – January 2022
+
+- Secured $100K in seed funding for two startups in 3 months by leading product development at Vrozart Future Incubators.
+- Defined product strategy and roadmap for Vrozart Health's services expansion — achieved $110K in revenue growth within 6 months.
+- Awarded the **2021 Indian Achiever's Award** by the Government of India's Startup Initiative for outstanding contributions in the tech and health space.
+- Established a structured stakeholder management cadence, aligning leadership on business projections, KPIs, and release milestones.
+
+### Co-Founder (Product) — Super Parent App · Inversa Technosoft, Bengaluru
+**Dates:** March 2019 – December 2020
+
+- Led the Super Parent App from concept to launch, executing a phased release strategy.
+- Partnered with a leading bank for an in-app child wallet, driving a 36% user subscription rate.
+- Reduced user churn by 23% through A/B testing and conducted cross-border trials to improve app features and scalability via feedback loops.
+- Secured technology incubation from a leading VC, validating product-market fit and innovation potential.
+
+### Product Marketing Manager — Auxesis Group, Mumbai
+**Dates:** September 2018 – March 2019
+
+- Owned the product marketing roadmap for blockchain-based projects, translating technical specifications into user stories and GTM assets.
+- Built a 45,000+ member digital community for ICO launch, increasing brand awareness and engagement.
+- Conducted data-driven analysis of user engagement and behavioral metrics, identifying key levers that improved community activation by 24%.
+- Partnered with engineering and design to align product positioning, release timelines, and launch content — improving adoption by 15%.
+
+### Associate Product Marketing Manager — Comezzo Marketing Tech Pvt. Ltd., Bengaluru
+**Dates:** August 2017 – September 2018
+
+- Defined the product roadmap and led product development of Towards.AI with Hotify AI, orchestrating value-exchange partnerships worth $2 million.
+- Trailblazed influencer marketing adoption in real estate for leading developers, achieving 140%+ ROI on the booked deal amount.
+- Conducted competitive benchmarking and user research to identify high-impact opportunities, guiding feature prioritization and positioning strategy.
+
+### Co-Founder — Viazene LLP, Mumbai
+**Dates:** March 2015 – June 2017
+
+- Founded and led Viazene, a women-exclusive lifestyle shopping and services app, owning the end-to-end product lifecycle.
+- Conducted user research and usability testing to identify personalization gaps, launching "Make My Match" — a recommendation feature that achieved 78% user acceptance.
+- Developed and pitched the GTM and growth strategy, securing $10K in angel investment to accelerate product development and scaling.
 
 ## Domains of expertise
 
@@ -158,18 +217,48 @@ Two redesign samples showing design progression:
 
 ## Certifications (with verification links)
 
-- Vanderbilt University — Agentic AI & AI Agents: https://www.coursera.org/account/accomplishments/specialization/78R5F5ZSBJR8
-- Duke University — Machine Learning Foundations for Product Managers: https://www.coursera.org/account/accomplishments/verify/RRJ6TQYTLRKA
-- Google Data Analytics Professional Certificate: https://www.coursera.org/account/accomplishments/specialization/DT9MPFK4WQJ6
-- Google Digital Marketing & E-commerce Professional Certificate: https://www.coursera.org/account/accomplishments/specialization/4YASLSGBH4F4
-- Google UX Design Professional Certificate: https://www.coursera.org/account/accomplishments/specialization/HX6ULC84Z2MV
-- Google Project Management Professional Certificate: https://www.coursera.org/account/accomplishments/specialization/3BEN482JJBCC
-- Monetate Platform Foundation: https://app.openbadges.me/view/#!/badge?badgeid=23b3d114-2a69-4b41-95a7-62477a3c75f9
-- NSE Certified Market Professional — Level 3 (NISM): https://drive.google.com/file/d/1puq2Kmx9SmqauyFxjgIK0tANFB15EeyF/view
+- **Vanderbilt University — Agentic AI & AI Agents** (Coursera Specialization)
+  - URL: https://www.coursera.org/account/accomplishments/specialization/78R5F5ZSBJR8
+
+- **Duke University — Machine Learning Foundations for Product Managers** (Coursera Certificate)
+  - URL: https://www.coursera.org/account/accomplishments/verify/RRJ6TQYTLRKA
+
+- **Google Data Analytics Professional Certificate** (Google · Coursera)
+  - URL: https://www.coursera.org/account/accomplishments/specialization/DT9MPFK4WQJ6
+
+- **Google Digital Marketing & E-commerce Professional Certificate** (Google · Coursera)
+  - URL: https://www.coursera.org/account/accomplishments/specialization/4YASLSGBH4F4
+
+- **Google UX Design Professional Certificate** (Google · Coursera)
+  - URL: https://www.coursera.org/account/accomplishments/specialization/HX6ULC84Z2MV
+
+- **Google Project Management Professional Certificate** (Google · Coursera)
+  - URL: https://www.coursera.org/account/accomplishments/specialization/3BEN482JJBCC
+
+- **Monetate Platform Foundation** (Monetate · Open Badges)
+  - URL: https://app.openbadges.me/view/#!/badge?badgeid=23b3d114-2a69-4b41-95a7-62477a3c75f9
+
+- **NSE Certified Market Professional — Level 3** (NISM, India)
+  - URL: https://drive.google.com/file/d/1puq2Kmx9SmqauyFxjgIK0tANFB15EeyF/view
 
 ## Awards
 
-- **Indian Achiever's Award (2021)** — Technology-led innovation at Vrozart.
+- **Indian Achiever's Award (2021)** — Awarded by the Indian Achievers Forum for technology-led innovation at Vrozart, in partnership with the Government of India's Startup Initiative.
+
+## Education
+
+### K.J. Somaiya College of Engineering (KJSCE)
+- Degree: B.Tech, Electronics & Telecom (EXTC)
+- Score: CGPA 8.5 (3rd semester)
+- Note: Dropped out in the 4th semester to build my first startup, Viazene.
+
+### SVKM's Chauhan Institute of Science (Mithibai College)
+- Degree: HSC, Science
+- Score: 78.33%
+
+### Jamnabai Narsee School
+- Degree: ICSE
+- Score: 90%
 
 ## Toolbelt
 
