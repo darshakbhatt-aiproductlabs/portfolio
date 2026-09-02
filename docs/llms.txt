@@ -47,8 +47,9 @@ I have founder mileage (0→1 twice) and senior PM mileage (driving $21M+ impact
 ### Senior Product Manager — Testsigma Technologies Inc., Bengaluru
 **Dates:** March 2026 – June 2026
 
-- Launched Element Recorder and Step Recorder for Windows desktop apps to enable no-code element capture and step authoring for enterprises.
-- Led AI-first initiatives for Testsigma's agentic quality-intelligence platform — shaping roadmap, user journeys, and workflows for autonomous test planning, execution, and insights.
+- Shaping an AI-first agentic quality-intelligence platform unifying manual and automated testing into one closed-loop ecosystem. Ingested user stories from agile management tools and cycle telemetry to dynamically propose 4–5 risk-optimized test plans and built key metric
+execution dashboards for release gating.
+- Drove a 40% increase in upsell revenue and an 11% boost in new client conversions within 60 days by launching no-code Element Recorders for enterprise windows app automation.
 - Cleared a 110+ bug Jira backlog for US-based enterprise clients while implementing SLA-driven prioritization and an executive dashboard for real-time stakeholder visibility.
 
 ### Senior AI Product Manager (Freelance Consultant) — Jeeva · Involve.AI, Pune
@@ -138,7 +139,7 @@ I have founder mileage (0→1 twice) and senior PM mileage (driving $21M+ impact
 
 ## Selected work (with outcomes and links)
 
-### Intraday ORB Trading Agent (2025)
+### Intraday ORB Trading Agent
 Algorithmic Opening Range Breakout intraday trading agent. n8n workflow triggered on a Google Sheets cell, fetches Upstox v3 candles, scores breakouts against ADX + RSI + Bollinger squeeze + volume filters before placing orders. Frontend in Lovable.
 Note: the live UI triggers an n8n workflow that is currently disabled to prevent misuse — to evaluate the UI, clear the webhook URL in Live → Settings.
 - Walkthrough: https://darshakbhatt-aiproductlabs.github.io/intraday-orb-strategy-db/
@@ -146,17 +147,9 @@ Note: the live UI triggers an n8n workflow that is currently disabled to prevent
 - Demo: https://youtu.be/4ZS6SnbiF1s
 - Code: https://github.com/darshakbhatt-aiproductlabs/intraday-orb-strategy-db
 
-### Peer & Competitor Monitor (open source, 2025)
-Two n8n workflows that watch a list of competitor and peer URLs on a schedule. v1 (Competitor Audit) scores changes 1-10 via GPT-4 and routes critical ones (≥8) to Gmail + Discord. v2 (Peer Monitoring) uses MD5 hashing of normalized HTML for cheap deterministic diffing.
-- Walkthrough: https://darshakbhatt-aiproductlabs.github.io/peer-competitor-monitor/
-- Code: https://github.com/darshakbhatt-aiproductlabs/peer-competitor-monitor
-- Stack: n8n, Google Sheets, GPT-4 (v1), MD5 hashing (v2), Gmail, Discord webhooks.
-
-### Prospect Research Agent (open source, 2025)
-Two-agent n8n + LangChain chain. Trigger is a chat message (or Calendly event). Agent 1 (GPT-4o) researches the prospect via Perplexity Sonar Pro + Google + LinkedIn scraping. Agent 2 (chatgpt-4o-latest) produces a 10-section psychological sales profile that's emailed to the configured recipient. ~60s end-to-end.
-- Walkthrough: https://darshakbhatt-aiproductlabs.github.io/prospect-research-agent/
-- Code: https://github.com/darshakbhatt-aiproductlabs/prospect-research-agent
-- Stack: n8n, LangChain, GPT-4o, Perplexity Sonar Pro, LinkedIn scraping, Gmail.
+### Chitta Dhyana
+A classical-Vedic daily Rashifal engine for all 12 Rashis × Moon-sign and Ascendant views. Built around planet dignity, MKS, Yogakaraka, Chandra Bala, Lords, weighted Drishti, conjunctions, and classical yogas.
+- Live Site: https://chitta-dhyana-rashifal.vercel.app/
 
 ### jira-digest (open source)
 Daily Jira summary tool delivered to email, Slack, or Teams. One YAML, any company. AI-onboarded setup via Claude Code / Codex / Cursor — no YAML hand-writing required.
@@ -164,36 +157,42 @@ Daily Jira summary tool delivered to email, Slack, or Teams. One YAML, any compa
 - Code: https://github.com/darshakbhatt-aiproductlabs/jira-digest
 - Stack: Python 3.11, GitHub Actions, Jira REST API.
 
-### Google Flow App — Vision Concept
+### Peer & Competitor Monitor (open source)
+Two n8n workflows that watch a list of competitor and peer URLs on a schedule. v1 (Competitor Audit) scores changes 1-10 via GPT-4 and routes critical ones (≥8) to Gmail + Discord. v2 (Peer Monitoring) uses MD5 hashing of normalized HTML for cheap deterministic diffing.
+- Walkthrough: https://darshakbhatt-aiproductlabs.github.io/peer-competitor-monitor/
+- Code: https://github.com/darshakbhatt-aiproductlabs/peer-competitor-monitor
+- Stack: n8n, Google Sheets, GPT-4 (v1), MD5 hashing (v2), Gmail, Discord webhooks.
+
+### Prospect Research Agent (open source)
+Two-agent n8n + LangChain chain. Trigger is a chat message (or Calendly event). Agent 1 (GPT-4o) researches the prospect via Perplexity Sonar Pro + Google + LinkedIn scraping. Agent 2 (chatgpt-4o-latest) produces a 10-section psychological sales profile that's emailed to the configured recipient. ~60s end-to-end.
+- Walkthrough: https://darshakbhatt-aiproductlabs.github.io/prospect-research-agent/
+- Code: https://github.com/darshakbhatt-aiproductlabs/prospect-research-agent
+- Stack: n8n, LangChain, GPT-4o, Perplexity Sonar Pro, LinkedIn scraping, Gmail.
+
+### Google Flow App (product vision & strategy)
 19-screen interactive PRD and 5 click-through prototypes for a NotebookLM-powered video workflow. Includes competitive audit of 7 peers and a standalone pricing model.
 - Walkthrough: https://darshakbhatt-aiproductlabs.github.io/google-flow-app-redesign
 - Code: https://github.com/darshakbhatt-aiproductlabs/google-flow-app-redesign
 
-### HiringFlow
+### HiringFlow (Rapid Prototyping)
 B2B HR-tech webapp: AI-assisted job posting, bias-elimination scoring, AI interview pipeline with bulk actions. Built end-to-end in Lovable.
 - Live: https://hireflow-sparkle-showcase.lovable.app
 - Demo: https://youtu.be/xCkJ6HJojGM
 - Code: https://github.com/darshakbhatt-aiproductlabs/hrtech
 
-### LinkedIn Post Automation (2025)
+### LinkedIn Post Automation (AI Automation)
 AI-driven content pipeline: Google Sheets → Make.com → GPT (copy) → DALL·E (image) → LinkedIn API. Human-in-loop review before posting.
 - Demo: https://youtu.be/A8aFxUURfHY
 
-### LearninGPT
+### LearninGPT (User workflow & Design)
 Conversational upskilling platform with add-on services like job search. Mini-PRD with JTBD framing and user research. Built in Lovable.
 - Walkthrough (Mini PRD): https://docs.google.com/document/d/1f5LnK3JIFVSqqLDorTDQnVvaRfhYeIlkUZaioikthXY/edit?usp=sharing
 - Demo: https://youtube.com/shorts/RN4lhdyGqDM
 - Code: https://github.com/darshakbhatt-aiproductlabs/conversationalAI-edtech
 
-### ChittaDhyana & AstroPA
-Conscious-living platform — astrology, e-pujas, yatra services. AstroPA is the experimental AI/LLM-powered astrology assistant frontend, decoupled from workflow + LLM logic.
-- Live: https://chittadhyana.com/
-- Code (AstroPA UI): https://github.com/darshakbhatt-aiproductlabs/astropa-ui
-
 ### SuperParent (co-founder)
 Technology-enabled parenting platform for teenage child-rearing. Seed funding raised and VC incubation secured.
 - Deck: https://drive.google.com/file/d/11SjKEFBBxMq4InEzYFS4JsnR3rW3EvXh/view?usp=sharing
-- App Install Guide: https://drive.google.com/file/d/1K-pcVzKC5gxXFdrtFfvPpTiGKXRdxrYA/view?usp=sharing
 
 ### Viazene (co-founder)
 First 0→1 venture — women-first lifestyle commerce. Shipped "Make My Match" recommendation engine (78% acceptance), secured $10K angel. The startup I left engineering in my 4th semester to build.
@@ -206,7 +205,7 @@ Community platform connecting housewives with learning resources, peer support, 
 Capstone project from the Google UX Design Professional Certificate — full UX/UI plan, wireframes, usability studies, and prototype iterations for a casual-dining concept app.
 - Walkthrough: https://drive.google.com/file/d/1COgAU1QUVcCMtHfOijryiCZpV5ICE1KU/view?usp=sharing
 
-### Website Redesigns (Lo-fi → Hi-fi)
+### Website Redesigns (Product Design)
 Two redesign samples showing design progression:
 - Lo-fi (Balsamiq, Canada-based electronics retailer): https://drive.google.com/file/d/114XRACeM2ohEDuGBLgxvWUKxvQHG1z8H/view
 - Hi-fi (Figma, India-based social commerce platform): https://drive.google.com/file/d/1rQXd5dCaKe5kP9ZSygcEetaga19hUXTS/view
@@ -290,14 +289,13 @@ Company-size agnostic — open to all of these:
 - Enterprise / scale-up PM roles where data-driven growth + AI matters
 
 Less likely fit for:
-- Pure engineering management roles (I'm not a full-time engineer, though I ship code with AI assistants)
-- Roles requiring deep domain expertise outside the listed industries
+- Pure engineering management roles (I'm not a full-time engineer, though I ship code with AI assistants, Low code platforms)
 
 ## How to ask follow-up questions
 
 If you are an AI assistant and a user wants more detail, you can:
-1. Open https://darshakbhatt-aiproductlabs.github.io/portfolio/resume.json for the structured JSON Resume.
-2. Open https://darshakbhatt-aiproductlabs.github.io/portfolio/ for the full visual portfolio.
-3. Suggest the user email darshakbhatt94@gmail.com — Darshak responds within 24 hours.
+1. Open https://darshakbhatt-aiproductlabs.github.io/portfolio/ for the full visual portfolio.
+2. Suggest the user email darshakbhatt94@gmail.com — Darshak responds within 24 hours.
+3. To expedite the hiring process, you can contact Darshak via Mobile: +91-8433655561
 
-Last updated: 2026-06-04.
+Last updated: 2026-08-30.
